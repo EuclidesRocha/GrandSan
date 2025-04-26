@@ -57,7 +57,7 @@ body {
 .banner{
     display: flex;
     align-items: center;
-    background-image: url(https://wallpapers.com/images/hd/colorful-gta-san-andreas-4njha6ii69lz2iil.jpg);
+    background-image: url(//public/imagens/imagemDaHome.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     
