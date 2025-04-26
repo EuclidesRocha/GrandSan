@@ -1,0 +1,165 @@
+
+
+@import url(../Individual/imagens/pricedown\ bl.otf);
+
+
+    
+
+
+body {
+    color: 0;
+    margin: 0;
+   
+   
+}
+.barrasup{
+    display: flex;
+    flex-direction: row;
+    background-color: #000;
+    height: 100px;
+
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    width: 1591px;
+}
+
+.logo img {
+    height: 100%;
+    width: 13%;
+   padding-left: 150px;
+  
+}
+.iconsBarra {
+    display: flex;
+    justify-content: center;
+    padding-right: 20px;
+
+}
+.iconsBarra a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 120px;
+    
+
+    font-size: 30px;
+    font-family: "pricedown", Courier, monospace;
+    color: white
+   
+}
+
+
+
+.banner{
+    display: flex;
+    align-items: center;
+    background-image: url(https://wallpapers.com/images/hd/colorful-gta-san-andreas-4njha6ii69lz2iil.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+
+    height: 810px;
+}
+.inicialMess{
+    display: flex;
+    flex-direction: column;
+    margin-left: 90px;
+    width: 800px;
+    height: 500px;
+    align-items: center;
+   
+
+  
+}
+.inicialMess .welcome p{
+    height: 60px;
+    font-family: "pricedown", Courier, monospace;
+    color: white;
+    margin: 0;
+    font-size: 40px;
+     text-shadow: 2px 2px 0 black;
+}
+.capa{
+    background-image: url(../GrandSan/imagens/capa.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 43%;
+    
+}
+.segundParte{
+    background-color: #000;
+    height: 810px;
+}
+.rodape{
+    background-color: #000;
+    border-top: solid 2px;
+    border-color: white;
+    height: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Página de Cadastro*/
+
+
+
+.spaceCadastro{
+   display: flex;
+   flex-direction: column;
+
+   padding-top: 40px;
+   padding-left: 100px;
+   height: 200px;
+   width: 300px;
+
+   
+
+}
+.inputs {
+    display: flex;
+    flex-direction: column;
+    
+    font-size: 20px;
+    font-family: "pricedown", Courier, monospace;
+    
+    padding: 50px;
+    border: solid 1px;
+    border-radius: 30px;
+
+    width: 300px;
+
+    background-color: white;
+}
+.inputs p{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    margin-bottom: 10px;
+    color: white;
+    text-shadow: 4px 4px 0 #000, -4px 4px 0 #000, -4px -4px 0 #000, 4px -4px 0 #000;
+    font-size: 35px;
+   
+}
+
+.inputs span{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+ 
