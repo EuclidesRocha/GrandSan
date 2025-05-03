@@ -15,9 +15,7 @@ body {
 
 }
 
-.logo {
-    margin-left: 25px;
-}
+
 
 
 
@@ -307,12 +305,12 @@ body {
     flex-direction: column;
    
     width: 38%;
-    height: 80%;
+    height: 75%;
     
     
     
     border: solid #000;
-    background-color: #BE9B0D;
+    background-color: #BE6327;
     border-radius: 30px;
   
     
@@ -334,6 +332,8 @@ body {
     width: 100%;
     
 }
+
+
 .spaceCadastro .inputs #input{
     display: flex;
     
@@ -350,9 +350,32 @@ body {
     
     
     
+}.spaceCadastro .selects{
+    display: flex;
+    flex-direction: row;
+    height: 8%;
+    width: 100%;
+    justify-content: space-around;
+}
+.spaceCadastro .selects #inputSel{
+    display: flex; 
+   
+    
+
+
+    border-radius: 30px;
+    
+    width: 30%;
+    border: none;
+   
+    text-align: center;
+    padding: 0;
+    
+    
+    
 }
 .inputs #butaoCadastrar{
-    margin-top: 3%;
+    margin-top: 4%;
     margin-bottom: 1%;
     color: white;
     background-color: #000;
@@ -360,6 +383,7 @@ body {
     width: 30%;
     font-size: 20px;
     border-radius: 20px;
+    font-family: "pricedown", Courier, monospace;
 }
 
 /* pagina de login */
@@ -388,7 +412,7 @@ body {
     
     
     margin: 0;
-    background-image: url(./arquivos/imagens/telalogin.jpg);
+    background-image: url(./arquivos/imagens/telalogin.png);
     background-size: cover;
     background-repeat: no-repeat;
     
@@ -415,7 +439,88 @@ body {
 
 }
 .spaceLogin{
+    margin-left: 6%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   
+    width: 38%;
+    height: 70%;
+    
+    
+    
+    border: solid #000;
+    background-color: #7D423E;
+    border-radius: 30px;
+  
+    
+}.spaceLogin p{
 
+    font-size: 32px;
+    font-weight: 800;
+    margin: 4%;
+}
+.spaceLogin .inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+   
+   
+   height: 90%;
+    width: 100%;
+    
+}
+.spaceLogin .inputs #input{
+    display: flex;
+    
+
+
+    border-radius: 30px;
+    height: 8%;
+    width: 80%;
+    border: none;
+    margin-top: 3%;
+    margin-bottom: 2%;
+    text-align: center;
+    padding: 0;
+    
+    
+    
+}
+.inputs #butaoLogin{
+    margin-top: 10%;
+    margin-bottom: 1%;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    height: 10%;
+    width: 30%;
+    font-size: 20px;
+    border-radius: 20px;
+    border: 0;
+    font-family: "pricedown", Courier, monospace;
 }
 
+#PdeRedirecionamento{
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 10%;
+   
+    color: white;
+    width: 26%;
+    justify-self: center;
+   margin-left: 0;
+margin-right: 0;   
+
+}
+#AdeRedirecionamento{
+ 
+
+    color: white;
+  
+    justify-self: center;
+   margin-left: 0;
+margin-right: 0;   
+
+}
 
