@@ -1,4 +1,8 @@
 @import url();
+@font-face {
+    font-family: "pricedown";
+    src: url(../public/arquivos/font/pricedown\ bl.otf);
+}
 
 body {
     margin: 0px;
@@ -7,18 +11,17 @@ body {
 }
 
 .barra {
-    padding: 20px;
+    padding: 1%;
     display: flex;
     flex-direction: row;
     background-color: #000;
     align-items: center;
 
 }
-
-
-
-
-
+.barra img{
+    height: 70%;
+    width: 70%;
+}
 .iconsBarra {
     display: flex;
 
@@ -42,19 +45,19 @@ body {
 }
 
 .iconsBarra .b1_button {
-    width: 14%;
+    width: 21%;
     margin-right: 5%;
     margin-left: 10%;
 
 }
 
 .iconsBarra .b2_button {
-    width: 12%;
-    margin-right: 50%;
+    width: 18%;
+    margin-right: 37%;
 }
 
 .iconsBarra .b3_button {
-    width: 6%;
+    width: 8%;
 
 }
 
@@ -281,7 +284,9 @@ body {
     flex-direction: column;
     font-weight: 800;
     font-family: Arial, Helvetica, sans-serif;
-    height: 777px;
+    height: 88.4vh;
+
+
 
 
 
@@ -305,7 +310,7 @@ body {
     flex-direction: column;
    
     width: 38%;
-    height: 75%;
+    height: 65%;
     
     
     
@@ -421,12 +426,13 @@ body {
     flex-direction: column;
     font-weight: 800;
     font-family: Arial, Helvetica, sans-serif;
-    height: 777px;
+    height: 88.4vh;
 
 
 
     
 }
+
 .containerLogin a:hover{
     color: gray;
 }
@@ -445,7 +451,7 @@ body {
     flex-direction: column;
    
     width: 38%;
-    height: 70%;
+    height: 55%;
     
     
     
@@ -459,6 +465,8 @@ body {
     font-size: 32px;
     font-weight: 800;
     margin: 4%;
+    
+    
 }
 .spaceLogin .inputs{
     display: flex;
@@ -467,7 +475,7 @@ body {
     
    
    
-   height: 90%;
+   height: 75%;
     width: 100%;
     
 }
@@ -477,7 +485,7 @@ body {
 
 
     border-radius: 30px;
-    height: 8%;
+    height: 100%;
     width: 80%;
     border: none;
     margin-top: 3%;
@@ -489,25 +497,27 @@ body {
     
 }
 .inputs #butaoLogin{
-    margin-top: 10%;
+    margin-top: 8%;
     margin-bottom: 1%;
     color: rgb(0, 0, 0);
     background-color: #ffffff;
-    height: 10%;
+    height: 100%;
     width: 30%;
     font-size: 20px;
     border-radius: 20px;
     border: 0;
     font-family: "pricedown", Courier, monospace;
+   
+    
 }
 
 #PdeRedirecionamento{
     font-size: 14px;
     font-weight: 700;
-    margin-top: 10%;
+    margin-top: 5%;
    
     color: white;
-    width: 26%;
+    
     justify-self: center;
    margin-left: 0;
 margin-right: 0;   
@@ -523,4 +533,8 @@ margin-right: 0;
 margin-right: 0;   
 
 }
+/* .barra .topo2 img{
+    height: 80%;
+    width: 80%;
+} */
 
