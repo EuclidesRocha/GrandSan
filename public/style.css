@@ -7,6 +7,8 @@
 body {
     margin: 0px;
     overflow-x: hidden;
+    height: 300vh;
+    
 
 }
 
@@ -16,6 +18,7 @@ body {
     flex-direction: row;
     background-color: #000;
     align-items: center;
+    height: 2%;
 
 }
 .barra img{
@@ -26,6 +29,7 @@ body {
     display: flex;
 
     width: 90%;
+   
 }
 
 .iconsBarra a:hover {
@@ -38,26 +42,28 @@ body {
 
     text-decoration: none;
 
-    height: 10%;
-    font-size: 40px;
+    
+    font-size: clamp(1rem, 5vw, 2.5rem);
+     
     font-family: "pricedown", Courier, monospace;
     color: white
 }
 
 .iconsBarra .b1_button {
-    width: 21%;
-    margin-right: 5%;
+    width: 16%;
+    margin-right: 3%;
     margin-left: 10%;
+    
 
 }
 
 .iconsBarra .b2_button {
-    width: 18%;
-    margin-right: 37%;
+    width: 14%;
+    margin-right: 55%;
 }
 
 .iconsBarra .b3_button {
-    width: 8%;
+    width: 7%;
 
 }
 
@@ -67,14 +73,15 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 144px;
-    padding-bottom: 145px;
+   
 
     background-image: url(.//arquivos/imagens/imagemDaHome.jpg);
 
     background-size: cover;
 
     background-repeat: no-repeat;
+    height: 30%;
+
 
 }
 
@@ -85,21 +92,22 @@ body {
 
 }
 
-#fraseBemvindo {
+.fraseBemvindo {
     height: 10%;
-    font-size: 48px;
+    font-size: clamp(1rem, 5vw, 3rem);
     color: #062818;
     font-family: "pricedown", Courier, monospace;
     margin-top: 0;
 }
 
-#fraseParaCadastrar {
+.fraseParaCadastrar {
     color: #000;
-    font-size: 24px;
+    font-size: clamp(0.1rem, 2vw, 1.5rem);
     font-weight: 800;
     font-family: Arial, Helvetica, sans-serif;
     width: 70%;
     margin-top: 5%;
+    
 }
 
 #botaoEntrar:hover {
@@ -113,7 +121,7 @@ body {
     margin-top: 3%;
     width: 25%;
     padding-left: 8%;
-    height: 102px;
+    height: 12%;
    
 }
 
@@ -125,13 +133,12 @@ body {
     color: white;
     border-radius: 20px;
     border: 0;
-
-    font-size: 36px;
+    font-size: clamp(0.1rem, 2vw, 2.5rem);
+    
     font-family: "pricedown", Courier, monospace;
     text-decoration: none;
+    width: 30%;
 
-
-    width: 146px;
 }
 
 #botaoCadastrar:hover {
@@ -148,37 +155,45 @@ body {
     border-radius: 20px;
     border: 0;
 
-    font-size: 36px;
+    font-size: clamp(0.1rem, 2vw, 2.5rem);
     font-family: "pricedown", Courier, monospace;
     text-decoration: none;
 
     height: 100%;
-    width: 240px;
+    
+    width: 50%;
     margin-left: 10%;
 }
 
+
+
+
+/* Tela de baixo */
 .conteBaixo{
     background-color: #0B0B0B;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
+    height: 68%;
 }
 
-/* Tela de baixo */
 
-.barra1{
-    padding: 20px;
+
+.barra{
+    
     display: flex;
     flex-direction: row;
+    height: 3%;
 
     background-color: #000;
     align-items: center;
     justify-content: center;
     color: #ffffff;
-    font-size: 64px;
+    padding: 1%;
+    font-size: clamp(1rem, 5vw, 3rem);
    
 
 }
-.barra1 p{
+.barra p{
     margin: 0;
 }
 
@@ -187,68 +202,70 @@ body {
 
 .pag1{
     display: flex;
+    align-items: center;
  
     color: white;
+    height: 46%;
+    
 }
 .pag1 a{
     margin-right: 20%;
     margin-left: 5%;
+   
 }
+.pag1 img{
+    height: 90%;
+    width: 90%;
+}
+
 
 
 
 .textoPages{
     display: flex;
     flex-direction: column;
-    font-size: 24px;
+   
+    font-size: clamp(0.1rem, 2vw , 1.5rem);
+    width: 50%;
+    height: 60%;
 }
+
+
+
+
+
 /* tela de baixo 2  */
-.barra2{
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
 
-    background-color: #000;
-    align-items: center;
-    justify-content: center;
-    color: #ffffff;
-    font-size: 64px;
-    
-}
-
-.barra2 p{
-    margin: 0;
-}
 
     
     
 
 .pag2{
     display: flex;
-    padding-top: 50px;
-    padding-bottom: 50px;
+
     color: white;
+    height: 43.9%;
 }
 
 .pag2 p{
     display: flex;
+    flex-direction: column;
     
     color: white;
+    
 }
 .imagensbarra2{
-    margin-right: 28%;
+    margin-right: 23%;
     margin-left: 5%;
+    width: 30%;
 }
 .imagensbarra2 img{
-    width: 507px;
-    padding-bottom: 40px;
+    width: 100%;
+    height: 33%;
+    margin-bottom: 10%;
     
 }
-.imagensbarra2 #CjOlhandoFoto{
-    
-    padding-bottom: 40px;
-    
-}
+
 
 
 
