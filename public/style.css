@@ -8,6 +8,7 @@ body {
     margin: 0px;
     overflow-x: hidden;
     height: 300vh;
+    width: 100%;
     
 
 }
@@ -50,22 +51,18 @@ body {
 }
 
 .iconsBarra .b1_button {
-    width: 16%;
+    
     margin-right: 3%;
-    margin-left: 10%;
+    margin-left: 2%;
     
 
 }
 
 .iconsBarra .b2_button {
-    width: 14%;
-    margin-right: 55%;
+   margin-right: 56%;
+  
 }
 
-.iconsBarra .b3_button {
-    width: 7%;
-
-}
 
 /* Parte do meio da home */
 
@@ -87,17 +84,18 @@ body {
 
 .textinicial {
     margin-left: 1%;
-    height: 38%;
+    height: 63%;
     width: 65%;
 
 }
 
 .fraseBemvindo {
-    height: 10%;
+    
     font-size: clamp(1rem, 5vw, 3rem);
     color: #062818;
     font-family: "pricedown", Courier, monospace;
     margin-top: 0;
+    margin-bottom: 2%;
 }
 
 .fraseParaCadastrar {
@@ -106,7 +104,7 @@ body {
     font-weight: 800;
     font-family: Arial, Helvetica, sans-serif;
     width: 70%;
-    margin-top: 5%;
+    margin-top: 2%;
     
 }
 
@@ -118,7 +116,7 @@ body {
 
 .botoesDaHome {
     display: flex;
-    margin-top: 3%;
+    margin-top: 1%;
     width: 25%;
     padding-left: 8%;
     height: 12%;
@@ -225,9 +223,10 @@ body {
     display: flex;
     flex-direction: column;
    
-    font-size: clamp(0.1rem, 2vw , 1.5rem);
+    font-size: clamp(0.1rem, 1.5vw , 1.5rem);
     width: 50%;
-    height: 60%;
+    height: 99%;
+    
 }
 
 
@@ -244,7 +243,7 @@ body {
     display: flex;
 
     color: white;
-    height: 43.9%;
+    height: 43.6%;
 }
 
 .pag2 p{
@@ -255,12 +254,16 @@ body {
     
 }
 .imagensbarra2{
-    margin-right: 23%;
+    margin-right: 20%;
     margin-left: 5%;
-    width: 30%;
+    width: 53%;
+    display: flex;
+    flex-direction: column;
+
 }
 .imagensbarra2 img{
-    width: 100%;
+    
+    width: 70%;
     height: 33%;
     margin-bottom: 10%;
     
