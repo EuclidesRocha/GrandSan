@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="bodyLoginCadas">
    
     <div class="barra" >
         <div class="topo">
@@ -27,12 +27,12 @@
 
                 <div class="inputs"> 
             
-            <input type="text" placeholder="Insira Email" id="input">
-            <input type="text" placeholder="Crie Um nome De Usuário" id="input">
-            <input type="text" placeholder="Crie Uma Senha" id="input">
-            <input type="text" placeholder="Confirmar Senha" id="input">
+            <input type="text" placeholder="Insira Email" id="inputEmail">
+            <input type="text" placeholder="Crie Um nome De Usuário" id="inputNome">
+            <input type="text" placeholder="Crie Uma Senha" id="inputSenha">
+            <input type="text" placeholder="Confirmar Senha" id="inputConFirmarSenha">
             <div class="selects">
-            <select id="inputSel">
+            <select id="inputSelGangue">
                 <option value="#" selected disabled>Selecione Sua Gangue</option>
                 <option value="">Grove Street</option>
                 <option value="">Ballas</option>
@@ -42,7 +42,7 @@
 
             </select>
           
-            <select  id="inputSel">
+            <select  id="inputSelCidade">
                 <option value="#" selected disabled>Cidade Preferida de San Andreas</option>
                 <option value="">Los Santos</option>
                 <option value="">San Fierro</option>
@@ -52,10 +52,21 @@
             </select>
             </div>
 
-            <button id="butaoCadastrar">Cadastrar</button>
+            <button id="butaoCadastrar" onclick="cadastrar()">Cadastrar</button>
                 </div>
             </div>
         </div>
      
 </body>
 </html>
+<script>
+
+    function cadastrar(){
+var Email = inputEmail.value
+var Nome = inputNome.value
+var Senha = inputSenha.value        
+var ConFirmarSenha = inputConFirmarSenha.value
+var SelGangue = inputSelGangue.value
+var SelCidade = inputSelCidade.value    
+}
+</script>
