@@ -10,19 +10,30 @@
 </head>
 <body>
     <div class="barra">
-        <div class="topo2">
+        <div class="logo">
             <a id="imagemSan" href="https://www.rockstargames.com/br/games/sanandreas"><img src="../arquivos/imagens/grandSan 1.png"></a>
-            <a id="atalhoCadastro" href="TelaSemCadastro.html">CADASTRO</a>
-        </div>     
+
+        </div> 
+        <div class="redirecionadores">
+            <a href="telaQuiz.html">Quiz</a>
+            <a href="telaHistoria.html">História</a>
+            <a href="enciclopedia.html">Enciclopédia</a>
+            <a href="MaisSobre.html">Mais Sobre GTA</a>
+        </div>    
     </div>
    
     <div class="home" id="div_home" >
+        <div class="layoutUser">
+
+        </div>
+        <div class="butaoSair"><a href="../TelaInicial.html">Sair</a></div>
     </div >
 </body>
 </html>
 
 <script>
-    var userCidadePrefe = 3
+    var userCidadePrefe = parseInt(Math.random()*3+1)
+    
     iniciar()
 
 

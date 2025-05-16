@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body class="bodyLoginCadas">
     <div class="barra" >
@@ -27,18 +27,20 @@
                     <input type="text" placeholder="Email" id="input">
                 <input type="text" placeholder="Senha" id="input">
 
-                <button id="butaoLogin">Login</button>
+                <button id="butaoLogin" onclick="cadastro()">Login</button>
                 
                 <p id="PdeRedirecionamento">Novo Por Aqui? <a id="AdeRedirecionamento" href="TelaSemCadastro.html">Cadastre-se</a></p>
             
                 </div>   
             </div>  
  
-        </div>
-
-        
-    
-
-     
+        </div>     
 </body>
 </html>
+
+
+<script>
+    function cadastro(){
+        window.location = "./ComCadastro/userTela.html"
+    }
+</script>

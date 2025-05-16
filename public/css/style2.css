@@ -1,3 +1,8 @@
+@import url();
+@font-face {
+    font-family: "pricedown";
+    src: url(../arquivos/font/pricedown\ bl.otf);
+}
 body{
 height: 100vh;
 margin: 0;
@@ -10,9 +15,31 @@ overflow-y: hidden;
     flex-direction: row;
     background-color: #000;
     align-items: center;
-    height: 2%;
+    height: 10%;
+    
 
 
+}
+.barra img{
+    height: 70%;
+    width: 70%;
+}
+.redirecionadores {
+    display: flex;
+    width: 76%;
+
+    
+}
+.redirecionadores a:hover{
+    color: gray;
+} 
+.redirecionadores a{
+    font-family: 'pricedown';
+    font-size: clamp(1rem, 5vw, 2rem);
+    color: white;
+    text-decoration: none;
+    margin-left: 1%;
+    margin-right: 2%;
 }
 .home {
     background-image: none;
@@ -21,7 +48,80 @@ overflow-y: hidden;
     
     height: 100%;
     width: 100%;
+
+    display: flex;
+    
+    flex-direction: column;
    
     
     
+}
+.layoutUser{
+    background-color: green;
+    width: 100%;
+    height: 40%;
+    border-radius: 20px;
+    margin-top: 5%;
+    opacity: 0.7;
+    
+}
+.bannerquiz{
+    height: 50%;
+  
+   
+    background-image: url(../arquivos/imagens/capa.jpg);
+}
+.bannerhistoria{
+  
+    height: 50%;         
+    background-image: url(../arquivos/imagens/capa.jpg);
+}
+.bannerenciclopedia{
+    height: 50%;
+    
+    background-image: url(../arquivos/imagens/capa.jpg);
+}
+.bannermaissobre{    
+    height: 50%;
+   
+    background-image: url(../arquivos/imagens/capa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.color{
+     
+    background-color: rgba(0, 168, 0, 0.7);
+    height: 100%;
+    width: 100%;
+    margin: 0 ;
+    color: green;
+    display: flex;
+    align-items: center;
+}
+.textoInBanner{
+    font-family:  'pricedown';
+    font-size: clamp(1rem, 10vh, 4rem);
+    color: white;
+    margin-left: 2%;
+
+} 
+.butaoSair:hover{
+    color: grey
+}
+.butaoSair {
+    background-color: rgba(0, 168, 0, 0.7);
+    font-family: 'pricedown';
+    font-size: clamp(1rem, 5vw, 2rem);
+    color: white;
+    text-decoration: none;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+.butaoSair a{
+    color: white;
+    text-decoration: none;
+
 }
