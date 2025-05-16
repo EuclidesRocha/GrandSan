@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <link rel="stylesheet" href="../css/style2.css">
+
+</head>
+<body>
+    <div class="barra">
+        <div class="topo2">
+            <a id="imagemSan" href="https://www.rockstargames.com/br/games/sanandreas"><img src="../arquivos/imagens/grandSan 1.png"></a>
+            <a id="atalhoCadastro" href="TelaSemCadastro.html">CADASTRO</a>
+        </div>     
+    </div>
+   
+    <div class="home" id="div_home" >
+    </div >
+</body>
+</html>
+
+<script>
+    var userCidadePrefe = 3
+    iniciar()
+
+
+   function iniciar(){
+   
+   
+   if (userCidadePrefe == 1){
+    	userimagem = `url('../arquivos/imagens/imagemLossantos.png')`;
+        div_home.style.backgroundImage = userimagem;
+
+   }else if(userCidadePrefe == 2){
+    	userimagem = `url('../arquivos/imagens/imagemSanfierro.png')`;
+        div_home.style.backgroundImage = userimagem;
+   }else if(userCidadePrefe == 3){
+    	userimagem = `url('../arquivos/imagens/imagemLasVenturas.png')`;
+        div_home.style.backgroundImage = userimagem;
+   }
+   }
+</script> 
+

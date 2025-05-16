@@ -1,7 +1,7 @@
 @import url();
 @font-face {
     font-family: "pricedown";
-    src: url(../public/arquivos/font/pricedown\ bl.otf);
+    src: url(.../public/arquivos/font/pricedown\ bl.otf);
 }
 
 .bodyInicial {
@@ -72,7 +72,7 @@ body{
     justify-content: center;
    
 
-    background-image: url(.//arquivos/imagens/imagemDaHome.jpg);
+    background-image: url(../arquivos/imagens/imagemDaHome.jpg);
 
     background-size: cover;
 
@@ -271,7 +271,7 @@ body{
     
     
     margin: 0;
-    background-image: url(./arquivos/imagens/telaCadastro.png);
+    background-image: url(../arquivos/imagens/telaCadastro.png);
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -468,7 +468,7 @@ body{
     
     
     margin: 0;
-    background-image: url(./arquivos/imagens/telalogin.png);
+    background-image: url(../arquivos/imagens/telalogin.png);
     background-size: cover;
     background-repeat: no-repeat;
     

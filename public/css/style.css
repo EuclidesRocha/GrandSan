@@ -72,7 +72,7 @@ body{
     justify-content: center;
    
 
-    background-image: url(.//arquivos/imagens/imagemDaHome.jpg);
+    background-image: url(./arquivos/imagens/imagemDaHome.jpg);
 
     background-size: cover;
 
