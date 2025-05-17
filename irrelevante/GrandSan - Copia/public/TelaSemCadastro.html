@@ -69,7 +69,7 @@
     var SelGangue = Number(inputSelGangue.value)
     var SelCidade = Number(inputSelCidade.value)    
 
-    if(Email == `` || Nome == `` || Senha == `` || ConFirmarSenha == `` ||SelGangue == ``||SelCidade == ``)
+    if(Email == `` || Nome == `` || Senha == `` || ConFirmarSenha == `` ||SelGangue == ``||SelCidade == `` || !Email.includes("@"))
 {
     return false;
 }
@@ -92,7 +92,7 @@
 
       }),
     })
-      .then(function (resposta) {
+    .then(function (resposta) {
         console.log("resposta: ", resposta);
 
         if (resposta.ok) {

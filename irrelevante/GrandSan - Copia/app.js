@@ -17,6 +17,10 @@ var app = express();
 
 
 var usuarioRouter = require("./src/routes/usuario");
+var missoesRouter = require("./src/routes/missoes");
+var quizRouter = require(".src/routes/quiz")
+var resultado = require("./src/routes/resultado");
+
 
 
 app.use(express.json());
@@ -27,7 +31,9 @@ app.use(cors());
 
 
 app.use("/usuario", usuarioRouter);
-
+app.use("/missoes", missoesRouter)
+app.use("/quiz", quizRouter)
+app.use("/resultado", resultado)
 
 
 
