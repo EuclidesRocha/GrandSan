@@ -19,7 +19,7 @@
     </div>
         <div class="containerCadastro">
 
-            <a href="TelaInicial.html">VOLTAR</a>
+            <a href="index.html">VOLTAR</a>
 
             <div class="spaceCadastro">
         
@@ -34,19 +34,19 @@
             <div class="selects">
             <select id="inputSelGangue">
                 <option value="#" selected disabled>Selecione Sua Gangue</option>
-                <option value="">Grove Street</option>
-                <option value="">Ballas</option>
-                <option value="">Los Santos Vagos</option>
-                <option value="">Varrios Los Aztecas</option>
+                <option value="1">Grove Street</option>
+                <option value="2">Ballas</option>
+                <option value="3">Los Santos Vagos</option>
+                <option value="4">Varrios Los Aztecas</option>
 
 
             </select>
           
             <select  id="inputSelCidade">
                 <option value="#" selected disabled>Cidade Preferida de San Andreas</option>
-                <option value="">Los Santos</option>
-                <option value="">San Fierro</option>
-                <option value="">Las Venturas</option>
+                <option value="1">Los Santos</option>
+                <option value="2">San Fierro</option>
+                <option value="3">Las Venturas</option>
                
 
             </select>
@@ -62,11 +62,71 @@
 <script>
 
     function cadastrar(){
-var Email = inputEmail.value
-var Nome = inputNome.value
-var Senha = inputSenha.value        
-var ConFirmarSenha = inputConFirmarSenha.value
-var SelGangue = inputSelGangue.value
-var SelCidade = inputSelCidade.value    
+    var Email = inputEmail.value
+    var Nome = inputNome.value
+    var Senha = inputSenha.value        
+    var ConFirmarSenha = inputConFirmarSenha.value
+    var SelGangue = Number(inputSelGangue.value)
+    var SelCidade = Number(inputSelCidade.value)    
+
+    if(Email == `` || Nome == `` || Senha == `` || ConFirmarSenha == `` ||SelGangue == ``||SelCidade == `` || !Email.includes("@"))
+{
+    return false;
 }
+if(Senha != ConFirmarSenha){
+  console.log("erro ao confirmar a senha")
+  return false;
+}
+
+
+    // Enviando o valor da nova input
+    fetch("/usuario/cadastrar", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        // crie um atributo que recebe o valor recuperado aqui
+        // Agora vá para o arquivo routes/usuario.js
+
+        EmailServer : Email,
+        NomeServer : Nome,
+        SenhaServer : Senha,
+        SelGangueServer : SelGangue,
+        SelCidadeServer : SelCidade 
+
+      }),
+    })
+    .then(function (resposta) {
+        console.log("resposta: ", resposta);
+
+        if (resposta.ok) {
+         
+            "Cadastro realizado com sucesso! Redirecionando para tela de Login...";
+
+          setTimeout(() => {
+            window.location = "TelaLogin.html";
+          }, "2000");
+
+          limparFormulario();
+          finalizarAguardar();
+        } else {
+          throw "Houve um erro ao tentar realizar o cadastro!";
+        }
+      })
+      .catch(function (resposta) {
+        console.log(`#ERRO: ${resposta}`);
+        finalizarAguardar();
+      });
+
+    return false;
+  }
+
+
+
+
+
+
+
+
 </script>

@@ -18,21 +18,17 @@ function autenticar(req, res) {
 
                     if (resultadoAutenticar.length == 1) {
                         console.log(resultadoAutenticar);
-
-                        aquarioModel.buscarAquariosPorEmpresa(resultadoAutenticar[0].empresaId)
-                            .then((resultadoAquarios) => {
-                                if (resultadoAquarios.length > 0) {
+                                
                                     res.json({
-                                        id: resultadoAutenticar[0].id,
-                                        email: resultadoAutenticar[0].email,
+                                        id: resultadoAutenticar[0].idUsuario,
                                         nome: resultadoAutenticar[0].nome,
+                                        email: resultadoAutenticar[0].email,
                                         senha: resultadoAutenticar[0].senha,
-                                        aquarios: resultadoAquarios
+                                        gangue: resultadoAutenticar[0].gangue,
+                                        cidadePrefe: resultadoAutenticar[0].cidadePrefe,
                                     });
-                                } else {
-                                    res.status(204).json({ aquarios: [] });
-                                }
-                            })
+                              
+                           
                     } else if (resultadoAutenticar.length == 0) {
                         res.status(403).send("Email e/ou senha inválido(s)");
                     } else {
@@ -56,7 +52,7 @@ function cadastrar(req, res) {
     var nome = req.body.NomeServer
     var senha = req.body.SenhaServer
     var gangue = req.body.SelGangueServer
-    var cidadaPrefe = req.body.SelCidadeServer
+    var cidadePrefe = req.body.SelCidadeServer
 
     // Faça as validações dos valores
     if (nome == undefined) {
@@ -67,12 +63,12 @@ function cadastrar(req, res) {
         res.status(400).send("Sua senha está undefined!");
     } else if (gangue == undefined) {
         res.status(400).send("Sua empresa a vincular está undefined!");}
-    else if (cidadaPrefe == undefined) {
+    else if (cidadePrefe == undefined) {
         res.status(400).send("Sua empresa a vincular está undefined!");
     } else {
 
         // Passe os valores como parâmetro e vá para o arquivo usuarioModel.js
-        usuarioModel.cadastrar(nome, email, senha, gangue, cidadaPrefe)
+        usuarioModel.cadastrar(nome, email, senha, gangue, cidadePrefe)
             .then(
                 function (resultado) {
                     res.json(resultado);

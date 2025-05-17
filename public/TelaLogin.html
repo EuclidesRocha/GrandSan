@@ -18,29 +18,103 @@
     </div>
         <div class="containerLogin">
 
-            <a href="TelaInicial.html">VOLTAR</a>
+            <a href="index.html">VOLTAR</a>
 
 
             <div class="spaceLogin">
                 <p>LOGIN</p>
                 <div class="inputs">
-                    <input type="text" placeholder="Email" id="input">
-                <input type="text" placeholder="Senha" id="input">
+                    <input type="text" placeholder="Email" id="in_Email">
+                <input type="text" placeholder="Senha" id="in_Senha">
 
-                <button id="butaoLogin" onclick="cadastro()">Login</button>
+                <button id="butaoLogin" onclick="entrar()">Login</button>
                 
                 <p id="PdeRedirecionamento">Novo Por Aqui? <a id="AdeRedirecionamento" href="TelaSemCadastro.html">Cadastre-se</a></p>
             
                 </div>   
             </div>  
  
-        </div>     
+        </div>
+
+          
 </body>
 </html>
 
 
+
+
 <script>
-    function cadastro(){
-        window.location = "./ComCadastro/userTela.html"
-    }
+
+function entrar(){
+var emailVar = in_Email.value
+var senhaVar = in_Senha.value
+
+
+
+if(emailVar == "" || senhaVar == ""){
+
+    console.log("erro email vazio ou senha ");
+    return false
+}
+
+console.log("form login", emailVar)
+console.log("form Senha", senhaVar)
+
+fetch("/usuario/autenticar", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                emailServer: emailVar,
+                senhaServer: senhaVar
+            })
+        }).then(function (resposta) {
+            console.log("ESTOU NO THEN DO entrar()!")
+
+            if (resposta.ok) {
+                console.log(resposta);
+                
+
+                resposta.json().then(json => {
+                    console.log(json);
+                    console.log(JSON.stringify(json));
+                    sessionStorage.EMAIL_USUARIO = json.email;
+                    sessionStorage.NOME_USUARIO = json.nome;
+                    sessionStorage.ID_USUARIO = json.idUsuario;
+                    sessionStorage.CIDADE_USUARIO = json.cidadePrefe;
+                    sessionStorage.GANGUE_USUARIO = json.gangue;
+
+                    console.log(json.nome)
+                    console.log(json.idUsuario)
+                    console.log(json.cidadePrefe)
+                    console.log(json.gangue)
+                    setTimeout(function () {
+                        window.location = "./ComCadastro/userTela.html";
+                    }, 1000); // apenas para exibir o loading
+
+                });
+
+            } else {
+
+                console.log("Houve um erro ao tentar realizar o login!");
+                 resposta.text().then(texto => {
+                    console.error(texto);
+                    finalizarAguardar(texto);
+                });
+               
+            }
+
+        }).catch(function (erro) {
+            console.log(erro);
+        })
+
+        return false;
+
+
+
+
+}
+
+
 </script>

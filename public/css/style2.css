@@ -7,6 +7,7 @@ body{
 height: 100vh;
 margin: 0;
 overflow-y: hidden;
+background-color: #000;
 
 }
  .barra {
@@ -57,48 +58,55 @@ overflow-y: hidden;
     
 }
 .layoutUser{
-    background-color: green;
+ 
     width: 100%;
     height: 40%;
     border-radius: 20px;
     margin-top: 5%;
-    opacity: 0.7;
+    
     
 }
 .bannerquiz{
     height: 50%;
   
    
-    background-image: url(../arquivos/imagens/capa.jpg);
+    background-image: url(../arquivos/imagens/videogame.png);
+    border-radius: 20px;
 }
 .bannerhistoria{
   
     height: 50%;         
-    background-image: url(../arquivos/imagens/capa.jpg);
+    background-image: url(../arquivos/imagens/CjOlhandoFoto.png);
+    border-radius: 20px;
 }
 .bannerenciclopedia{
     height: 50%;
     
-    background-image: url(../arquivos/imagens/capa.jpg);
+    background-image: url(../arquivos/imagens/mapa.png);
+    border-radius: 20px;
 }
 .bannermaissobre{    
     height: 50%;
    
-    background-image: url(../arquivos/imagens/capa.jpg);
+    background-image: url(../arquivos/imagens/revista.png);
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 20px;
+    
     
 }
 .color{
      
-    background-color: rgba(0, 168, 0, 0.7);
+    
     height: 100%;
     width: 100%;
     margin: 0 ;
-    color: green;
+    
     display: flex;
     align-items: center;
+    border-radius: 20px;
 }
+
 .textoInBanner{
     font-family:  'pricedown';
     font-size: clamp(1rem, 10vh, 4rem);
@@ -109,8 +117,11 @@ overflow-y: hidden;
 .butaoSair:hover{
     color: grey
 }
-.butaoSair {
-    background-color: rgba(0, 168, 0, 0.7);
+
+.butaoSair button{
+    
+    text-decoration: none;
+    
     font-family: 'pricedown';
     font-size: clamp(1rem, 5vw, 2rem);
     color: white;
@@ -119,9 +130,5 @@ overflow-y: hidden;
     display: flex;
     justify-content: center;
     border-radius: 10px;
-}
-.butaoSair a{
-    color: white;
-    text-decoration: none;
-
+    border: 0;
 }

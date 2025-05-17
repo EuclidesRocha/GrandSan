@@ -1,7 +1,7 @@
 @import url();
 @font-face {
     font-family: "pricedown";
-    src: url(../arquivos/font/pricedown\ bl.otf);
+    src: url(.../public/arquivos/font/pricedown\ bl.otf);
 }
 
 .bodyInicial {
@@ -531,7 +531,24 @@ body{
     width: 100%;
     
 }
-.spaceLogin .inputs #input{
+
+.spaceLogin .inputs #in_Email{
+    display: flex;
+    
+
+
+    border-radius: 30px;
+    height: 100%;
+    width: 80%;
+    border: none;
+    margin-top: 3%;
+    margin-bottom: 2%;
+    text-align: center;
+    padding: 0;
+    
+    
+    
+}.spaceLogin .inputs #in_Senha{
     display: flex;
     
 
@@ -557,7 +574,7 @@ body{
     width: 30%;
     font-size: clamp(0.1rem,5vw,1.25rem);
     border-radius: 20px;
-    border: 0;
+    border: solid black ;
     font-family: "pricedown", Courier, monospace;
    
     
