@@ -7,7 +7,7 @@
    
     <link rel="stylesheet" href="../css/style2.css">
 
-    <script src="../js/temasUsuario.js"></script>
+    <script src="../js/AcoesEmUsuario.js"></script>
 
 </head>
 <body>
@@ -25,13 +25,16 @@
     </div>
    
     <div class="home" id="div_home" >
+        <div class="sombra">
         <div class="layoutUser" id="layoutUserCor">
-
+            <span id="imagemUser"></span>
             <p id="p_ola">Olá,</p>
             <p id="p_membro">Mebro da:</p>
             <p id="p_cidade">Cidade Preferida</p>
+            </div>
+            <div class="butaoSair"><button id="id_butaoSair" onclick="deslogar()">SAIR</button></div>
         </div>
-        <div class="butaoSair"><button id="id_butaoSair" onclick="deslogar()">SAIR</button></div>
+        
     </div >
 </body>
 </html>
@@ -40,9 +43,7 @@
    
   mudarTelaUser()
   mudarCor()
-
-
-
+  
 
    
    

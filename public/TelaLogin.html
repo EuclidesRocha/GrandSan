@@ -12,7 +12,7 @@
         <div class="topo2">
             <a id="imagemSan" href="https://www.rockstargames.com/br/games/sanandreas"><img src="./arquivos/imagens/grandSan 1.png"></a>
            
-            <a id="atalhoCadastro" href="TelaSemCadastro.html">CADASTRO</a>
+            <a id="atalhoCadastro" href="TelaCadastro.html">CADASTRO</a>
            </div>
          
     </div>
@@ -29,7 +29,7 @@
 
                 <button id="butaoLogin" onclick="entrar()">Login</button>
                 
-                <p id="PdeRedirecionamento">Novo Por Aqui? <a id="AdeRedirecionamento" href="TelaSemCadastro.html">Cadastre-se</a></p>
+                <p id="PdeRedirecionamento">Novo Por Aqui? <a id="AdeRedirecionamento" href="TelaCadastro.html">Cadastre-se</a></p>
             
                 </div>   
             </div>  
@@ -85,10 +85,7 @@ fetch("/usuario/autenticar", {
                     sessionStorage.CIDADE_USUARIO = json.cidadePrefe;
                     sessionStorage.GANGUE_USUARIO = json.gangue;
 
-                    console.log(json.nome)
-                    console.log(json.idUsuario)
-                    console.log(json.cidadePrefe)
-                    console.log(json.gangue)
+                 
                     setTimeout(function () {
                         window.location = "./ComCadastro/userTela.html";
                     }, 1000); // apenas para exibir o loading

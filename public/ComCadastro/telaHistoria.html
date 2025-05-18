@@ -6,7 +6,7 @@
     <title>Document</title>
    
     <link rel="stylesheet" href="../css/style2.css">
-    <script src="../js/temasUsuario.js"></script>
+    <script src="../js/AcoesEmUsuario.js"></script>
 </head>
 <body>
     <div class="barra">
@@ -28,8 +28,367 @@
      
     </div>
 
+
+    <div class="missoes">
+    <p id="p_missoes"></p>
+    <div id="resposta"></div>
+    <div> <button onclick="tirar()">TIRAR</button></div>
+
+
+    </div>
+
 </body>
 </html>
 <script>
     corMudar()
+    
+
+var missoes = [
+{
+ 
+ "nome": "No Início",
+ "descricao": 'Essa é a primeira missão do jogo, onde vemos a famosa frase de CJ: "oh shit, here we go again". Ele é capturado por policiais da C.R.A.S.H ao chegar em sua casa, na Grove Street. Eles roubam seu dinheiro e o levam até Jefferson, um bairro dominado pela gangue Ballas. O objetivo da missão é levar CJ de volta a Grove Street.',
+ "localMissao": "Los Santos",
+ 
+},
+{
+ 
+ "nome": "Big Smoke",
+ "descricao": "Assim que retorna para sua casa, conhecida como Casa dos Johnsons, CJ encontra uma foto de sua falecida mãe e algumas de suas memórias de infância são reveladas. No local, ele é confundido com um ladrão por seu grande amigo de infância, Big Smoke, que após o reconhecê-lo, jura que irá ajudar a vingar a morte da mãe.",
+ "localMissao": "Los Santos",
+ 
+},
+{
+ 
+ "nome": "Sweet and Kendl",
+ "descricao": " Após o reencontro, CJ e Big seguem para o cemitério onde a mãe de Carl foi enterrada. Chegando lá, ele reencontra seus dois irmãos, Sweet e Kendl, sendo que o primeiro considera CJ culpado pela morte da mãe. Quando os irmãos estão saindo do cemitério para voltar a Grove Street, eles são emboscados por um carro dos Ballas. Você deve guiar CJ em segurança de volta até sua casa em uma BMX.",
+ "localMissao": "Los Santos",
+ 
+},
+{
+
+ "nome": "Ryder",
+ "descricao": "Carl encontra seu amigo Ryder, que não parece muito animado com seu retorno à cidade. Ele explica que enquanto CJ esteve fora, uma pizzaria cobriu diversas vezes o grafite do símbolo da Grove Street Families, a gangue em que ele faz parte. Logo depois ele convida o protagonista para cortar o cabelo e também para “dar uma lição” na pizzaria.",
+ "localMissao": "Los Santos",
+ 
+},
+{
+ 
+ "nome": "Invasão Domiciliar",
+ "descricao": "Ryder pede ajuda a CJ para se infiltrar na casa de um veterano de guerra e roubar suas armas. Esta é uma missão furtiva, onde você deve pegar os pacotes que devem ser obtidos com o mínimo de ruído possível. Caso o veterano acorde no meio do assalto, ele irá chamar a polícia e a missão vai fracassar.",
+ "localMissao": "Los Santos",
+ 
+},
+{
+ 
+ "nome": "Catalisador",
+ "descricao": "Durante uma reunião, CJ e Ryder são informados que um trem carregado com munições, passará na cidade em breve. Também é revelado que outras gangues, como os Ballas, estão planejando roubar as cargas do veículo. Você deve superar todas as gangues rivais e roubar a carga do trem junto com Ryder.",
+ "localMissao": "Los Santos",
+ 
+},
+{
+ 
+ "nome": "Roubando o Tio Sam",
+ "descricao": "Após receber Carl para uma visita, Ryder comenta que o exército tem o arsenal de armas ideal para que eles possam combater em uma possível guerra de gangues. Então, ambos partem para as docas, para encontrar e roubar os armamentos da Guarda Nacional.",
+ "localMissao": "Los Santos",
+ 
+},
+{
+ 
+ "nome": "Marcando território",
+ "descricao": "Ao ir na casa de seu irmão, Sweet, CJ ouve dele que ele não faz mais parte da gangue Grove Street Families, até que ele prove que merece. Dito isso, ele entrega ao protagonista uma lata de spray e manda ele pichar todos os grafites dos Ballas como modo de redenção.",
+ "localMissao": "Los Santos",
+ 
+},
+{
+ 
+ "nome": "Limpando as ruas",
+ "descricao": "Em um bate-papo entre Sweet, Smoke e Ryder, o assunto do aumento do crack na cidade aparece, deixando evidente que todos são contra a droga. Para resolver o problema, Carl e Ryder se juntam para matar o vendedor de drogas da região, além de pôr fim aos Ballas na área do Covil de Crack.",
+ "localMissao": "Los Santos",
+ 
+},
+{
+ 
+ "nome": "Drive-Thru",
+ "descricao": "Enquanto CJ, Sweet, Big e Ryder estão na fila de um drive-thru esperando para comer, eles veem um carro idêntico ao do Ballas que já os tinha perseguido. Você deve juntar esforços para impedir que esse veículo chegue até a Grove Street.",
+ "localMissao": "Los Santos",
+ 
+},
+{
+ 
+ "nome": "Noves e AK’s",
+ "descricao": "Projetando um confronto com gangues rivais, CJ se preocupa com quais armas a Grove Street Families pode contar para se defender. Além disso, ele e Big vão praticar tiro ao alvo com Emmet, um membro da Seville Boulevard Families, uma gangue que saiu da GSF.",
+ "localMissao": "Los Santos",
+ 
+},
+{
+ 
+ "nome": "Tiroteio de Veículo",
+ "descricao": "Ainda na preparação para possíveis batalhas, CJ, Sweet, Ryder e Big, praticam um tiroteio de veículos no território dos Ballas. Nessa missão, você deve conduzir o carro, enquanto os outros ficam responsáveis por atirar.",
+ "localMissao": "Los Santos",
+ 
+},
+{
+ 
+ "nome": "Garota do Sweet",
+ "descricao": "Sweet e sua namorada caem em uma armadilha e são encurralados por membros da Seville Boulevard Families. Sweet liga e pede socorro para CJ, que prontamente se arma e parte ao resgate do irmão.",
+ "localMissao": "Los Santos",
+ 
+},
+{
+ 
+ "nome": "Cesar Vialpando",
+ "descricao": "Kendl, irmã de CJ, está em um relacionamento com o líder da gangue rival Varrios Los Aztecas, Cesar Vialpando. O namoro entre os dois deixa Sweet incomodado, e ele pede para Carl seguir a irmã enquanto ela se encontra com seu amado. Na missão, você deve vencer o “Desafio de Lowrider”, uma competição envolvendo carros modificados que “dançam”.",
+ "localMissao": "Los Santos",
+ 
+},
+{
+ 
+ "nome": "Doberman",
+ "descricao": "Sweet liga para CJ pedindo que ele mate Little Weasel, um ex-membro da Grove Street Families que traiu a gangue para se juntar aos Ballas. Ele informa a Carl que o judas está no Glen Park, mas quando o protagonista chega lá, é surpreendido com três ataques dos Ballas. Você deve sobreviver aos tiros e matar Weasel para conquistar o território e concluir a missão.",
+ "localMissao": "Los Santos",
+ 
+},
+{
+ 
+ "nome": "Los Sepulcros",
+ "descricao": "Com os principais membros dos Ballas indo ao funeral de Little Weasel, Sweet planeja uma emboscada para dar um baque na gangue rival. CJ recruta alguns membros da Grove para ir ao cemitério antes do velório começar. Você deve matar Kane, um dos mandachuvas dos Ballas, que chega ao funeral de colete balístico, junto com seus companheiros de gangue",
+ "localMissao": "Los Santos",
+ 
+},
+{
+ 
+ "nome": "Reunindo as Famílias",
+ "descricao": "",
+ "localMissao": "Los Santos",
+ 
+},
+{
+ 
+ "nome": "O Sabre Verde",
+ "descricao": "Enquanto se prepara com Sweet para atacar os Ballas, CJ recebe uma ligação de Cesar Vialpando, que diz ter informações urgentes para ele. Ambos se encontram debaixo de um viaduto, onde observam Big Smoke e Ryder saindo de uma garagem junto com membros dos Ballas. No mesmo local, é possível ver um Sabre Verde, mesmo carro utilizado no assassinato da mãe de Carl. O protagonista logo entende a situação e corre para salvar Sweet e os membros da GSF da armadilha dos Ballas.",
+ "localMissao": "Los Santos",
+ 
+},
+{
+ 
+ "nome": "OG Loc",
+ "descricao": "CJ, Sweet e Big, partem para a delegacia para buscar OG Loc, membro da GSF que está saindo da prisão. Quando se encontram, Loc diz que eles precisam matar Freddy, um membro da gangue Los Santos Vagos, que está causando na prisão. Os personagens vão até a casa de Freddy, que escapa com uma moto, rumo a base dos LSV. Nessa missão, você deve enfrentar os membros da gangue e matar todos eles.",
+ "localMissao": "Los Santos",
+ 
+},
+{
+ 
+ "nome": "Cão em Fuga",
+ "descricao": "Quando está chegando na casa de Smoke, Carl vê os policiais Frank Tenpenny e Eddie Pulaski saindo pela porta da frente. Quando questionado, Big diz que eles estavam tentando extrair informações dele. Ele então chama CJ para ir buscar um “material” com dois membros dos Vagos, mas tudo dá errado e um deles foge. Você deve perseguir e matar fugitivo",
+ "localMissao": "Los Santos",
+ 
+},
+{
+ 
+ "nome": "Do Lado Errado dos Trilhos",
+ "descricao": "Carl e Big veem quatro membros da gangue Los Santos Vagos pular em um vagão de trem. No mesmo instante, eles sobem em uma moto para perseguir o trem e enfrentar os rivais. Nessa missão você pilota a moto, enquanto Big atira nos inimigos.",
+ "localMissao": "Los Santos",
+ 
+},
+{
+ 
+ "nome": "Apenas Negócios",
+ "descricao": "Durante um passeio entre CJ e Smoke no Commerce, criminosos da máfia russa iniciam um tiroteio. Carl então parte para o combate para proteger Smoke e tentar fugir dali o mais rápido possível.",
+ "localMissao": "Los Santos",
+ 
+},
+{
+ 
+ "nome": "Tirando Onda na Praia",
+ "descricao": "Recém liberado da prisão, OG Loc planeja lançar um álbum de música durante uma festa em sua casa. Para isso, ele precisa que Carl roube um equipamento de som na praia de Santa Maria. Para concluir a missão, você deve vencer uma batalha de dança contra a DJ da festa, além de fugir com o equipamento roubado.",
+ "localMissao": "Los Santos",
+ 
+},
+{
+ 
+ "nome": "As Rimas do Madd Dogg",
+ "descricao": "Depois de roubar o equipamento de som para OG Loc, CJ descobre que o amigo não tem nenhuma rima para usar em suas músicas. Loc pede para que CJ roube o caderno de rimas do famoso rapper Madd Dogg. Você deve ser furtivo ao invadir a mansão do cantor, tendo que entrar e sair sem ser visto pelos seguranças.",
+ "localMissao": "Los Santos",
+ 
+},
+{
+ 
+ "nome": "A Gente Tem um Problema",
+ "descricao": "Mesmo com o equipamento de som e o caderno de rimas, OG Loc não se sente preparado para começar sua carreira. Ele entende que precisa de alguém para gerenciar sua carreira e tenta falar com Alan Crawford, empresário de Madd Dogg, mas ele não vê talento em Loc. A partir disso, OG pede para que CJ ponha um fim em Alan",
+ "localMissao": "Los Santos",
+ 
+},
+{
+ 
+ "nome": "Festinha em Casa",
+ "descricao": "Loc viola sua liberdade condicional ao se demitir do seu emprego e decide dar uma festa antes de ser preso novamente. Vários membros da Grove Street Families vão para a festa, até que em determinado momento, um deles chega de bicicleta afirmando que os Ballas estão chegando para um confronto.",
+ "localMissao": "Los Santos",
+ 
+},
+{
+ 
+ "nome": "Grande Prêmio Lowrider",
+ "descricao": "CJ pega um Lowrider e segue rumo a casa de Cesar, em El Corona. De lá, ambos seguem para o Commerce, e então entram em uma corrida contra outros 4 pilotos. O objetivo da missão é simples: vencer a corrida e conquistar o dinheiro.",
+ "localMissao": "Los Santos",
+ 
+},
+{
+ 
+ "nome": "Desejo Ardente",
+ "descricao": "Frank Tenpenny, chefe da C.R.A.S.H, uma espécie de milícia do GTA: SA, encontra com CJ em uma loja de donuts e o intimida. Frank então revela que existe um assassino de policiais na Los Santos Vagos e pede para CJ matá-lo. Ao partir para missão, você deve pegar coquetéis molotov para incendiar a casa do gangster.",
+ "localMissao": "Los Santos",
+ 
+},
+{
+ 
+ "nome": "Mercado Cinza",
+ "descricao": "Carl é novamente convocado pela C.R.A.S.H. Dessa vez, seu trabalho é acabar com uma reunião de acordo entre os Ballas e a máfia russa, nas Ocean Docks. Ao chegar lá, você deve invadir o escritório e enfrentar todos os integrantes que estão fortemente armados.",
+ "localMissao": "Los Santos",
+ 
+},
+{
+ 
+ "nome": "Terra de Ninguém",
+ "descricao": "Frank Tenpenny pede a CJ para que ele mate um ex-policial que irá depor contra ele no tribunal. A missão se passa no Mount Chiliad, e para concluí-la, você deve tirar uma foto do cadáver para provar que matou a testemunha.",
+ "localMissao": "Whetstone",
+ 
+},
+{
+ 
+ "nome": "Colheita de Corpos",
+ "descricao": "Ao entrar em uma pousada, CJ vê Frank Tenpenny se drogando com uma substância produzida por “The Truth”, um personagem hippie do jogo. Carl faz uma amizade com Truth, que pede para que o novo amigo roube uma Ceifeira para ele. Para concluir a missão, você terá que invadir uma fazenda fortemente protegida, roubar a Ceifeira e fugir em segurança.",
+ "localMissao": "Whetstone",
+ 
+},
+{
+ 
+ "nome": "Rei no Exílio",
+ "descricao": "Carl encontra César e Kendl em Angel Pine, e o líder da VLA está furioso com a situação de Los Santos. Ele pretende acabar com o tráfico de drogas na região de sua gangue, e para isso, tenta convencer CJ de que Smoke e a C.R.A.S.H estão envolvidos nisso. No entanto, o protagonista se recusa a acreditar e resolve ir embora",
+ "localMissao": "Whetstone",
+ 
+},
+{
+ 
+ "nome": "Primeiro Encontro",
+ "descricao": "Ao entrar em um bar, CJ presencia um ataque de uma mulher a dois homens com uma faca. Ele então diz a ela que está a procura da prima de um amigo mexicano. A mulher se apresenta como Catalina, a prima de Cesar Vialpando, e ambos conversam sobre assaltar todos os quatro estabelecimentos da região.",
+ "localMissao": "Red County",
+ 
+},
+{
+ 
+ "nome": "Ladrão de Caminhão",
+ "descricao": "Um dos estabelecimentos da região é uma loja, mas não foi possível roubá-la pois ela tem vidros à prova de bala. Camila decide então roubar um caminhão-tanque que estava ali próximo.",
+ "localMissao": "Red County",
+ 
+},
+{
+ 
+ "nome": "Contra as Probabilidades",
+ "descricao": "Outro comércio que virou alvo da dupla foi a casa de apostas Montgomery. Ao invadirem e anunciarem o assalto, a atendente aciona o alarme, o que faz Catalina matar dois clientes. A missão é tensa e CJ precisa ser veloz para explodir o cofre, roubar o dinheiro e fugir da polícia.",
+ "localMissao": "Red County",
+ 
+},
+{
+ 
+ "nome": "Loja de Bebidas Local",
+ "descricao": "Ao chegarem para roubar a loja de bebidas da região, Carl e Catalina se deparam com quatro meliantes assaltando a loja. Quando eles começam a fugir, a dupla começa a persegui-los com quadriciclos. O objetivo é matar os bandidos e pegar o dinheiro que eles roubaram da loja.",
+ "localMissao": "Red County",
+ 
+},
+{
+ 
+ "nome": "Banco de Cidade Pequena",
+ "descricao": " O último estabelecimento é um banco. Dessa vez, Catalina entrega uma escopeta para CJ e o instrui a não deixar nenhum funcionário abaixar as mãos para acionar o alarme. No entanto, quando isso acontece, Carl não atira e o alarme é acionado, com policiais cercando o prédio em pouquíssimo tempo. Pegue toda grana que puder e fuja o mais rápido possível para concluir a missão",
+ "localMissao": "Red County",
+ 
+},
+{
+ 
+ "nome": "Preliminares",
+ "descricao": "Catalina chama CJ para sua cabana, mas quando ele chega não encontra ninguém. Irritado, ele começa a xingar Catalina, que aparece apontando uma arma em sua cabeça, ameaçando puxar o gatilho. O protagonista convence ela a desistir da ideia e propõe que eles façam algum outro assalto juntos.",
+ "localMissao": "Red County",
+ 
+},
+{
+ 
+ "nome": "Acasalamento",
+ "descricao": "Ao chegar no esconderijo da Catalina, CJ é surpreendido com uma sessão erótica de sadomasoquismo, onde ela o maltrata, mas retribui com sexo. Quando eles terminam, você tem a opção de escolher qual assalto irá fazer com ela.",
+ "localMissao": "Red County",
+ 
+},
+{
+ 
+ "nome": "Par Perfeito",
+ "descricao": "Carl não chama Catalina e isso deixa ela muito irritada com ele. Ela diz que a partir de agora eles são apenas sócios e decide que esta será a última vez que irão assaltar juntos.",
+ "localMissao": "Red County",
+ 
+},
+{
+ 
+ "nome": "Wu Zi Mu",
+ "descricao": "Cesar e CJ marcam de se encontrar em uma corrida. O gerente da corrida, Wu Zi Mu, aparece para se apresentar a Carl. Nessa missão você deve vencer a corrida, que passa por Red County, Blueberry e Blueberry Acres.",
+ "localMissao": "Red County",
+ 
+},
+{
+ 
+ "nome": "Adeus, Meu Amor…",
+ "descricao": "CJ volta a encontrar Catalina, que num acesso de raiva ataca o carro dele com um pé de cabra. Depois dessa cena, Catalina apresenta a CJ o seu novo namorado, Claude. Você irá enfrentá-lo em uma corrida, no circuito inverso da missão Wu Zi Mu.",
+ "localMissao": "Red County",
+ 
+}
+
+]
+aparecermissoes()
+function aparecermissoes(){
+
+for(var i = 0; i< missoes.length; i++){
+    p_missoes.innerHTML += `<p id="p${i}" style=" background-color: gray"; wi> <button id="missao${i}" onclick="feita${i}()">feita?</button>${missoes[i].nome} ${missoes[i].localMissao} ${missoes[i].descricao} </p>` 
+    
+
+}
+
+
+}
+function feita0(){
+    if(missoes.conluida.includes(0)){
+        missoes.conluida = 1
+}else{
+    missoes.conluida = 0
+}
+ resposta.innerHTML= `essa missao está ${missoes.conluida}`
+ resposta.innerHTML+= `essa missao está ${missoes[0].conluida}`
+ resposta.innerHTML+= `essa missao está ${missoes[1].conluida}`
+
+
+}
+function feita1(){
+    if(missoes[0].conluida == 0){
+        missoes[0].conluida = 1
+}else{
+    missoes[0].conluida = 0
+}
+ resposta.innerHTML= `essa missao está ${missoes[0].conluida}`
+ resposta.innerHTML+= `essa missao está ${missoes[0].conluida}`
+ resposta.innerHTML+= `essa missao está ${missoes[1].conluida}`
+    }
+function tirar() {
+    for(var i =0; i< missoes.length; i++){
+        if(missoes[i].conluida == 1 && missoes[0]){
+            p0.style.display = "none"
+        }
+    }
+    
+}
+   
+
+
+
+
+
+
+
+
+
 </script>

@@ -83,5 +83,20 @@ function mudarTelaUser(){
 
 
     }}
+
+
+
+    {
+        function deslogar(){
+            sessionStorage.EMAIL_USUARIO = undefined
+            sessionStorage.CIDADE_USUARIO = undefined
+            sessionStorage.GANGUE_USUARIO = undefined
+            sessionStorage.ID_USUARIO = undefined
+            sessionStorage.NOME_USUARIO = undefined
+
+            window.location = "http://localhost:3333/"
+            
+        }
+    }
    
 // COLOCAR FOTO DO MEMBRO DA GANGUE

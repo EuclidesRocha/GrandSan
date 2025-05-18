@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="../js/AcoesEmUsuario.js"></script>
+    
+</head>
+<body style="margin: 0; overflow-y: hidden;">
+
+    
+    <div id="div_home" style="height: 100vh; ;  background-repeat: no-repeat; background-size: cover; ">
+        <div style="background-color: rgba(0,0, 0,0.6); height: 100%; width: 100%; margin: 0;">
+            <p id="p_cidade" style=" display: none;">   
+                <p id="p_ola" style=" display: none;">  
+                </p>   
+            </p>
+        </div>
+    </div>
+    
+</body>
+</html>
+<script>
+    var perguntas = [{"Perguntas": "Qual a empresa desenvolvedora do Grand Theft Auto: San Andreas?",
+        "Resposta": "Rockstar Games",
+        "Errada1": "2k Games",
+        "Errada2": "Ubisoft",
+        "Errada3": "Sony",
+    },
+    {"Perguntas": "Carl Johnson, é o protagonista de Grand Theft Auto. Porém, ele voltou de uma cidade após um acontecimento. Qual é essa Cidade?",
+        "Resposta": "Liberty City",
+        "Errada1": "San Fierro",
+        "Errada2": "Las Venturas",
+        "Errada3": "Vice City",
+    },
+    {"Perguntas": "Qual desses não dublou um personagem em Grand Theft Auto: San Andreas?",
+        "Resposta": "Ray Liotta",
+        "Errada1": "Samuel Jackson",
+        "Errada2": "Ice-T",
+        "Errada3": "James Wood",
+    },
+    {"Perguntas": "Qual foi o principal motivo de Carl Johnson voltar a seu antigo bairro?",
+        "Resposta": "Ir para o funeral de sua mãe",
+        "Errada1": "Estava fugindo da Polícia estão foi para a sua antiga gangue",
+        "Errada2": "Estava visitando seu antigo bairro, mas viu que sua gangue precisava de ajuda e fico",
+        "Errada3": "Seu amigo Big Smoke morreu e ele foi para vingar seu amigo",
+    },
+    {"Perguntas": "GTA foi é uma das franquias mais conhecidas do mundo dos jogos. E teve algumas sequências antes de seu grande sucesso Grand Theft Auto: San Andreas. Qual a data de lançamento de Grand Theft Auto: San Andreas?",
+        "Resposta": "Outubro de 2004",
+        "Errada1": "Abril de 2006",
+        "Errada2": "Outubro de 2001",
+        "Errada3": "Setembro de 2013",
+    },
+    {"Perguntas": "Qual as três principais cidades do Estado de San Andreas?",
+        "Resposta": "Las Venturas, San Fierro e Los Santos",
+        "Errada1": "Liberty City, Vice City e Los Santos",
+        "Errada2": "Scanton, Liberty City e Las Ventura",
+        "Errada3": "Vice City, Las Venturas e Leônidas",
+    },
+    {"Perguntas": "Ao decorrer do jogo temos muitas reviravolta, a principal é que tem 2 traidores em sua gangue, que secretamente é da gangue rival, os Ballas. Quem são eles?",
+        "Resposta": "Big Smoke e Rider",
+        "Errada1": "Tempenny e Sweet",
+        "Errada2": "Sweet e Claude",
+        "Errada3": "Pulaski e César",
+    },
+    {"Perguntas": "Para contar ainda mais de sua história o GTA San Andreas tem um vídeo que conta mais sobre os momentos antes e fala da morte da mãe de CJ. E existe um tal Sabre verde, que é um carro dos assassinos que mataram a mãe de CJ. Porém, a mãe dele não era o foco do assassinato. Quem era?",
+        "Resposta": "Sweet",
+        "Errada1": "Cesar",
+        "Errada2": "Carl Johnson",
+        "Errada3": "Big Smoke",
+    },
+    {"Perguntas": "No jogo existe um personagem amigo de CJ que é cego. Porém, por um bom tempo Cj não tinha percebido, e até tem uma cena onde Cj perde em uma partida de videogame para ele. Quem é esse personagem?",
+        "Resposta": "Woozie",
+        "Errada1": "Ryder",
+        "Errada2": "Big Smoke",
+        "Errada3": "Claude",
+    },
+    {"Perguntas": "Claude não foi apenas o único personagem a aparecer de novo na franquia GTA, e mais especificamente no GTA: San Andreas, porém, desta vez era um antagonista de uma franquia antecessora. Quem foi o outro personagem?",
+        "Resposta": "Catalina",
+        "Errada1": "Ryder",
+        "Errada2": "Johnny Klebitz",
+        "Errada3": "Tommy Vercett",
+    },
+    {"Perguntas": "'Qual protagonista de uma Franquia principal antecessor aparece em Grand Theft Auto: San Andreas?",
+        "Resposta": "Claude",
+        "Errada1": "Michael de Santa",
+        "Errada2": "Niko Belic",
+        "Errada3": "Tommy Vercetti",
+    },
+    {"Perguntas": "O Jogo GTA: San Andreas tem um grande mapa em relação aos seus antecessores e com isso tornar o jogo mais divertido de sair por aí e andar pelas cidades. Porém, a Rockstar foi ambiciosa, colocando uma missão onde ele volta para a cidade na qual Cj estava antes de voltar para Los Santos. Qual é esse cidade?",
+      "Resposta": "Liberty City",
+        "Errada1": "Las Venturas",
+        "Errada2": "San Fierro",
+        "Errada3": "Los Santos",
+    },
+    {"Perguntas": "Ao decorrer do jogo vemos que Big Smoke protagonissa uma cena com o seu discurso. O que ele disse?",
+        "Resposta": "Eu quero dois Número 9, um Número 9 grande, um Número 6 com molho extra, um Número 7, dois Número 45, um com queijo, e um refrigerante grande.",
+        "Errada1": "Cj, cuide da minha família. Esse vida de gangue é perigosa. E não quero que eles sofram por escolhas minhas.",
+        "Errada2": "Eu só quero paz. O ressentimento corrói e eu odeio isso.",
+        "Errada3": "Homens realmente grandes não nascem grandes, tornam-se grandes.",
+    },
+    {"Perguntas": "Por ser um jogo conhecido GTA moveu bastante a comunidade, principalmente por causa de suas lendas que a comunidade fazia em volta do jogo. Anos depois essa lenda foi referênciada em uma conquista no remaster. Qual é essa lenda?",
+        "Resposta": "Pé grande",
+        "Errada1": "'Cj existiu e é um dos maiores criminoso dos Estados Unidos",
+        "Errada2": "GTA se passa em um plano espiritual",
+        "Errada3": "Big Smoke é irmão de Cj",
+    }]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+mudarTelaUser();
+
+
+
+
+
+
+
+
+
+
+
+</script>
