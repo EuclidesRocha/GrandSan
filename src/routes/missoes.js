@@ -4,8 +4,8 @@ var router = express.Router();
 
 var missoesController = require("../controllers/missoesController");
 
-router.post("/cadastrar", function (req, res) {
-    missoesController.cadastrar(req, res);
+router.post("/cadastrarPrimeiraVez", function (req, res) {
+    missoesController.cadastrarPrimeiraVez(req, res);
 });
 
 router.get("/listar", function (req, res) {

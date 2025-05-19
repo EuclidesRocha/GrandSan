@@ -61,6 +61,8 @@
 </html>
 <script>
 
+var listaUsuario = [];
+
     function cadastrar(){
     var Email = inputEmail.value
     var Nome = inputNome.value
@@ -68,6 +70,9 @@
     var ConFirmarSenha = inputConFirmarSenha.value
     var SelGangue = Number(inputSelGangue.value)
     var SelCidade = Number(inputSelCidade.value)    
+    var EmailDeCriacao = ``
+    var idUsuario = ``
+    
 
     if(Email == `` || Nome == `` || Senha == `` || ConFirmarSenha == `` ||SelGangue == ``||SelCidade == `` || !Email.includes("@"))
 {
@@ -103,6 +108,63 @@ if(Senha != ConFirmarSenha){
         if (resposta.ok) {
          
             "Cadastro realizado com sucesso! Redirecionando para tela de Login...";
+
+
+            fetch("/usuario/listar", {
+      method: "GET",
+    })
+      .then(function (resposta) {
+        resposta.json().then((usuarios) => {
+          usuarios.forEach((usuario) => {
+            listaUsuario.push(usuario);
+      
+          });
+          for(var i = 0; i < listaUsuario.length; i++ ){
+        if(Email  == listaUsuario[i].email){
+        
+          idUsuario = listaUsuario[i].idUsuario;
+
+          for(var numero = 1; numero <=100; numero++){
+
+        var missao = numero;
+        
+
+      fetch("/missoes/cadastrarPrimeiraVez", {
+      method: "POST",
+    headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+       
+        fkUsuarioServer : idUsuario,
+        missaoServer: missao
+      }),
+    })
+    .then(function(resposta){
+
+
+      }).catch(function (resposta) {
+        console.log(`#ERRO: ${resposta}`);
+       
+      });
+    }
+          break;
+        
+        }
+      };
+        })
+      })
+      .catch(function (resposta) {
+        console.log(`#ERRO: ${resposta}`);
+      });
+
+      
+
+
+
+      
+      
+
 
           setTimeout(() => {
             window.location = "TelaLogin.html";
