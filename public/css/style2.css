@@ -1,7 +1,7 @@
 @import url();
 @font-face {
     font-family: "pricedown";
-    src: url(../arquivos/font/pricedown\ bl.otf);
+    src: url(../arquivos/font/bl.otf);
 }
 body{
 height: 100vh;
@@ -71,6 +71,11 @@ overflow-y: hidden;
     
     
 }
+.textoUser{
+    font-family: "pricedown";
+    color: white;
+}
+
 .bannerquiz{
     height: 50%;
   
