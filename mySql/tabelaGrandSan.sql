@@ -2,17 +2,20 @@ create database GrandSan;
 
 USE GrandSan;
 
+drop database grandsan;
+
 drop table usuario;
 
 CREATE TABLE usuario(
   idUsuario INT primary key auto_increment NOT NULL,
   nome VARCHAR(45) not null,
-  email VARCHAR(45) Not null,
+  email VARCHAR(45) Not null unique,
   senha VARCHAR(45) Not null ,
   gangue INT not null ,
   cidadePrefe INT not null
   
 );
+select * from usuario;
 
 
 CREATE TABLE  resultado(
@@ -29,6 +32,7 @@ erros int not NULL,
 
 CREATE TABLE missoes(
   idMissoes INT PRIMARY KEY NOT NULL auto_increment,
+  numero Int,
   concluida boolean not NULL,
   fkUsuario INT,
   CONSTRAINT fkmisUser
@@ -36,4 +40,5 @@ CREATE TABLE missoes(
     REFERENCES usuario (idUsuario)
    ); 
    
+   select * from missoes;
    
