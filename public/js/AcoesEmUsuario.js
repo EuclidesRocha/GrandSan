@@ -14,7 +14,7 @@ function mudarTelaUser(){
    }else if(userCidadePrefe == 3){
     	var userimagemFundo = `url('../arquivos/imagens/imagemLasVenturas.png')`;
         div_home.style.backgroundImage = userimagemFundo;
-        p_cidade.innerHTML += `LAS VENTURAS`
+        p_cidade.innerHTML += ` LAS VENTURAS`
    }
    p_ola.innerHTML += ` ${username}`; 
    }
@@ -27,24 +27,28 @@ function mudarTelaUser(){
     if(userGangue == 1){
         color = "rgba(10, 60, 10, 0.8)"
         layoutUserCor.style.backgroundColor = color;
+        imagemUser.style.backgroundImage = `url('../arquivos/imagens/membroGROve.png')`
         id_butaoSair.style.backgroundColor = color;
-        p_membro.innerHTML += `GROVE STREET`
+        p_membro.innerHTML += ` GROVE STREET`
 
     }else if(userGangue == 2){
         color = "rgba(61, 7, 48, 0.8)"
         layoutUserCor.style.backgroundColor = color;
+        imagemUser.style.backgroundImage = `url('../arquivos/imagens/membroBallas.png')`
         id_butaoSair.style.backgroundColor = color;
-        p_membro.innerHTML += `BALLAS`
+        p_membro.innerHTML += ` BALLAS`
     }else if(userGangue == 3){
         color = "rgba(179, 184, 27, 0.8)"
         layoutUserCor.style.backgroundColor = color;
+        imagemUser.style.backgroundImage = `url('../arquivos/imagens/membroVagos.png')`
         id_butaoSair.style.backgroundColor = color;
-        p_membro.innerHTML += `VAGOS`
+        p_membro.innerHTML += ` VAGOS`
 
 
     }else if(userGangue == 4){
         color = "rgba(48, 186, 217, 0.8)"
         layoutUserCor.style.backgroundColor = color;
+        imagemUser.style.backgroundImage = `url('../arquivos/imagens/membroAzteca.png')`
         id_butaoSair.style.backgroundColor = color;
         p_membro.innerHTML += ` LOS AZTECAS`
 
@@ -58,18 +62,18 @@ function mudarTelaUser(){
     var color = "color"
     if(userGangue == 1){
         color = "rgba(10, 60, 10, 0.8)"
-        imagemUser.style.backgroundImage = `url('../arquivos/imagens/imagemSanfierro.png')`
+        
         div_corDasPaginas.style.backgroundColor = color;
         
 
     }else if(userGangue == 2){
         color = "rgba(61, 7, 48, 0.8)"
-        imagemUser.style.backgroundImage = `url('../arquivos/imagens/imagemSanfierro.png')`
+        
         div_corDasPaginas.style.backgroundColor = color;
       
     }else if(userGangue == 3){
         color = "rgba(179, 184, 27, 0.8)"
-        imagemUser.style.backgroundImage = `url('../arquivos/imagens/imagemSanfierro.png')`
+        
         div_corDasPaginas.style.backgroundColor = color;
         
     
@@ -77,7 +81,7 @@ function mudarTelaUser(){
 
     }else if(userGangue == 4){
         color = "rgba(48, 186, 217, 0.8)"
-       imagemUser.style.backgroundImage = `url('../arquivos/imagens/imagemSanfierro.png')`
+       
         div_corDasPaginas.style.backgroundColor = color;
       
 

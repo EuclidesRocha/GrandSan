@@ -11,6 +11,7 @@
 
 </head>
 <body>
+    <div class="userTela">
     <div class="barra">
         <div class="logo">
             <a id="imagemSan" href="https://www.rockstargames.com/br/games/sanandreas"><img src="../arquivos/imagens/grandSan 1.png"></a>
@@ -26,16 +27,21 @@
    
     <div class="home" id="div_home" >
         <div class="sombra">
-        <div class="layoutUser" id="layoutUserCor">
-            <span id="imagemUser"></span>
-            <p class="textoUser" id="p_ola">Olá,</p>
-            <p class="textoUser"id="p_membro">Gangue:</p>
-            <p class="textoUser"id="p_cidade">Cidade Preferida</p>
+            <div class="layoutUser" id="layoutUserCor">
+                <span id="imagemUser"></span>
+                    <div class="containerTextoUser">
+                        <p class="textoUser" id="p_ola">Olá,</p>
+                        <p class="textoUser"id="p_membro">Gangue:</p>
+                        <p class="textoUser"id="p_cidade">Cidade Preferida</p>
+                    </div>
+                    <div class="pontos">
+                       <p id="p_pontos">pontos: <span id="span_pontos">0</span></p> 
+                    </div>
             </div>
-            <div class="butaoSair"><button id="id_butaoSair" onclick="deslogar()">SAIR</button></div>
-        </div>
-        
-    </div >
+                <div class="butaoSair"><button id="id_butaoSair" onclick="deslogar()">SAIR</button></div>
+        </div>    
+    </div>
+    </div>
 </body>
 </html>
 

@@ -4,11 +4,16 @@
     src: url(../arquivos/font/bl.otf);
 }
 body{
-height: 100vh;
+overflow-x: hidden;
 margin: 0;
-overflow-y: hidden;
 
 
+
+
+}
+.userTela{
+    height: 100vh;
+    overflow: hidden;
 }
  .barra {
     padding: 1%;
@@ -62,48 +67,103 @@ overflow-y: hidden;
     width: 100%;
     height: 100%;
 }
+
 .layoutUser{
- 
+    display: flex;
+    align-items: center;
     width: 100%;
     height: 40%;
     border-radius: 20px;
     margin-top: 5%;
     
     
+}#imagemUser{
+    width: 12%;
+    height: 60%;
+    border-radius: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 2%;
+    margin-right: 2%;
+    background-position: center;
+    background-position-y: -1%;
+    
+}
+.containerTextoUser{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+   
+    justify-content: center;
+
 }
 .textoUser{
     font-family: "pricedown";
     color: white;
+    
+}
+#p_ola{
+    font-size: clamp(1rem, 5vw, 3rem);
 }
 
+#p_membro{
+    font-size: clamp(0.5rem, 5vw, 1.5rem);
+}
+
+#p_cidade{
+    margin-top: 0;
+    font-size: clamp(0.5rem , 1.5vw, 1.5rem);
+}
 .bannerquiz{
-    height: 50%;
+    height: 25%;
   
    
     background-image: url(../arquivos/imagens/videogame.png);
-    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   
+   
 }
 .bannerhistoria{
   
-    height: 50%;         
+    height: 25%;         
     background-image: url(../arquivos/imagens/CjOlhandoFoto.png);
-    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   
 }
 .bannerenciclopedia{
-    height: 50%;
+    height: 25%;
     
     background-image: url(../arquivos/imagens/mapa.png);
-    border-radius: 20px;
+   background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   
 }
 .bannermaissobre{    
-    height: 50%;
+    height: 25%;
    
     background-image: url(../arquivos/imagens/revista.png);
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 20px;
+    background-position: center;
+   
     
     
+}.pontos{
+    margin-left: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+#p_pontos{
+    font-family: "pricedown";
+    color: white;
+    font-size: clamp(1rem, 5vw, 3rem); ;
 }
 .color{
      
@@ -114,12 +174,12 @@ overflow-y: hidden;
     
     display: flex;
     align-items: center;
-    border-radius: 20px;
+   
 }
 
 .textoInBanner{
     font-family:  'pricedown';
-    font-size: clamp(1rem, 10vh, 4rem);
+    font-size: clamp(1rem, 5vw, 4rem);
     color: white;
     margin-left: 2%;
 
@@ -141,10 +201,129 @@ overflow-y: hidden;
     justify-content: center;
     border-radius: 10px;
     border: 0;
+    margin: 2%;
+}
+
+
+/* Tela Historia */
+
+
+.telaHistoria{
+    height: 200vh;
+}
+ .barraHistoria{
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+    background-color: #000;
+    align-items: center;
+    height: 5%;
+    
+
+
+}.barraHistoria img{
+    height: 70%;
+    width: 70%;
+}
+.containerCJ{
+    height: 30%;
+    background-color: rgb(193, 211, 195);
+}
+.barraCJ{
+    height: 20%;
+    background-color: rgba(48, 100, 56, 0.747);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(1rem, 5vw, 5rem);
+    font-family: "pricedown";
+    color: white;
+}
+.infoCJ{
+
+   
+    height: 80%;
+}.infoCJ img{
+    float: left;
+    height: 40%;
+    width: 10%;
+    margin: 1%;
+    border: solid black ;
+    
+}
+#p_textoCJ{
+    margin: 1%;
+
+    
+    font-family:'Times New Roman';
+    font-size: clamp(0.1rem, 1.3vw, 1.4rem);
+    
+}
+
+.missoescontainer{
+   
+    background-color: rgb(193, 211, 195);
+    height: 38.1%;
+    
+
+}
+.barraMissoes{
+    height: 15.8%;
+    background-color: rgba(48, 100, 56, 0.747);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(1rem, 5vw, 5rem);
+    font-family: "pricedown";
+    color: white;
+}.acoesEmMissoesContainer{
+    display: flex;
+    height: 10.9%;
+    background-color: white;
+    border: solid black;
+    border-radius: 20px;
+    margin-bottom: 0.5%;
+    width: 80%;
+    margin-left: 10%;
 }
 .missoes{
+    margin-left: 10%;
     overflow-y: scroll;
     display: flex;
     flex-direction: column;
-    height: 20%;
+    height: 70%;
+    width: 80%;
+    background-color: rgb(193, 211, 195);}
+.missoesCard{
+        height: 4%;
+        border: solid black;
+        display: flex;
+        flex-direction: column;
+    }
+.butaoMissao{
+    margin-left: 1% ;
+    
+   
+    border-radius: 5px;
+    width: 1%;
+    height: 50%;
+}
+.span_missaoname{
+    margin-left: 1%;
+    font-family: "pricedown";
+    font-size: clamp(0.4rem, 1vw, 1rem);
+    color: black;
+}
+.barraCardMissoes{
+    display: flex;
+    align-items: center;
+    height: 35%;
+    background-color:  rgba(48, 100, 56, 0.747);;
+} 
+.span_localMissao{
+     
+    margin-left: 1%;
+    font-family: "pricedown";
+    font-size: clamp(0.4rem, 1vw, 1rem);
+    color: black;
 }

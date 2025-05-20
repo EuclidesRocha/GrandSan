@@ -7,9 +7,11 @@
    
     <link rel="stylesheet" href="../css/style2.css">
     <script src="../js/AcoesEmUsuario.js"></script>
+    <script src="../js/MissoesAcoes.js"></script>
 </head>
 <body>
-    <div class="barra">
+    <div class="telaHistoria">
+    <div class="barraHistoria">
         <div class="logo">
             <a id="imagemSan" href="https://www.rockstargames.com/br/games/sanandreas"><img src="../arquivos/imagens/grandSan 1.png"></a>
 
@@ -28,15 +30,33 @@
      
     </div>
 
-
-    <div class="missoes">
-    <p id="p_missoes"></p>
-    <div id="resposta"></div>
-    <div> <button onclick="tirar()">TIRAR</button></div>
-
+    <div class="containerCJ">
+        <div class="barraCJ">Carl Johnson</div>
+       
+        <div class="infoCJ"><img src="../arquivos/imagens/cjSorrindo.png" > <p id="p_textoCJ"> Carl Johnson, ou CJ (Los Santos, 1968) é o protagonista do Grand Theft Auto: San Andreas. Sua mãe se chama Beverly Johnson. Ele tem 24 anos durante os eventos de San Andreas.
+Nascimento
+Carl Johnson nasceu em Los Santos, o nome de sua mãe era Beverly Johnson. Ele nascido antes de 1969 (Supondo que ele tinha 19 anos em 1987, capaz de viver por conta própria em outra cidade). Ele é o segundo filho de Beverly, o primeiro sendo Sean Johnson (Sweet), em seguida, Carl, seguido logo depois por Kendl e, finalmente, Brian. Sweet recorda que CJ nasceu na Casa dos Johnson, onde ele volta a viver nos acontecimentos iniciais de GTA San Andreas.
+Old Reece, um amigo da família, manda lembranças ao pai de CJ (Embora Reece tenha sua sanidade questionada, pois de acordo com Ryder ele rompeu seu diafragma), mas CJ diz a Joey Leone que ele nunca conheceu seu pai, e Sweet era o homem da casa. Em outra das memórias de CJ ele está nadando ao largo da costa de Santa Maria Beach, onde um preservativo ficou preso ao seu rosto, e desde então tem tido medo de nadar. Os irmãos Johnson, juntamente com Melvin Harris (Big Smoke) e Lance Wilson (Ryder), cresceram no mesmo beco sem saída e eram amigos de infância. CJ recorda que Ryder traficava drogas desde que ele tinha dez anos.
+Adolescência na gangue
+Sweet se tornou o líder da Grove Street Families, que introduziu ele, CJ e até mesmo Brian na vida de gangue. Durante este período, Grove Street Families estavam no auge de seu poder quando foram pressionados por Frank Tenpenny, o policial corrupto da C.R.A.S.H.. É provável que o gestor Eddie Pulaski estava servindo também com Tenpenny neste momento. Em 1987, o grupo foi abalado pela morte de Brian. Sweet lamenta que Carl "Deixou Brian morrer" e não pediu ajuda, fazendo com que Carl sai-se para Liberty City, no mesmo ano. Ele já não era considerado um membro da Grove Street, e mais tarde tem que ganhar o seu caminho de volta para a gangue. Big Smoke diz que CJ era mais musculoso nestes dias, e que "a costa leste o deixou emagrecer".
+Vida adulta em Liberty City
+Em Liberty City, ele teve a oportunidade de trabalhar com o filho de Don Salvatore Leone, Joey Leone no negócio de roubos de carros, e mais uma vez atacar um transeunte nas ruas de Liberty City. Em 1992, após cinco anos, Sweet liga para Carl para dizer-lhe que sua mãe morreu em um tiroteio (ligando apenas alguns minutos após o ocorrido). Carl retorna a Los Santos para o funeral, com a consideração parcial de permanecer lá a longo prazo.</p></div>
+        
 
     </div>
-
+    
+    <div class="missoescontainer">
+    
+    <div class="barraMissoes">missÕES</div>
+    <div class="acoesEmMissoesContainer"> <button onclick="listarMissoes()">listar</button></div>  
+    <div class="missoes">
+    <p id="div_missoes"></p>
+    <div id="resposta"></div>
+    
+   
+    </div>
+    </div>
+</div>
 </body>
 </html>
 <script>
@@ -341,46 +361,71 @@ var missoes = [
 
 ]
 aparecermissoes()
+
+// function listarMissoes(){
+
+//   var idUsuario = Number(sessionStorage.ID_USUARIO);
+
+//   for(var i = 0; i<= 100;)
+//     fetch("/missoes/listar", {
+//             method: "POST",
+//             headers: {
+//                 "Content-Type": "application/json"
+//             },
+//             body: JSON.stringify({
+//                 idUsuarioServer: idUsuario,
+//                 MISSAO:
+//             })
+//         }).then(function (resposta) {
+//             console.log("ESTOU NO THEN DO ()!")
+
+//             if (resposta.ok) {
+//                 console.log(resposta);
+                
+
+//                 resposta.json().then(json => {
+//                     console.log(json);
+//                     console.log(JSON.stringify(json));
+//                     for(var i = 0; i<= json;i++){
+//                         if(json[i].numero == 1)
+                        
+//                             sessionStorage.MISSAO_1 = json[i].numero;
+                        
+//                     }
+
+                    
+                    
+
+                 
+                  
+
+//                 });
+
+//             } else {
+
+//                 console.log("Houve um erro ao tentar realizar o login!");
+//                  resposta.text().then(texto => {
+//                     console.error(texto);
+                   
+//                 });
+               
+//             }
+
+//         }).catch(function (erro) {
+//             console.log(erro);
+//         })
+// }
 function aparecermissoes(){
 
-for(var i = 0; i< missoes.length; i++){
-    p_missoes.innerHTML += `<p id="p${i}" style=" background-color: gray"; wi> <button id="missao${i}" onclick="feita${i}()">feita?</button>${missoes[i].nome} ${missoes[i].localMissao} ${missoes[i].descricao} </p>` 
+for(var i = 0; i<missoes.length; i++){
+    div_missoes.innerHTML += `<div id="div_${i+1}" class ="missoesCard"style=" background-color: white "; > <div class = "barraCardMissoes"> <button id="missao${i+1}" onclick="feita${i+1}()" class ="butaoMissao"></button><span class="span_missaoname">${missoes[i].nome} </span> <span class="span_localMissao">${missoes[i].localMissao}</span></div> <div>  ${missoes[i].descricao} </div> </div>` 
     
 
 }
 
 
 }
-function feita0(){
-    if(missoes.conluida.includes(0)){
-        missoes.conluida = 1
-}else{
-    missoes.conluida = 0
-}
- resposta.innerHTML= `essa missao está ${missoes.conluida}`
- resposta.innerHTML+= `essa missao está ${missoes[0].conluida}`
- resposta.innerHTML+= `essa missao está ${missoes[1].conluida}`
 
-
-}
-function feita1(){
-    if(missoes[0].conluida == 0){
-        missoes[0].conluida = 1
-}else{
-    missoes[0].conluida = 0
-}
- resposta.innerHTML= `essa missao está ${missoes[0].conluida}`
- resposta.innerHTML+= `essa missao está ${missoes[0].conluida}`
- resposta.innerHTML+= `essa missao está ${missoes[1].conluida}`
-    }
-function tirar() {
-    for(var i =0; i< missoes.length; i++){
-        if(missoes[i].conluida == 1 && missoes[0]){
-            p0.style.display = "none"
-        }
-    }
-    
-}
    
 
 
