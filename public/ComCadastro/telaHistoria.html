@@ -418,7 +418,7 @@ aparecermissoes()
 function aparecermissoes(){
 
 for(var i = 0; i<missoes.length; i++){
-    div_missoes.innerHTML += `<div id="div_${i+1}" class ="missoesCard"style=" background-color: white "; > <div class = "barraCardMissoes"> <button id="missao${i+1}" onclick="feita${i+1}()" class ="butaoMissao"></button><span class="span_missaoname">${missoes[i].nome} </span> <span class="span_localMissao">${missoes[i].localMissao}</span></div> <div>  ${missoes[i].descricao} </div> </div>` 
+    div_missoes.innerHTML += `<div id="div_${i+1}" class ="missoesCard"style=" background-color: white "; > <div class = "barraCardMissoes"> <button id="id_missao${i+1}" onclick="feita${i+1}()" class ="butaoMissao"></button><span class="span_missaoname">${missoes[i].nome} </span> <span class="span_localMissao">${missoes[i].localMissao}</span></div> <div>  ${missoes[i].descricao} </div> </div>` 
     
 
 }
