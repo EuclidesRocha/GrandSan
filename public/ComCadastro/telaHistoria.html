@@ -360,61 +360,9 @@ var missoes = [
 }
 
 ]
-aparecermissoes()
 
-// function listarMissoes(){
 
-//   var idUsuario = Number(sessionStorage.ID_USUARIO);
-
-//   for(var i = 0; i<= 100;)
-//     fetch("/missoes/listar", {
-//             method: "POST",
-//             headers: {
-//                 "Content-Type": "application/json"
-//             },
-//             body: JSON.stringify({
-//                 idUsuarioServer: idUsuario,
-//                 MISSAO:
-//             })
-//         }).then(function (resposta) {
-//             console.log("ESTOU NO THEN DO ()!")
-
-//             if (resposta.ok) {
-//                 console.log(resposta);
-                
-
-//                 resposta.json().then(json => {
-//                     console.log(json);
-//                     console.log(JSON.stringify(json));
-//                     for(var i = 0; i<= json;i++){
-//                         if(json[i].numero == 1)
-                        
-//                             sessionStorage.MISSAO_1 = json[i].numero;
-                        
-//                     }
-
-                    
-                    
-
-                 
-                  
-
-//                 });
-
-//             } else {
-
-//                 console.log("Houve um erro ao tentar realizar o login!");
-//                  resposta.text().then(texto => {
-//                     console.error(texto);
-                   
-//                 });
-               
-//             }
-
-//         }).catch(function (erro) {
-//             console.log(erro);
-//         })
-// }
+ 
 function aparecermissoes(){
 
 for(var i = 0; i<missoes.length; i++){
@@ -425,15 +373,357 @@ for(var i = 0; i<missoes.length; i++){
 
 
 }
+function listarMissoes(){
 
    
+   var idUsuario = Number(sessionStorage.ID_USUARIO);
+
+   for(var i = 0; i<100; i++){
+    
+    var numMissao = i + 1
+     fetch("/missoes/listar", {
+             method: "POST",
+             headers: {
+                 "Content-Type": "application/json"
+             },
+             body: JSON.stringify({
+                 idUsuarioServer: idUsuario,
+                 missaoServer: numMissao
+             })
+         }).then(function (resposta) {
+             console.log("ESTOU NO THEN DO ()!")
+
+             if (resposta.ok) {
+                 console.log(resposta);
+                
+
+                 resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)
+                    
+if(json[0].numero == 1){  
+    sessionStorage.MISSAO_1 = json[0].concluida;
+}
+if(json[0].numero == 2){  
+    sessionStorage.MISSAO_2 = json[0].concluida;
+}
+if(json[0].numero == 3){  
+    sessionStorage.MISSAO_3 = json[0].concluida;
+}
+if(json[0].numero == 4){  
+    sessionStorage.MISSAO_4 = json[0].concluida;
+}
+if(json[0].numero == 5){  
+    sessionStorage.MISSAO_5 = json[0].concluida;
+}
+if(json[0].numero == 6){  
+    sessionStorage.MISSAO_6 = json[0].concluida;
+}
+if(json[0].numero == 7){  
+    sessionStorage.MISSAO_7 = json[0].concluida;
+}
+if(json[0].numero == 8){  
+    sessionStorage.MISSAO_8 = json[0].concluida;
+}
+if(json[0].numero == 9){  
+    sessionStorage.MISSAO_9 = json[0].concluida;
+}
+if(json[0].numero == 10){  
+    sessionStorage.MISSAO_10 = json[0].concluida;
+}
+if(json[0].numero == 11){  
+    sessionStorage.MISSAO_11 = json[0].concluida;
+}
+if(json[0].numero == 12){  
+    sessionStorage.MISSAO_12 = json[0].concluida;
+}
+if(json[0].numero == 13){  
+    sessionStorage.MISSAO_13 = json[0].concluida;
+}
+if(json[0].numero == 14){  
+    sessionStorage.MISSAO_14 = json[0].concluida;
+}
+if(json[0].numero == 15){  
+    sessionStorage.MISSAO_15 = json[0].concluida;
+}
+if(json[0].numero == 16){  
+    sessionStorage.MISSAO_16 = json[0].concluida;
+}
+if(json[0].numero == 17){  
+    sessionStorage.MISSAO_17 = json[0].concluida;
+}
+if(json[0].numero == 18){  
+    sessionStorage.MISSAO_18 = json[0].concluida;
+}
+if(json[0].numero == 19){  
+    sessionStorage.MISSAO_19 = json[0].concluida;
+}
+if(json[0].numero == 20){  
+    sessionStorage.MISSAO_20 = json[0].concluida;
+}
+if(json[0].numero == 21){  
+    sessionStorage.MISSAO_21 = json[0].concluida;
+}
+if(json[0].numero == 22){  
+    sessionStorage.MISSAO_22 = json[0].concluida;
+}
+if(json[0].numero == 23){  
+    sessionStorage.MISSAO_23 = json[0].concluida;
+}
+if(json[0].numero == 24){  
+    sessionStorage.MISSAO_24 = json[0].concluida;
+}
+if(json[0].numero == 25){  
+    sessionStorage.MISSAO_25 = json[0].concluida;
+}
+if(json[0].numero == 26){  
+    sessionStorage.MISSAO_26 = json[0].concluida;
+}
+if(json[0].numero == 27){  
+    sessionStorage.MISSAO_27 = json[0].concluida;
+}
+if(json[0].numero == 28){  
+    sessionStorage.MISSAO_28 = json[0].concluida;
+}
+if(json[0].numero == 29){  
+    sessionStorage.MISSAO_29 = json[0].concluida;
+}
+if(json[0].numero == 30){  
+    sessionStorage.MISSAO_30 = json[0].concluida;
+}
+if(json[0].numero == 31){  
+    sessionStorage.MISSAO_31 = json[0].concluida;
+}
+if(json[0].numero == 32){  
+    sessionStorage.MISSAO_32 = json[0].concluida;
+}
+if(json[0].numero == 33){  
+    sessionStorage.MISSAO_33 = json[0].concluida;
+}
+if(json[0].numero == 34){  
+    sessionStorage.MISSAO_34 = json[0].concluida;
+}
+if(json[0].numero == 35){  
+    sessionStorage.MISSAO_35 = json[0].concluida;
+}
+if(json[0].numero == 36){  
+    sessionStorage.MISSAO_36 = json[0].concluida;
+}
+if(json[0].numero == 37){  
+    sessionStorage.MISSAO_37 = json[0].concluida;
+}
+if(json[0].numero == 38){  
+    sessionStorage.MISSAO_38 = json[0].concluida;
+}
+if(json[0].numero == 39){  
+    sessionStorage.MISSAO_39 = json[0].concluida;
+}
+if(json[0].numero == 40){  
+    sessionStorage.MISSAO_40 = json[0].concluida;
+}
+if(json[0].numero == 41){  
+    sessionStorage.MISSAO_41 = json[0].concluida;
+}
+if(json[0].numero == 42){  
+    sessionStorage.MISSAO_42 = json[0].concluida;
+}
+if(json[0].numero == 43){  
+    sessionStorage.MISSAO_43 = json[0].concluida;
+}
+if(json[0].numero == 44){  
+    sessionStorage.MISSAO_44 = json[0].concluida;
+}
+if(json[0].numero == 45){  
+    sessionStorage.MISSAO_45 = json[0].concluida;
+}
+if(json[0].numero == 46){  
+    sessionStorage.MISSAO_46 = json[0].concluida;
+}
+if(json[0].numero == 47){  
+    sessionStorage.MISSAO_47 = json[0].concluida;
+}
+if(json[0].numero == 48){  
+    sessionStorage.MISSAO_48 = json[0].concluida;
+}
+if(json[0].numero == 49){  
+    sessionStorage.MISSAO_49 = json[0].concluida;
+}
+if(json[0].numero == 50){  
+    sessionStorage.MISSAO_50 = json[0].concluida;
+}
+if(json[0].numero == 51){  
+    sessionStorage.MISSAO_51 = json[0].concluida;
+}
+if(json[0].numero == 52){  
+    sessionStorage.MISSAO_52 = json[0].concluida;
+}
+if(json[0].numero == 53){  
+    sessionStorage.MISSAO_53 = json[0].concluida;
+}
+if(json[0].numero == 54){  
+    sessionStorage.MISSAO_54 = json[0].concluida;
+}
+if(json[0].numero == 55){  
+    sessionStorage.MISSAO_55 = json[0].concluida;
+}
+if(json[0].numero == 56){  
+    sessionStorage.MISSAO_56 = json[0].concluida;
+}
+if(json[0].numero == 57){  
+    sessionStorage.MISSAO_57 = json[0].concluida;
+}
+if(json[0].numero == 58){  
+    sessionStorage.MISSAO_58 = json[0].concluida;
+}
+if(json[0].numero == 59){  
+    sessionStorage.MISSAO_59 = json[0].concluida;
+}
+if(json[0].numero == 60){  
+    sessionStorage.MISSAO_60 = json[0].concluida;
+}
+if(json[0].numero == 61){  
+    sessionStorage.MISSAO_61 = json[0].concluida;
+}
+if(json[0].numero == 62){  
+    sessionStorage.MISSAO_62 = json[0].concluida;
+}
+if(json[0].numero == 63){  
+    sessionStorage.MISSAO_63 = json[0].concluida;
+}
+if(json[0].numero == 64){  
+    sessionStorage.MISSAO_64 = json[0].concluida;
+}
+if(json[0].numero == 65){  
+    sessionStorage.MISSAO_65 = json[0].concluida;
+}
+if(json[0].numero == 66){  
+    sessionStorage.MISSAO_66 = json[0].concluida;
+}
+if(json[0].numero == 67){  
+    sessionStorage.MISSAO_67 = json[0].concluida;
+}
+if(json[0].numero == 68){  
+    sessionStorage.MISSAO_68 = json[0].concluida;
+}
+if(json[0].numero == 69){  
+    sessionStorage.MISSAO_69 = json[0].concluida;
+}
+if(json[0].numero == 70){  
+    sessionStorage.MISSAO_70 = json[0].concluida;
+}
+if(json[0].numero == 71){  
+    sessionStorage.MISSAO_71 = json[0].concluida;
+}
+if(json[0].numero == 72){  
+    sessionStorage.MISSAO_72 = json[0].concluida;
+}
+if(json[0].numero == 73){  
+    sessionStorage.MISSAO_73 = json[0].concluida;
+}
+if(json[0].numero == 74){  
+    sessionStorage.MISSAO_74 = json[0].concluida;
+}
+if(json[0].numero == 75){  
+    sessionStorage.MISSAO_75 = json[0].concluida;
+}
+if(json[0].numero == 76){  
+    sessionStorage.MISSAO_76 = json[0].concluida;
+}
+if(json[0].numero == 77){  
+    sessionStorage.MISSAO_77 = json[0].concluida;
+}
+if(json[0].numero == 78){  
+    sessionStorage.MISSAO_78 = json[0].concluida;
+}
+if(json[0].numero == 79){  
+    sessionStorage.MISSAO_79 = json[0].concluida;
+}
+if(json[0].numero == 80){  
+    sessionStorage.MISSAO_80 = json[0].concluida;
+}
+if(json[0].numero == 81){  
+    sessionStorage.MISSAO_81 = json[0].concluida;
+}
+if(json[0].numero == 82){  
+    sessionStorage.MISSAO_82 = json[0].concluida;
+}
+if(json[0].numero == 83){  
+    sessionStorage.MISSAO_83 = json[0].concluida;
+}
+if(json[0].numero == 84){  
+    sessionStorage.MISSAO_84 = json[0].concluida;
+}
+if(json[0].numero == 85){  
+    sessionStorage.MISSAO_85 = json[0].concluida;
+}
+if(json[0].numero == 86){  
+    sessionStorage.MISSAO_86 = json[0].concluida;
+}
+if(json[0].numero == 87){  
+    sessionStorage.MISSAO_87 = json[0].concluida;
+}
+if(json[0].numero == 88){  
+    sessionStorage.MISSAO_88 = json[0].concluida;
+}
+if(json[0].numero == 89){  
+    sessionStorage.MISSAO_89 = json[0].concluida;
+}
+if(json[0].numero == 90){  
+    sessionStorage.MISSAO_90 = json[0].concluida;
+}
+if(json[0].numero == 91){  
+    sessionStorage.MISSAO_91 = json[0].concluida;
+}
+if(json[0].numero == 92){  
+    sessionStorage.MISSAO_92 = json[0].concluida;
+}
+if(json[0].numero == 93){  
+    sessionStorage.MISSAO_93 = json[0].concluida;
+}
+if(json[0].numero == 94){  
+    sessionStorage.MISSAO_94 = json[0].concluida;
+}
+if(json[0].numero == 95){  
+    sessionStorage.MISSAO_95 = json[0].concluida;
+}
+if(json[0].numero == 96){  
+    sessionStorage.MISSAO_96 = json[0].concluida;
+}
+if(json[0].numero == 97){  
+    sessionStorage.MISSAO_97 = json[0].concluida;
+}
+if(json[0].numero == 98){  
+    sessionStorage.MISSAO_98 = json[0].concluida;
+}
+if(json[0].numero == 99){  
+    sessionStorage.MISSAO_99 = json[0].concluida;
+}
+if(json[0].numero == 100){  
+    sessionStorage.MISSAO_100 = json[0].concluida;
+}
 
 
+                });
+                  
 
 
+            }else {
 
+                 console.log("Houve um erro ao tentar realizar o login!");
+                  resposta.text().then(texto => {
+                     console.error(texto);
+                   
+                 });
+               
+             }
 
+         }).catch(function (erro) {
+             console.log(erro);
+         })
+        }
+        
+ }
 
-
-
+aparecermissoes()
+listarMissoes()
+color()
+    
 </script>

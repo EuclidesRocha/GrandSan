@@ -8,8 +8,11 @@ router.post("/cadastrarPrimeiraVez", function (req, res) {
     missoesController.cadastrarPrimeiraVez(req, res);
 });
 
-router.get("/listar", function (req, res) {
+router.post("/listar", function (req, res) {
     missoesController.listar(req, res);
+});
+router.put("/atualizar", function(req,res){
+    missoesController.atualizar(req, res);
 });
 
 
