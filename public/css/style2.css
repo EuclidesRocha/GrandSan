@@ -115,7 +115,7 @@ margin: 0;
     font-size: clamp(0.5rem , 2vw, 1.5rem);
 }
 .bannerquiz{
-    height: 25%;
+    height: 34%;
   
    
     background-image: url(../arquivos/imagens/videogame.png);
@@ -135,7 +135,7 @@ margin: 0;
    
 }
 .bannerenciclopedia{
-    height: 25%;
+    height: 34%;
     
     background-image: url(../arquivos/imagens/mapa.png);
    background-repeat: no-repeat;
@@ -144,7 +144,7 @@ margin: 0;
    
 }
 .bannermaissobre{    
-    height: 25%;
+    height: 34%;
    
     background-image: url(../arquivos/imagens/revista.png);
     background-repeat: no-repeat;
@@ -182,8 +182,15 @@ margin: 0;
     font-size: clamp(1rem, 5vw, 4rem);
     color: white;
     margin-left: 2%;
+    margin-right: 60%;
 
 } 
+.pontosInBanner{
+    font-family:  'pricedown';
+    font-size: clamp(1rem, 5vw, 4rem);
+    color: white;
+    margin-left: 2%;
+}
 .butaoSair:hover{
     color: grey
 }
@@ -228,6 +235,12 @@ margin: 0;
  background-color: white;
  font-family: 'pricedown';  
  justify-self:flex-start; 
+ border-radius: 20px;
+ height: 40%;
+ width: 8%;
+ font-size: clamp(0.5rem, 1vw, 2rem);
+ margin-right: 35%;
+ margin-left: 1%;
 }
 .containerCJ{
     height: 70%;
@@ -237,7 +250,7 @@ margin: 0;
     height: 10%;
     background-color: rgba(48, 100, 56, 0.747);
     display: flex;
-    justify-content: center;
+    
     align-items: center;
     font-size: clamp(1rem, 5vw, 3rem);
     font-family: "pricedown";
@@ -268,6 +281,53 @@ margin: 0;
     font-size: clamp(0.1rem, 1vw, 1.3rem);
     
     
+}.imagemForCJ{
+    height: 55% ;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+}.textoDeVersãoCJ {
+    height: 40%;
+    background-color: white ;
+    border: solid black;
+    border-radius: 20px;
+    width: 80%;
+    display: flex;
+  align-items: center;
+    flex-direction: column;
+    margin: 1%;
+    
+}
+.textoDeVersãoCJ img{
+    height: 90%;
+}.textoDeVersãoCJ div{
+    font-size: clamp(0.1rem, 1vw, 0.9rem);
+    font-weight: 600;
+}.fotosDeGameplay{
+    height: 40%;
+    background-color: white ;
+    border: solid black;
+    border-radius: 20px;
+    width: 80%;
+    display: flex;
+  align-items: center;
+    flex-direction: column;
+    margin: 1%;
+    
+}
+.fotosDeGameplay img{
+    height: 90%;
+}.fotosDeGameplay div{
+    font-size: clamp(0.1rem, 1vw, 0.9rem);
+    font-weight: 600;
+}.primeiroCard{
+height: 100%;
+width: 40%;
+}.segundoCard{
+height: 100%;
+width: 40%;
 }
 
 .missoescontainer{
@@ -281,21 +341,34 @@ margin: 0;
     height: 10%;
     background-color: rgba(48, 100, 56, 0.747);
     display: flex;
-    justify-content: center;
+    
     align-items: center;
     font-size: clamp(1rem, 5vw, 3rem);
     font-family: "pricedown";
     color: white;
 }.acoesEmMissoesContainer{
     display: flex;
-    height: 10.9%;
+    height: 8%;
     background-color: white;
     border: solid black;
     border-radius: 20px;
     margin-bottom: 0.5%;
     width: 80%;
     margin-left: 10%;
+    align-items: center ;
 }
+.acoesEmMissoesContainer span{
+    font-weight: 600;
+    font-size: clamp(0.1rem, 5vh, 1rem );
+    margin: 1%;
+}.acoesEmMissoesContainer button{
+    height: 50%;
+    width: 10%;
+    background-color: rgb(202, 201, 201);
+    font-size: clamp(0.1rem, 5vh, 1rem );
+    border-radius: 20px;
+    font-family: "pricedown";
+} 
 .missoes{
     margin-left: 10%;
     overflow-y: scroll;
@@ -306,37 +379,159 @@ margin: 0;
     background-color: rgb(193, 211, 195);
     padding: 0;
     padding-left: 1%;
+    
 
 }
 
 .missoesCard{
-        height: 4%;
+        height: auto;
         border: solid black;
         display: flex;
         flex-direction: column;
+        border-radius: 20px;
+        
     }
 .butaoMissao{
     margin-left: 1% ;
     border-radius: 5px;
-    width: 1%;
-    height: 50%;
+    width: 2%;
+    height: 100%;
 }
 .span_missaoname{
     margin-left: 1%;
     font-family: "pricedown";
-    font-size: clamp(0.4rem, 1vw, 1rem);
-    color: black;
+    font-size: clamp(0.4rem, 1vw, 2rem);
+    color: rgb(0, 0, 0);
 }
 .barraCardMissoes{
     display: flex;
     align-items: center;
-    height: 35%;
+    height: 80%;
     background-color:  rgba(48, 100, 56, 0.747);;
 } 
 .span_localMissao{
      
     margin-left: 1%;
     font-family: "pricedown";
-    font-size: clamp(0.4rem, 1vw, 1rem);
+    font-size: clamp(0.4rem, 1vw, 2rem);
+    color: rgb(0, 0, 0);
+}
+.div_descricao{
+    margin: 1%;
+    font-weight: 600;
+}
+
+/* TELA QUIZ */
+
+.TelaQuiz{
+    height: 150vh;
+    background-color: rgb(212, 152, 152);
+}
+ .barraQuiz{
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+    background-color: #000;
+    align-items: center;
+    height: 7%;
+    
+
+
+}.barraQuiz img{
+    height: 70%;
+    width: 70%;
+}.containerquiz{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ height: 6%;
+}.barraJogarQuiz{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid black;
+    
+    width: 100%;
+    height: 100%;
+}.barraJogarQuiz button{
+    font-family: "pricedown";
     color: black;
+    border-radius: 20px;
+    background-color: rgb(202, 201, 201);
+    height: 90%;
+    font-size:  clamp(1rem, 5vw, 3rem);
+
+
+}.graficos{
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3%;
+    
+}.grafico1{
+    width: 30%;
+    height: 100%;
+    margin: 1%;
+    
+}.grafico2{
+    width: 30%;
+    height: 100%;
+    margin: 1%;
+}.containerhist{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20%;
+}
+.HistPontos{
+    background-color: white;
+    border: solid;
+    border-radius: 20px;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}.HistPontos p{
+   
+   
+}
+
+/* Tela Enciclopedia */
+.telaEnciclopedia{
+    height: 150vh;
+}
+ .barraEnciclopedia{
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+    background-color: #000;
+    align-items: center;
+    height: 7%;
+    
+
+
+}.barraEnciclopedia img{
+    height: 70%;
+    width: 70%;
+}
+
+/*Tela Mais Sobre*/
+.telaMaisSobre{
+    height: 150vh;
+}
+.barraMaisSobre{
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+    background-color: #000;
+    align-items: center;
+    height: 7%;
+    
+
+
+}.barraMaisSobre img{
+    height: 70%;
+    width: 70%;
 }

@@ -3,41 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GrandSan</title>
    
     <link rel="stylesheet" href="../css/style2.css">
     <script src="../js/AcoesEmUsuario.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 </head>
 <body>
-    <div class="barra">
-        <div class="logo">
-            <a id="imagemSan" href="https://www.rockstargames.com/br/games/sanandreas"><img src="../arquivos/imagens/grandSan 1.png"></a>
-
-        </div> 
-        <div class="redirecionadores">
-            <a href="userTela.html">Inicial</a>
-            <a href="telaHistoria.html">História</a>
-            <a href="enciclopedia.html">Enciclopédia</a>
-            <a href="MaisSobre.html">Mais Sobre GTA</a>
-        </div>    
-    </div>
-    <div class="bannerquiz">
-        <div class="color" id="div_corDasPaginas">
-            <div class="textoInBanner">Quiz</div>
+    <div class="TelaQuiz">
+        <div class="barraQuiz">
+            <div class="logo">
+                <a id="imagemSan" href="https://www.rockstargames.com/br/games/sanandreas"><img src="../arquivos/imagens/grandSan 1.png"></a>
+            </div> 
+            <div class="redirecionadores">
+                <a href="userTela.html">Inicial</a>
+                    <a href="telaHistoria.html">História</a>
+                    <a href="enciclopedia.html">Enciclopédia</a>
+                <a href="MaisSobre.html">Mais Sobre GTA</a>
+            </div>    
         </div>
-     
-    </div>
-
-    <div> <button onclick="jogar()">JOGAR</button></div>
-   
+        <div class="bannerquiz">
+            <div class="color" id="div_corDasPaginas">
+                <div class="textoInBanner">Quiz</div>
+                <div class="pontosInBanner">Pontos:</div>
+            </div>
+        </div>
+        <div class="containerquiz">
+            <div class="barraJogarQuiz"> <button onclick="jogar()">JOGAR</button></div>
+        </div>
+        <div class="graficos">
+            <div class="grafico1" style="position: relative;">
+                <canvas  style="position: relative;height: 100%; width: 100%;"id="myChartLinha"></canvas >
+            </div>
+            <div class="grafico1" style="position: relative;">
+                <canvas  style="position: relative;height: 100%; width: 100%;"id="myChartBarra"></canvas >
+            </div>
+        </div>
+        <div class="containerhist">
+            <div class="HistPontos"><div>HISTORICO DE PONTOS</div> <p>4</p> <p>2</p> <p>5</p> <p>7</p> <p>8</p></div>
+        </div>
+   </div>
 </body>
 </html>
 <script>
     corMudar()
+    tabela()
 
     function jogar(){
 
         window.location = "playQuiz.html"
+    }
+    
+
+    function tabela(){
+ const ctxLinha = document.getElementById('myChartLinha');
+  
+  new Chart(ctxLinha, {
+    type: 'line',
+   
+    data: {
+      labels: ['12:00', '13:00', '14:00', '15:00', '16:00', '17:00'],
+      datasets: [{
+        label: 'Temperatura ',
+        data: [30, 29, 28, 25, 22, 23], 
+        borderWidth: 2,
+        borderColor: 'rgb(240, 6, 96)'
+       
+        
+      },
+      {
+        label: 'Umidade ', 
+        data: [80, 82, 80, 85, 80, 83],
+        borderWidth: 2,
+        borderColor: 'rgb(25, 86, 201)'
+        
+
+        
+      }
+  ]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+
+ const ctxBarra = document.getElementById('myChartBarra');
+ 
+  
+  new Chart(ctxBarra, {
+    type: 'bar',
+   
+    data: {
+      labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho'],
+      datasets: [{
+        label: 'Acertos',
+        data: [22, 24, 27, 23, 20, 18], 
+        borderWidth: 1,
+        backgroundColor: 'rgb(240, 6, 96)'
+       
+        
+      },
+      {
+        label: 'Erros', 
+        data: [90, 89, 93, 87, 88, 82],
+        borderWidth: 1,
+        backgroundColor: 'rgb(25, 86, 201)'
+        
+
+        
+      }
+  ]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
     }
 </script>

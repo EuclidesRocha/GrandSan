@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GrandSan</title>
    
     <link rel="stylesheet" href="../css/style2.css">
     <script src="../js/AcoesEmUsuario.js"></script>
@@ -41,14 +41,22 @@ Adolescência na gangue</p>
 <p>Sweet se tornou o líder da Grove Street Families, que introduziu ele, CJ e até mesmo Brian na vida de gangue. Durante este período, Grove Street Families estavam no auge de seu poder quando foram pressionados por Frank Tenpenny, o policial corrupto da C.R.A.S.H.. É provável que o gestor Eddie Pulaski estava servindo também com Tenpenny neste momento. Em 1987, o grupo foi abalado pela morte de Brian. Sweet lamenta que Carl "Deixou Brian morrer" e não pediu ajuda, fazendo com que Carl sai-se para Liberty City, no mesmo ano. Ele já não era considerado um membro da Grove Street, e mais tarde tem que ganhar o seu caminho de volta para a gangue. Big Smoke diz que CJ era mais musculoso nestes dias, e que "a costa leste o deixou emagrecer".
 Vida adulta em Liberty City
 Em Liberty City, ele teve a oportunidade de trabalhar com o filho de Don Salvatore Leone, Joey Leone no negócio de roubos de carros, e mais uma vez atacar um transeunte nas ruas de Liberty City. Em 1992, após cinco anos, Sweet liga para Carl para dizer-lhe que sua mãe morreu em um tiroteio (ligando apenas alguns minutos após o ocorrido). Carl retorna a Los Santos para o funeral, com a consideração parcial de permanecer lá a longo prazo.</p></p></div>
-        
-
+  <div class="imagemForCJ">      
+<div class="primeiroCard"><div class="textoDeVersãoCJ"><img src="../arquivos/imagens/imagemPrimeiraversaoCJ.png" alt=""> <div>Dizem que essa é a suposta primeira artwork do CJ sendo possível sendo a versão beta </div> </div>
+<div class="textoDeVersãoCJ"> <img src="../arquivos/imagens/imagemDeArtWork.png" alt=""><div>Suposta artwork do cj que poderia ser vista nas telas de londing</div></div> 
+</div>
+<div class="segundoCard"><div class="fotosDeGameplay"> <img src="../arquivos/imagens/imagemDeArtWork.png" alt=""><div>Suposta artwork do cj que poderia ser vista nas telas de londing</div></div>
+<div class="fotosDeGameplay"> <img src="../arquivos/imagens/imagemDeArtWork.png" alt=""><div>Suposta artwork do cj que poderia ser vista nas telas de londing</div></div>
+</div>
+</div>
     </div>
     
     <div class="missoescontainer" id="div_missao" style="display: none;">
     
     <div class="barraMissoes"> <button onclick="trocarContainer() " class="butaoTrocar">Carl Johnson</button>missÕES</div>
-    <div class="acoesEmMissoesContainer"> <button onclick="listarMissoes()">listar</button></div>  
+     
+    <div class="acoesEmMissoesContainer"><span>As misssos ajudam a contar sobre a historia do jogo,  ao todo são 100 missões. Sendo elas, principais ou secundárias (Missões que são ‘’subprincipais’’ e necessárias para desbloquear outra.) se passando em diferentes cidades.</span> <button onclick="faltantes()">faltantes</button> <button onclick="todas()">Todas</button><button onclick="feitas()">Feitas</div>  
+  
     <div class="missoes">
     <p id="div_missoes"></p>
     <div id="resposta"></div>
@@ -366,7 +374,7 @@ var missoes = [
 function aparecermissoes(){
 
 for(var i = 0; i<missoes.length; i++){
-    div_missoes.innerHTML += `<div id="div_${i+1}" class ="missoesCard"style=" background-color: white "; > <div class = "barraCardMissoes"> <button id="id_missao${i+1}" onclick="feita${i+1}()" class ="butaoMissao"></button><span class="span_missaoname">${missoes[i].nome} </span> <span class="span_localMissao">${missoes[i].localMissao}</span></div> <div>  ${missoes[i].descricao} </div> </div>` 
+    div_missoes.innerHTML += `<div id="div_cardMissao${i+1}" class ="missoesCard"style=" background-color: white "; > <div class = "barraCardMissoes"> <button id="id_missao${i+1}" onclick="feita${i+1}()" class ="butaoMissao"></button><span class="span_missaoname">${missoes[i].nome} </span> <span class="span_localMissao">${missoes[i].localMissao}</span></div> <div class= "div_descricao">  ${missoes[i].descricao} </div> </div>` 
     
 
 }
@@ -738,5 +746,5 @@ function trocarContainer(){
         
     }
 }
-    
+
 </script>

@@ -97,6 +97,7 @@ function mudarTelaUser(){
             sessionStorage.GANGUE_USUARIO = undefined
             sessionStorage.ID_USUARIO = undefined
             sessionStorage.NOME_USUARIO = undefined
+            sessionStorage.clear();
 
             window.location = "http://localhost:3333/"
             
