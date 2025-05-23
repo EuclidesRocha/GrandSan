@@ -6,24 +6,35 @@
     <title>GrandSan</title>
 
     <script src="../js/AcoesEmUsuario.js"></script>
+    <link rel="stylesheet" href="../css/style2.css">
+    <link rel="stylesheet" href="../ComCadastro/telaQuiz.html">
+    
     
 </head>
-<body style="margin: 0; overflow-y: hidden;">
+<body id = "body_home"style="margin: 0; overflow-y: hidden; height: 100vh; background-repeat: no-repeat; background-size: cover;  ">
 
     
-    <div id="div_home" style="height: 100vh; ;  background-repeat: no-repeat; background-size: cover; ">
-        <div style="background-color: rgba(0,0, 0,0.6); height: 100%; width: 100%; margin: 0;">
-            <p id="p_cidade" style=" display: none;">   
-                <p id="p_ola" style=" display: none;">  
-                </p>   
-            </p>
-        </div>
+    
+        <div  style="background-color: rgba(0,0, 0,0.6); height: 100vh; width: 100%; margin: 0; display: flex; align-items: center; justify-content: center; flex-direction: column;">
+            
+            <div class="barraQuizInGame">Quiz</div>
+                
+                <div class="containerQUIZ">
+                    <div id="div_perguntas" class="perguntas"></div>
+                    <div id="div_resultado" class="resultado" style="display: none;"></div>
+                    <div id="div_respostas" class="respostas"></div>
+                </div>
+            
+            
+        
     </div>
     
 </body>
 </html>
 <script>
-    var perguntas = [{"Perguntas": "Qual a empresa desenvolvedora do Grand Theft Auto: San Andreas?",
+
+
+    var arrayPerguntas = [{"Perguntas": "Qual a empresa desenvolvedora do Grand Theft Auto: San Andreas?",
         "Resposta": "Rockstar Games",
         "Errada1": "2k Games",
         "Errada2": "Ubisoft",
@@ -83,13 +94,13 @@
         "Errada2": "Johnny Klebitz",
         "Errada3": "Tommy Vercett",
     },
-    {"Perguntas": "'Qual protagonista de uma Franquia principal antecessor aparece em Grand Theft Auto: San Andreas?",
+    {"Perguntas": "Qual protagonista de uma Franquia principal antecessor aparece em Grand Theft Auto: San Andreas?",
         "Resposta": "Claude",
         "Errada1": "Michael de Santa",
         "Errada2": "Niko Belic",
         "Errada3": "Tommy Vercetti",
     },
-    {"Perguntas": "O Jogo GTA: San Andreas tem um grande mapa em relação aos seus antecessores e com isso tornar o jogo mais divertido de sair por aí e andar pelas cidades. Porém, a Rockstar foi ambiciosa, colocando uma missão onde ele volta para a cidade na qual Cj estava antes de voltar para Los Santos. Qual é esse cidade?",
+    {"Perguntas": "O Jogo GTA: San Andreas tem um grande mapa em relação aos seus antecessores e com isso tornaou o jogo mais divertido de sair por aí e andar pelas cidades. Porém, a Rockstar foi ambiciosa, colocando uma missão onde ele volta para a cidade na qual Cj estava antes de voltar para Los Santos. Qual é esse cidade?",
       "Resposta": "Liberty City",
         "Errada1": "Las Venturas",
         "Errada2": "San Fierro",
@@ -110,29 +121,84 @@
 
 
 
+var numeros = []
+var paginas = 0
+var pontos = 0
+var acertos = 0
+mudarTELA()
+gerarPergunta()
 
+function gerarPergunta(){
 
+if(paginas == 14){
+    	div_resultado.style.display = `flex`
+        div_respostas.style.display = `none`
+        div_perguntas.style.display = `none`
 
+        div_resultado.innerHTML = `<p>Você Acertou: ${acertos}</p> <div class = "butaoVoltar"> <button onclick="inicio()">Inicio</button> </div>`
+            paginas = 0
+        }else{
+            div_perguntas.innerHTML = `<div class = "classpergunta">${arrayPerguntas[paginas].Perguntas}<div>`
+            for(var i = 0; i < 5; i++ ){
+             var numeroAleatorio = parseInt(Math.random()*4+1)
+        if(numeros.includes(1) && numeros.includes(2)&& numeros.includes(3) && numeros.includes(4)){
+            break;
+        }
+        else if(numeros.includes(numeroAleatorio)){
+           i-= 1
+        }else{
+            if(numeroAleatorio == 1 ){
+                numeros.push(numeroAleatorio)
+               div_respostas.innerHTML += `<button class = "cardPergunta" onclick ="proxima()">${arrayPerguntas[paginas].Errada1}</button>`
+            }else if(numeroAleatorio == 2){
+                 numeros.push(numeroAleatorio)
+                div_respostas.innerHTML += `<button class = "cardPergunta" onclick ="ponto()">${arrayPerguntas[paginas].Resposta}</button>`
 
+            }else if(numeroAleatorio == 3){
+                 numeros.push(numeroAleatorio)
+                div_respostas.innerHTML += `<button class = "cardPergunta" onclick ="proxima()">${arrayPerguntas[paginas].Errada2}</button>`
+            }else{
+                 numeros.push(numeroAleatorio)
+                div_respostas.innerHTML += `<button class = "cardPergunta" onclick ="proxima()">${arrayPerguntas[paginas].Errada3}</button>`
+            }
+            }   
+       
+            }
+        }
+    numeros.splice(0,4)
+    paginas += 1
+      
+}
+function ponto(){
+    pontos += 50
+    acertos += 1
+    proxima()
+}
+function proxima(){
+    div_respostas.innerHTML = ``
+    mudarTELA()
+    gerarPergunta()
+    
+}function inicio(){
+    window.location = "../ComCadastro/telaQuiz.html"
+    
+}
+     
 
+function mudarTELA(){
+    var  num = parseInt(Math.random()*5+1)
 
-
-
-
-
-
-
-
-mudarTelaUser();
-
-
-
-
-
-
-
-
-
-
+    if( num == 1){
+        body_home.style.backgroundImage = `url(../arquivos/imagens/iamgemQUiz.png)`
+    }else if(num == 2){
+        body_home.style.backgroundImage = `url(../arquivos/imagens/iamgemquiz1.png)`
+    }else if(num == 3){
+        body_home.style.backgroundImage = `url(../arquivos/imagens/iamgemquiz2.png)`
+    }else if(num == 4){
+        body_home.style.backgroundImage = `url(../arquivos/imagens/iamgemquiz3.png)`
+    }else{
+        body_home.style.backgroundImage = `url(../arquivos/imagens/iamgemquiz7.png)`
+    }
+}
 
 </script>
