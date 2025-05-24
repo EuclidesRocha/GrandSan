@@ -304,7 +304,7 @@ margin: 0;
 .textoDeVersãoCJ img{
     height: 90%;
 }.textoDeVersãoCJ div{
-    font-size: clamp(0.1rem, 1vw, 0.8rem);
+    font-size: clamp(0.1rem, 1vw, 0.7rem);
     font-weight: 600;
 }.fotosDeGameplay{
     height: 40%;
@@ -461,9 +461,10 @@ width: 40%;
     color: black;
     border-radius: 20px;
     background-color: rgb(202, 201, 201);
-    height: 90%;
+    height: 100%;
     font-size:  clamp(1rem, 5vw, 3rem);
-
+    display: flex;
+    align-items: center;
 
 }.graficos{
     height: 20%;

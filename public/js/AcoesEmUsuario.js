@@ -90,7 +90,7 @@ function mudarTelaUser(){
 
 
 
-    {
+    
         function deslogar(){
             sessionStorage.EMAIL_USUARIO = undefined
             sessionStorage.CIDADE_USUARIO = undefined
@@ -102,6 +102,10 @@ function mudarTelaUser(){
             window.location = "http://localhost:3333/"
             
         }
+    function verPontos(){
+        
     }
+
+
    
 // COLOCAR FOTO DO MEMBRO DA GANGUE

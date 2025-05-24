@@ -4,12 +4,16 @@ var router = express.Router();
 
 var resultadoController = require("../controllers/resultadoController");
 
-router.post("/cadastrar", function (req, res) {
-    resultadoController.cadastrar(req, res);
+router.post("/guardarResultado", function (req, res) {
+    resultadoController.guardarResultado(req, res);
 });
 
-router.get("/listar", function (req, res) {
-    resultadoController.listar(req, res);
+router.get("/listarResultado", function (req, res) {
+    resultadoController.listarResultado(req, res);
+});
+router.post("/pegarPontos", function (req, res){
+    resultadoController.pegarPontos(req, res);
+
 });
 
 

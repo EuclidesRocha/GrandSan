@@ -19,15 +19,17 @@ select * from usuario;
 
 
 CREATE TABLE  resultado(
-idResultado int not null,
+idResultado int not null auto_increment,
 fkUsuario INT NOT NULL,
 pontos int not NULL,
 acertos  int not NULL,
 erros int not NULL,
-  PRIMARY KEY (fkUsuario, idResultado),
+  PRIMARY KEY (idResultado, fkUsuario),
   CONSTRAINT fkUserResul FOREIGN KEY (fkUsuario)
     REFERENCES usuario (idUsuario)
 );
+
+drop table resultado;
 
 
 CREATE TABLE missoes(
@@ -39,6 +41,7 @@ CREATE TABLE missoes(
     FOREIGN KEY (fkUsuario)
     REFERENCES usuario (idUsuario)
    ); 
+   
    
    select * from missoes;
    

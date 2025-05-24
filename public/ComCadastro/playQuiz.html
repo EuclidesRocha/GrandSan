@@ -32,7 +32,8 @@
 </body>
 </html>
 <script>
-
+    
+validarSessao() 
 
     var arrayPerguntas = [{"Perguntas": "Qual a empresa desenvolvedora do Grand Theft Auto: San Andreas?",
         "Resposta": "Rockstar Games",
@@ -180,6 +181,46 @@ function proxima(){
     gerarPergunta()
     
 }function inicio(){
+    var erros  =  Number(arrayPerguntas.length - acertos)
+
+
+    fetch("/resultado/guardarResultado", {
+             method: "POST",
+             headers: {
+                 "Content-Type": "application/json"
+             },
+             body: JSON.stringify({
+                UsuarioServer: sessionStorage.ID_USUARIO,
+                pontosServer: pontos,
+                 acertosServer: acertos,
+                 errosServer: erros
+             })
+         }).then(function (resposta) {
+             console.log("ESTOU NO THEN DO ()!")
+
+             if (resposta.ok) {
+                 console.log(resposta);
+                
+
+                 resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)        });
+                  
+
+
+            }else {
+
+                 console.log("Houve um erro ao tentar realizar o login!");
+                  resposta.text().then(texto => {
+                     console.error(texto);
+                   
+                 });
+               
+             }
+
+         }).catch(function (erro) {
+             console.log(erro);
+         })
+    
+    
     window.location = "../ComCadastro/telaQuiz.html"
     
 }
