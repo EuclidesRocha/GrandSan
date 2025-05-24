@@ -103,9 +103,48 @@ function mudarTelaUser(){
             
         }
     function verPontos(){
-        
+        // pegtar e color em uma session storage
+
+        fetch("/resultado/pegarPontos", {
+             method: "POST",
+             headers: {
+                 "Content-Type": "application/json"
+             },
+             body: JSON.stringify({
+                UsuarioServer: sessionStorage.ID_USUARIO,
+
+                
+             })
+         }).then(function (resposta) {
+             console.log("ESTOU NO THEN DO ()!")
+
+             if (resposta.ok) {
+                 console.log(resposta);
+                
+
+                 resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json) 
+                    sessionStorage.PONTOS_USUARIO = json[0].Pontos 
+                        });
+                  
+                    
+
+            }else {
+
+                 console.log("Houve um erro ao tentar realizar o login!");
+                  resposta.text().then(texto => {
+                     console.error(texto);
+                   
+                 });
+               
+             }
+
+         }).catch(function (erro) {
+             console.log(erro);
+         })
+    
+         span_pontos.innerHTML = sessionStorage.PONTOS_USUARIO;
+         
     }
 
 
    
-// COLOCAR FOTO DO MEMBRO DA GANGUE

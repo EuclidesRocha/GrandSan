@@ -7,6 +7,7 @@
    
     <link rel="stylesheet" href="../css/style2.css">
     <script src="../js/AcoesEmUsuario.js"></script>
+     <script src="../js/sessao.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 </head>
@@ -26,7 +27,7 @@
         <div class="bannerquiz">
             <div class="color" id="div_corDasPaginas">
                 <div class="textoInBanner">Quiz</div>
-                <div class="pontosInBanner">Pontos:</div>
+                <div class="pontosInBanner">Pontos: <span id="span_pontos">0</span></div>
             </div>
         </div>
         <div class="containerquiz">
@@ -48,6 +49,7 @@
 </html>
 <script>
   validarSessao() 
+  verPontos()
     corMudar()
     tabela()
 

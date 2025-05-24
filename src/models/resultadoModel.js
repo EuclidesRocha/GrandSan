@@ -14,10 +14,18 @@ function guardarResultado (idUsuario, pontos, acertos, erros) {
     return database.executar(instrucao);
 
 }
+function pegarPontos (idUsuario){
+
+    var instrucao = `Select sum(pontos) as Pontos from resultado group by fkUsuario HAVING fkUsuario = ${idUsuario}` 
+    console.log("Executando a instrução SQL: \n" + instrucao);
+    return database.executar(instrucao);
+
+}
 
 
 module.exports = {
     
-    guardarResultado
+    guardarResultado,
+    pegarPontos
    
 };
