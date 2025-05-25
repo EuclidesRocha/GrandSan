@@ -9,6 +9,7 @@
     <script src="../js/AcoesEmUsuario.js"></script>
     <script src="../js/MissoesAcoes.js"></script>
      <script src="../js/sessao.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <div class="telaHistoria">
@@ -19,20 +20,23 @@
         </div> 
         <div class="redirecionadores">
             <a href="userTela.html">Inicial</a>
-            <a href="telaQuiz.html">Quiz</a>
+            <a href="telaQuiz.html">Quiz</a> 
             <a href="enciclopedia.html">Enciclopédia</a>
             <a href="MaisSobre.html">Mais Sobre GTA</a>
         </div>    
     </div>
     <div class="bannerhistoria">
         <div class="color" id="div_corDasPaginas">
-            <div class="textoInBanner">História</div>
+            <div class="textoInBanner">História</div> 
+            <div class="grafico1" style="position: relative;">
+                <canvas  style="position: relative;height: 100%; width: 100%;"id="myChartDonut"></canvas >
+            </div>
         </div>
      
     </div>
 
     <div class="containerCJ" id="div_cj">
-        <div class="barraCJ"><button onclick="trocarContainer()" class="butaoTrocar">Missoes</button>Carl Johnson</div>
+        <div class="barraCJ" id="div_cjBarra"><button onclick="trocarContainer()" class="butaoTrocar">Missoes</button>Carl Johnson</div>
        
         <div class="infoCJ"><img src="../arquivos/imagens/cjSorrindo.png" > <p id="p_textoCJ">
 
@@ -54,7 +58,7 @@ Em Liberty City, ele teve a oportunidade de trabalhar com o filho de Don Salva
     
     <div class="missoescontainer" id="div_missao" style="display: none;">
     
-    <div class="barraMissoes"> <button onclick="trocarContainer() " class="butaoTrocar">Carl Johnson</button>missÕES</div>
+    <div class="barraMissoes" id="div_missaoBarra"> <button onclick="trocarContainer() " class="butaoTrocar">Carl Johnson</button>missÕES</div>
      
     <div class="acoesEmMissoesContainer"><span>As misssos ajudam a contar sobre a historia do jogo,  ao todo são 100 missões. Sendo elas, principais ou secundárias (Missões que são ‘’subprincipais’’ e necessárias para desbloquear outra.) se passando em diferentes cidades.</span> <button onclick="faltantes()">faltantes</button> <button onclick="todas()">Todas</button><button onclick="feitas()">Feitas</div>  
   
@@ -71,6 +75,7 @@ Em Liberty City, ele teve a oportunidade de trabalhar com o filho de Don Salva
 <script>
     corMudar()
     validarSessao() 
+    colorOfPage()
     
 
 var missoes = [
@@ -372,11 +377,11 @@ var missoes = [
 ]
 
 
- 
+
 function aparecermissoes(){
 
 for(var i = 0; i<missoes.length; i++){
-    div_missoes.innerHTML += `<div id="div_cardMissao${i+1}" class ="missoesCard"style=" background-color: white "; > <div class = "barraCardMissoes"> <button id="id_missao${i+1}" onclick="feita${i+1}()" class ="butaoMissao"></button><span class="span_missaoname">${missoes[i].nome} </span> <span class="span_localMissao">${missoes[i].localMissao}</span></div> <div class= "div_descricao">  ${missoes[i].descricao} </div> </div>` 
+    div_missoes.innerHTML += `<div id="div_cardMissao${i+1}" class ="missoesCard"style=" background-color: white "; > <div class = "barraCardMissoes" id = "div_ColorBarra"> <button id="id_missao${i+1}" onclick="feita${i+1}()" class ="butaoMissao"></button><span class="span_missaoname">${missoes[i].nome} </span> <span class="span_localMissao">${missoes[i].localMissao}</span></div> <div class= "div_descricao">  ${missoes[i].descricao} </div> </div>` 
     
 
 }
@@ -731,7 +736,7 @@ if(json[0].numero == 100){
         }
         
  }
-
+tabela()
 aparecermissoes()
 listarMissoes()
 color()
@@ -747,6 +752,68 @@ function trocarContainer(){
         escolha = 0;
         
     }
+}
+
+
+function colorOfPage(){
+
+    var gangue = Number(sessionStorage.GANGUE_USUARIO);
+     if(gangue ==  1){
+         div_missao.style.backgroundColor = "rgba(193, 211, 195, 1)"
+        div_missaoBarra.style.backgroundColor = "rgba(48, 100, 56, 0.747)"
+        div_cj.style.backgroundColor = "rgba(193, 211, 195, 1)"
+        div_cjBarra.style.backgroundColor = "rgba(48, 100, 56, 0.747)"
+        
+    }else if(gangue == 2){
+        
+        div_missao.style.backgroundColor = "rgba(129, 77, 118, 1)"
+        div_missaoBarra.style.backgroundColor = "rgba(59, 9, 38, 0.74)"
+        div_cj.style.backgroundColor = "rgba(129, 77, 118, 1)"
+        div_cjBarra.style.backgroundColor = "rgba(59, 9, 38 , 0.74)"
+        
+        
+    }else if(gangue == 3){
+        div_missao.style.backgroundColor = "rgba(218, 217, 150, 1)"
+        div_missaoBarra.style.backgroundColor = "rgba(175, 184, 131, 1)"
+        div_cj.style.backgroundColor = "rgba(218, 217, 150, 1)"
+        div_cjBarra.style.backgroundColor = "rgba(175, 184, 131, 1)"
+        
+
+    }else if(gangue == 4){
+         div_missao.style.backgroundColor = "rgba(142, 183, 187, 1)"
+        div_missaoBarra.style.backgroundColor = "rgba(77, 122, 129, 0.747)"
+        div_cj.style.backgroundColor = "rgba(142, 183, 187, 1)"
+        div_cjBarra.style.backgroundColor = "rgba(77, 122, 129, 0.747)"
+        
+    }
+}
+
+
+
+function tabela(){
+    const ctxBarra = document.getElementById('myChartDonut');
+ 
+  
+  new Chart(ctxBarra, {
+    type: 'doughnut',
+   
+    data: {
+      labels: ['Feitas', 'Faltantes'],
+      datasets: [{
+       
+        data: [60,40], 
+        borderWidth: 1,
+        backgroundColor: ['rgb(240, 6, 96)',  'rgb(54, 162, 235)',]
+       
+        
+      }
+     
+  ]
+    },
+   
+  });
+    
+
 }
 
 </script>

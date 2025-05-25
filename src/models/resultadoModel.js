@@ -8,7 +8,7 @@ function guardarResultado (idUsuario, pontos, acertos, erros) {
     
         
     var instrucao = `
-        INSERT INTO resultado (fkUsuario, pontos, acertos, erros) VALUES ( '${idUsuario}', ${pontos}, ${acertos}, ${erros} );
+        INSERT INTO resultado (fkUsuario, pontos, acertos, erros) VALUES ( ${idUsuario}, ${pontos}, ${acertos}, ${erros} );
     `;
     console.log("Executando a instrução SQL: \n" + instrucao);
     return database.executar(instrucao);
@@ -21,11 +21,19 @@ function pegarPontos (idUsuario){
     return database.executar(instrucao);
 
 }
+function listarUlitmos5Pontos(idUsuario){
+
+var instrucao = `Select  idResultado, pontos from resultado where fkUsuario = ${idUsuario} order by idResultado desc ;` 
+    console.log("Executando a instrução SQL: \n" + instrucao);
+    return database.executar(instrucao);
+
+}
 
 
 module.exports = {
     
     guardarResultado,
-    pegarPontos
+    pegarPontos,
+    listarUlitmos5Pontos
    
 };

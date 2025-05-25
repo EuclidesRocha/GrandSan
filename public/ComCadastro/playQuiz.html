@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/style2.css">
     <link rel="stylesheet" href="../ComCadastro/telaQuiz.html">
      <script src="../js/sessao.js"></script>
+     <script src="../js/AcoesEmUsuario.js"></script>
     
     
 </head>
@@ -18,7 +19,7 @@
     
         <div  style="background-color: rgba(0,0, 0,0.6); height: 100vh; width: 100%; margin: 0; display: flex; align-items: center; justify-content: center; flex-direction: column;">
             
-            <div class="barraQuizInGame">Quiz</div>
+            <div id="span_pontos"></div><div class="barraQuizInGame">Quiz</div>
                 
                 <div class="containerQUIZ">
                     <div id="div_perguntas" class="perguntas"></div>
@@ -203,7 +204,7 @@ function proxima(){
                  console.log(resposta);
                 
 
-                 resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)        });
+                 resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json) });
                   
 
 
@@ -221,9 +222,10 @@ function proxima(){
              console.log(erro);
          })
     
-    
+   
     window.location = "../ComCadastro/telaQuiz.html"
-    
+
+     verPontos()
 }
      
 

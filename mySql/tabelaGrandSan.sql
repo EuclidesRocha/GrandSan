@@ -19,15 +19,21 @@ select * from usuario;
 
 
 CREATE TABLE  resultado(
-idResultado int not null auto_increment,
+idResultado int auto_increment,
 fkUsuario INT NOT NULL,
 pontos int not NULL,
 acertos  int not NULL,
 erros int not NULL,
+dtResultado datetime default current_timestamp,
   PRIMARY KEY (idResultado, fkUsuario),
   CONSTRAINT fkUserResul FOREIGN KEY (fkUsuario)
     REFERENCES usuario (idUsuario)
 );
+
+select * from resultado;
+
+Select sum(pontos) from resultado group by fkUsuario HAVING fkUsuario = 1;
+Select  tentativa, pontos from resultado where fkUsuario = 1 order by tentativa desc ;
 
 drop table resultado;
 
@@ -42,6 +48,9 @@ CREATE TABLE missoes(
     REFERENCES usuario (idUsuario)
    ); 
    
-   
    select * from missoes;
+
+         UPDATE missoes SET concluida = 1 where numero = 2 and fkUsuario = 1 ;
+       
+  
    

@@ -34,9 +34,26 @@ function pegarPontos(req, res) {
     })
 }
 
+function listarUlitmos5Pontos(req,res){
+
+    var idUsuario = req.body.UsuarioServer;
+    if (idUsuario == undefined) {
+        res.status(400).send("Seu ID está undefined!");
+    }
+
+    resultadoModel.listarUlitmos5Pontos(idUsuario).then(function(resposta){
+        res.json(resposta);
+        res.status(200).send("INSERTS criado com sucesso");
+    }).catch(function(erro){
+        res.status(500).json(erro.sqlMessage);
+    })
+
+}
+
 module.exports = {
     guardarResultado,
-    pegarPontos
+    pegarPontos,
+    listarUlitmos5Pontos
     
 }
 

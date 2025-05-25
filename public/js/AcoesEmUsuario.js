@@ -124,6 +124,8 @@ function mudarTelaUser(){
 
                  resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json) 
                     sessionStorage.PONTOS_USUARIO = json[0].Pontos 
+
+                      span_pontos.innerHTML = sessionStorage.PONTOS_USUARIO;
                         });
                   
                     
@@ -142,7 +144,7 @@ function mudarTelaUser(){
              console.log(erro);
          })
     
-         span_pontos.innerHTML = sessionStorage.PONTOS_USUARIO;
+       
          
     }
 

@@ -12,7 +12,7 @@
 
 </head>
 <body>
-    <div class="TelaQuiz">
+    <div class="TelaQuiz" id="tela_quiz">
         <div class="barraQuiz">
             <div class="logo">
                 <a id="imagemSan" href="https://www.rockstargames.com/br/games/sanandreas"><img src="../arquivos/imagens/grandSan 1.png"></a>
@@ -31,7 +31,7 @@
             </div>
         </div>
         <div class="containerquiz">
-            <div class="barraJogarQuiz"> <button onclick="jogar()">JOGAR</button></div>
+            <div class="barraJogarQuiz" id="div_barraJogar"> <button onclick="jogar()">JOGAR</button></div>
         </div>
         <div class="graficos">
             <div class="grafico1" style="position: relative;">
@@ -42,16 +42,24 @@
             </div>
         </div>
         <div class="containerhist">
-            <div class="HistPontos"><div>HISTORICO DE PONTOS</div> <p>4</p> <p>2</p> <p>5</p> <p>7</p> <p>8</p></div>
+            <div class="HistPontos"><div class="fraseHist">HISTORICO DE PONTOS</div><div id="div_pontos"></div></div>
         </div>
    </div>
 </body>
 </html>
 <script>
   validarSessao() 
+
+  
   verPontos()
     corMudar()
     tabela()
+  ultimosPontos()
+  colorOfPage()
+
+
+
+
 
     function jogar(){
 
@@ -59,31 +67,100 @@
     }
     
 
+function ultimosPontos(){
+
+  var idUsuario = sessionStorage.ID_USUARIO;
+ fetch("/resultado/listarUlitmos5Pontos", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+              UsuarioServer : idUsuario
+              
+            })
+        }).then(function (resposta) {
+            console.log("ESTOU NO THEN DO entrar()!")
+
+            if (resposta.ok) {
+                console.log(resposta);
+                
+
+                resposta.json().then(json => {
+
+                  for(var  i = 0; i < 5; i++){
+                    var periodo =``;
+                    
+                    if( i == 0 ){
+                      periodo = `Partida Mais Recente`
+                    }else if (i == 1 || i == 2 || i == 4 || i == 3 ){
+                      periodo = `Partida ${i+1}º Recente`
+                    }else{
+                      periodo = `Partida Menos Recente`
+                    }
+                    div_pontos.innerHTML += `<p class = "p_PontosHistorico"><span>${periodo}</span>  <span>Pontos:${json[i].pontos}</span></p>`
+                  }
+
+
+                });
+
+            } else {
+
+                console.log("Houve um erro ao tentar realizar o login!");
+                 resposta.text().then(texto => {
+                    console.error(texto);
+                   
+                });
+               
+            }
+
+        }).catch(function (erro) {
+            console.log(erro);
+        })
+
+
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     function tabela(){
  const ctxLinha = document.getElementById('myChartLinha');
   
   new Chart(ctxLinha, {
-    type: 'line',
+    type: 'bar',
    
     data: {
       labels: ['12:00', '13:00', '14:00', '15:00', '16:00', '17:00'],
       datasets: [{
-        label: 'Temperatura ',
+        label: 'bar',
         data: [30, 29, 28, 25, 22, 23], 
         borderWidth: 2,
         borderColor: 'rgb(240, 6, 96)'
        
         
       },
-      {
-        label: 'Umidade ', 
-        data: [80, 82, 80, 85, 80, 83],
-        borderWidth: 2,
-        borderColor: 'rgb(25, 86, 201)'
-        
-
-        
-      }
+      
   ]
     },
     options: {
@@ -131,4 +208,35 @@
     }
   });
     }
+
+
+    function colorOfPage(){
+
+    var gangue = Number(sessionStorage.GANGUE_USUARIO);
+     if(gangue ==  1){
+         tela_quiz.style.backgroundColor = "rgba(193, 211, 195, 1)"
+        div_barraJogar.style.backgroundColor = "rgba(48, 100, 56, 0.747)"
+      
+        
+    }else if(gangue == 2){
+        
+        tela_quiz.style.backgroundColor = "rgba(129, 77, 118, 1)"
+        div_barraJogar.style.backgroundColor = "rgba(59, 9, 38, 0.74)"
+      
+        
+        
+    }else if(gangue == 3){
+       tela_quiz.style.backgroundColor = "rgba(218, 217, 150, 1)"
+        div_barraJogar.style.backgroundColor = "rgba(175, 184, 131, 1)"
+      
+        
+
+    }else if(gangue == 4){
+         tela_quiz.style.backgroundColor = "rgba(142, 183, 187, 1)"
+        div_barraJogar.style.backgroundColor = "rgba(77, 122, 129, 0.747)"
+        
+        
+    }
+}
+
 </script>
