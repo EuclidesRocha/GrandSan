@@ -47,10 +47,24 @@
 </html>
 
 <script>
-validarSessao() 
-verPontos()
-  mudarTelaUser()
-  mudarCor()
+    validarSessao()
+    validaTela()
+    
+
+    function validaTela(){
+        var numero = validarSessao()
+        console.log(numero)
+        if(numero == true){
+        verPontos()
+        mudarTelaUser()
+        mudarCor()
+   
+        }
+    }
+
+    
+
+    
   
   
 

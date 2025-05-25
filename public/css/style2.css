@@ -233,7 +233,7 @@ margin: 0;
     height: 70%;
     width: 70%;
 }.butaoTrocar{
- background-color: white;
+ background-color: rgb(235, 235, 235);
  font-family: 'pricedown';  
  justify-self:flex-start; 
  border-radius: 20px;
@@ -261,7 +261,7 @@ margin: 0;
 
     margin: 1%;
     height: 30%;
-    background-color: white;
+    background-color: rgb(235, 235, 235);
     border: solid black;
     border-radius: 20px;
 }.infoCJ img{
@@ -291,7 +291,7 @@ margin: 0;
     
 }.textoDeVersãoCJ {
     height: 40%;
-    background-color: white ;
+    background-color: rgb(235, 235, 235);
     border: solid black;
     border-radius: 20px;
     width: 80%;
@@ -308,7 +308,7 @@ margin: 0;
     font-weight: 600;
 }.fotosDeGameplay{
     height: 40%;
-    background-color: white ;
+    background-color: rgb(235, 235, 235);
     border: solid black;
     border-radius: 20px;
     width: 80%;
@@ -350,7 +350,7 @@ width: 40%;
 }.acoesEmMissoesContainer{
     display: flex;
     height: 8%;
-    background-color: white;
+    background-color: rgb(235, 235, 235);
     border: solid black;
     border-radius: 20px;
     margin-bottom: 0.5%;
@@ -488,7 +488,7 @@ width: 40%;
     height: 20%;
 }
 .HistPontos{
-    background-color: white;
+    background-color: rgb(235, 235, 235);
     border: solid;
     border-radius: 20px;
     width: 20%;
@@ -569,16 +569,25 @@ width: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgb(235, 235, 235);
+    border: solid ;
+    border-radius: 20px;
 }.containerText2{
     width: 80%;
     height: 20%;
     display: flex;
     flex-direction: column;
+    background-color: rgb(235, 235, 235);
+    border: solid ;
+    border-radius: 20px;
 }.containerText3{
     width: 80%;
     height: 27%;
     display: flex;
     flex-direction: column;
+    background-color: rgb(235, 235, 235);
+    border: solid ;
+    border-radius: 20px;
 }
 .FranquiaText{
     display: flex;
@@ -685,7 +694,7 @@ width: 40%;
 }.perguntas{
     display: flex;
     height: 40%;
-    background-color: white;
+    background-color: rgb(235, 235, 235);
     width: 90%;
     border: solid black;
     border-radius: 20px;

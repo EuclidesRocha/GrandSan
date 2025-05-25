@@ -1,406 +1,405 @@
 {
  
- "nome": "",
- "descricao": "",
- "localMissao": "",
+ "nome": "Você Vai Para San Fierro? ",
+ "descricao": "The Truth liga para Carl para avisar que a sua erva está pronta. Ao chegar na casa dele, um helicóptero passa e assusta o hippie, o deixando em pânico. Ele entrega um lança-chamas para CJ e ambos queimam a plantação de maconha. Após isso, algumas situações meio psicodélicas acontecem na missão, o que indica que o protagonista não estava puro.",
+ "localMissao": "Flint County",
  
 },
 {
  
- "nome": "",
- "descricao": "",
- "localMissao": "",
+ "nome": "Use Flores no Seu Cabelo ",
+ "descricao": "Esta é uma missão feita para te situar em San Fierro. Nela, você irá dirigir pela cidade para buscar Dwayne, Jethro e Zero, três amigos de The Truth.",
+ "localMissao": "San Fierro",
  
 },
 {
  
- "nome": "",
- "descricao": "",
- "localMissao": "",
+ "nome": "Disque-Denúncia",
+ "descricao": "Tenpenny novamente liga para Carl, dessa vez, para que ele arme uma emboscada para um promotor que tem incomodado Frank e Pulaski. CJ aceita a missão e decide incriminar o promotor plantando drogas em seu carro e realizando uma denúncia anônima.",
+ "localMissao": "San Fierro",
  
 },
 {
  
- "nome": "",
- "descricao": "",
- "localMissao": "",
+ "nome": "Desconstrução",
+ "descricao": "Kendl vai até CJ reclamar que estava sendo assediada por trabalhadores que estavam em uma construção por perto. Revoltado, ele decide destruir parte do que já havia sido construído nas obras para dar uma lição nos assediadores.",
+ "localMissao": "San Fierro",
  
 },
 {
  
- "nome": "",
- "descricao": "",
- "localMissao": "",
+ "nome": "Ataque Aéreo",
+ "descricao": "Zero, amigo de CJ, está enfrentando um problema com seu nerd rival, Berkley, que enviou uma esquadrilha de aviões com bombas para destruir as antenas levantadas por Zero. Sua missão é defender a invenção de seu amigo contra os ataques de Berkley durante três minutos",
+ "localMissao": "San Fierro",
  
 },
 {
  
- "nome": "",
- "descricao": "",
- "localMissao": "",
+ "nome": "Linhas de Suprimentos…",
+ "descricao": "Zero foi humilhado por Berkley, que o pendurou em um armário pela cueca. Ao descobrir a situação, CJ resolve se vingar do amigo, destruindo os cinco entregadores de Berkley. Você deve matar todos eles com um planador, só tome cuidado para não deixar seu combustível acabar.",
+ "localMissao": "San Fierro",
  
 },
 {
  
- "nome": "",
- "descricao": "",
- "localMissao": "",
+ "nome": "Exército Novo",
+ "descricao": "Zero e Berkley decidem colocar fim a essa guerra com uma batalha final, mas dessa vez apenas com brinquedos. Para completar a missão, você deve pilotar o helicóptero de brinquedo de Zero e liberar o caminho para ele chegar de carro na base de Berkley. Lembre-se, o perdedor deve deixar a cidade com todas suas coisas.",
+ "localMissao": "San Fierro",
  
 },
 {
  
- "nome": "",
- "descricao": "",
- "localMissao": "",
+ "nome": "Oportunidade de Foto",
+ "descricao": "Cesar descobre que os Ballas terão uma reunião de negócios e chama CJ para ajudar a investigar o que está havendo. Ambos se encontram em Flint County e seguem para o local da reunião, em Angel Pine. Chegando lá, Carl fica responsável por tirar fotos dos membros presentes na reunião.",
+ "localMissao": "San Fierro",
  
 },
 {
  
- "nome": "",
- "descricao": "",
- "localMissao": "",
+ "nome": "Jizzy",
+ "descricao": "Jizzy é o maior cafetão da cidade. CJ chega até ele e se oferece para ajudar com algum serviço, e Jizzy aceita prontamente. Ele designa quatro tarefas para Carl realizar: levar uma prostituta até o centro, matar um concorrente, salvar uma prostituta de ser agredida e impedir que a prostituta levada ao centro seja convertida por um pregador.",
+ "localMissao": "San Fierro",
  
 },
 {
  
- "nome": "",
- "descricao": "",
- "localMissao": "",
+ "nome": "T-Bone Mendez",
+ "descricao": "CJ e Jizzy vão a uma van abandonada pegar algumas drogas, mas ao chegar no destino, dão de cara com quatro homens pegando os pacotes e fugindo de moto. Nessa missão, você deve perseguir os motoqueiros e recuperar todos os pacotes.",
+ "localMissao": "San Fierro",
  
 },
 {
  
- "nome": "",
- "descricao": "",
- "localMissao": "",
+ "nome": "Mike Toreno",
+ "descricao": "T-Bone Mendez, membro da gangue Loco Syndicate, junto com Mike Toreno e Jizzy, tem certeza que os passos dos três estão sendo vigiados. Em seguida, Mike liga para Bone e diz que foi sequestrado junto com um carregamento de drogas pela gangue Da Nang Boys. Seu papel é liderar o resgate de Toreno",
+ "localMissao": "San Fierro",
  
 },
 {
  
- "nome": "",
- "descricao": "",
- "localMissao": "",
+ "nome": "Batedor",
+ "descricao": "Jizzy liga para CJ e pede para que ele se encontre com T-Bone em Easter Basin. Quando ele chega no local combinado e entra no carro, Bone aponta uma arma em sua cabeça e ameaça matá-lo, pois acha que Carl está trabalhando para outra pessoa. Após convencê-lo de que não está, CJ se junta a Bone e Mike para escoltar uma remessa de drogas.",
+ "localMissao": "San Fierro",
  
 },
 {
  
- "nome": "",
- "descricao": "",
- "localMissao": "",
+ "nome": "Galera da Mountain Cloud",
+ "descricao": "Carl leva Woozie até a reunião da Tong, porém, ao chegarem no local, percebem que algo está errado. O portão que sempre fica fechado estava aberto, logo em seguida eles encontram um membro morto. O lugar se incendeia e logo aparecem os homens da Da Nang Boys para finalizar o serviço. Se junte a Jizzy e mate todos os rivais",
+ "localMissao": "San Fierro",
  
 },
 {
  
- "nome": "",
- "descricao": "",
- "localMissao": "",
+ "nome": "Ran Fa Li",
+ "descricao": "CJ deve roubar um carro no estacionamento do aeroporto e entregar ele na garagem. Porém, quando Carl está de saída do aeroporto, é surpreendido por uma emboscada da Da Nang Boys. Escape das mãos deles e leve o carro até a garagem em segurança.",
+ "localMissao": "San Fierro", 
+},
+{
+ 
+ "nome": "Isca",
+ "descricao": "Ran Fa Li ficou preso em Chinatown, território dos Da Nang Boys. Para ajudá-lo a sair de lá, CJ se usa de isca para atrair os gangsters para longe de Li. Ele se passa de Ran Fa Li e é perseguido pelos membros da gangue rival. Nesse meio tempo, é a chance que Ran tem de fugir.",
+ "localMissao": "San Fierro",
  
 },
 {
  
- "nome": "",
- "descricao": "",
- "localMissao": "",
+ "nome": "Ataque Anfíbio",
+ "descricao": "Woozie planeja plantar um bug no navio dos Da Nang Boys, mas ele não sabe nadar. Portanto, ele pede ajuda a CJ, que aceita o desafio. Ao chegar no Pier 69, Carl mergulha na água e tenta acessar o navio de maneira furtiva para instalar o bug.",
+ "localMissao": "San Fierro",
  
 },
 {
  
- "nome": "",
- "descricao": "",
- "localMissao": "",
+ "nome": "A Gangue Da Nang",
+ "descricao": "Depois de uma conversa com Woozie, CJ decide pôr um fim a essa guerra com os Nang Boys. Você vai até o navio deles de helicóptero e chega atirando com uma minigun, matando diversos membros da gangue.",
+ "localMissao": "San Fierro",
  
 },
 {
  
- "nome": "",
- "descricao": "",
- "localMissao": "",
+ "nome": "No Rastro da Lesma",
+ "descricao": "Os policiais corruptos Frank Tenpenny e Eddie Pulaski reaparecem para pedir que Carl cometa mais um assassinato. Dessa vez, o alvo são dois jornalistas que estão supostamente investigando Pulaski. Nesta tarefa, você deve aguardar o encontro dos dois e matá-los a distância.",
+ "localMissao": "San Fierro",
  
 },
 {
  
- "nome": "",
- "descricao": "",
- "localMissao": "",
+ "nome": "Sangue-Frio",
+ "descricao": "Woozie informou a CJ que a Loco Syndicate, gangue comandada por Jizzy, iria se encontrar com os Ballas. Para descobrir sobre o que se trata essa reunião, Carl decide confrontar Jizzy, mas ele foge. Você terá de perseguí-lo e matá-lo para conseguir acessar o telefone dele e saber da verdade.",
+ "localMissao": "San Fierro",
  
 },
 {
  
- "nome": "",
- "descricao": "",
- "localMissao": "",
+ "nome": "Píer 69",
+ "descricao": " Após matar Jizzy, Carl descobre o local do próximo encontro de Big Smoke e Ryder com os Loco Syndicate. Ele resolve chamar Cesar para ajudá-lo a sabotar o encontro, e o cunhado chega com um rifle para CJ. Depois que todos estão presentes, ele começa a atirar e mata Bone, mas Ryder e Toreno fogem. Para finalizar a atividade você deve perseguir Ryder de barco e assassiná-lo.",
+ "localMissao": "San Fierro",
  
 },
 {
  
- "nome": "",
- "descricao": "",
- "localMissao": "",
+ "nome": "O Último Voo do Toreno",
+ "descricao": "Seu objetivo nessa missão é matar o único membro restante da Loco Syndicate, Mike Toreno. Enquanto dava sua fuga, Mike foi perseguido por Wu Zi Mu, que observou o gangster entrar em um helicóptero na delegacia de polícia da cidade. CJ chega até o local, mas antes de chegar em Toreno ele tem que matar seus seguranças. O helicóptero decola e para concluir a missão, você deve derrubá-lo.",
+ "localMissao": "San Fierro",
  
 },
 {
  
- "nome": "",
- "descricao": "",
- "localMissao": "",
+ "nome": "Cabum",
+ "descricao": "Com todos os seus três membros mortos, a Loco Syndicate estava quase acabada, restando apenas a fábrica yay, em Doherty. CJ resolve destruir a fábrica para dar um fim definitivo à gangue. Ao chegar no local, você deve matar todos os seguranças do prédio, ativar uma bomba e fugir da explosão.",
+ "localMissao": "San Fierro",
  
 },
 {
  
- "nome": "",
- "descricao": "",
- "localMissao": "",
+ "nome": "Zeroing In",
+ "descricao": " Zero, o amigo nerd de Carl, desenvolve uma nova tecnologia para rastrear carros através das chamadas de celular feitas pelo condutor do veículo. CJ logo se anima e parte em busca de um dos carros utilizando o novo rastreador de Zero. Você deve localizar o veículo através desse sistema e roubá-lo.",
+ "localMissao": "San Fierro",
  
 },
 {
  
- "nome": "",
- "descricao": "",
- "localMissao": "",
+ "nome": "Test Drive",
+ "descricao": "Cesar está visando mais dois carros para roubo e convida CJ para ajudá-lo. Os alvos são um Elegy e um Sultan, carros esportivos de alto valor. Apenas siga Cesar até a concessionária, roube os carros e fuja da polícia a tempo.",
+ "localMissao": "San Fierro",
  
 },
 {
  
- "nome": "",
- "descricao": "",
- "localMissao": "",
+ "nome": "Customs Fast Track",
+ "descricao": "O próximo carro na lista de desejos de Vialpando é um Jester. Ele descobre que existe um que está sendo transportado por um container nas docas de Easter Basin. Chegando lá, você usará um guindaste para procurar pelo carro nos containers, enquanto Cesar vai arrombá-los. Enfrente os seguranças, ache o veículo e fuja o mais rápido que puder.",
+ "localMissao": "San Fierro",
  
 },
 {
  
- "nome": "",
- "descricao": "",
- "localMissao": "",
+ "nome": "Puncture Wounds",
+ "descricao": "Cesar aparece furioso após não conseguir alcançar o último carro de sua lista de desejos. Carl então bola um plano para conseguir roubar o veículo sem depender da velocidade, usando uma armadilha de espinhos. Ele junta três tapetes com espinhos e sai em busca do carro. Após furar os pneus do carro e roubá-lo, você deve consertá-lo antes de entregá-lo a Cesar.",
+ "localMissao": "San Fierro",
  
 },
 {
  
- "nome": "",
- "descricao": "",
- "localMissao": "",
+ "nome": "Aprendendo a Voar",
+ "descricao": "Essa é uma continuação da missão Verdant Meadows, e para concluí-la, é necessário um aproveitamento de pelo menos 70% para passar em cada teste. CJ está motivado a trabalhar com Toreno para ajudar a libertar seu irmão Sweet da prisão.",
+ "localMissao": "Bone County",
  
 },
 {
  
- "nome": "",
- "descricao": "",
- "localMissao": "",
+ "nome": "Voo Rasante",
+ "descricao": "Toreno vai até CJ contar que seus agentes estão com problemas e que eles precisam receber um pacote até o anoitecer, senão todos irão morrer. Mesmo após relutar, Carl aceita cumprir a tarefa. Para concluir a missão, você deve ficar abaixo da altura mínima detectável pelo radar do exército e entregar o pacote no local combinado.",
+ "localMissao": "Bone County",
  
 },
 {
  
- "nome": "",
- "descricao": "",
- "localMissao": "",
+ "nome": "Passageiro Clandestino",
+ "descricao": "Agentes do governo invadem a pista de pouso de CJ com caminhões e um grande avião de carga. Mike pede para que CJ embarque no avião e o encha de explosivos para derrubá-lo remotamente. Você deve entrar no veículo com ele andando na pista, desviando dos agentes no caminho.",
+ "localMissao": "Bone County",
  
 },
 {
  
- "nome": "",
- "descricao": "",
- "localMissao": "",
+ "nome": "Projeto Negro",
+ "descricao": "Carl chega ao aeroporto e encontra The Truth, que o critica por ter trabalhado para um agente do governo (Toreno). Após isso, ele informa CJ sobre o suposto “Projeto Negro”, um segredo de estado guardado na Área 69. Carl então parte para invadir o local e roubar o projeto. Para isso, você terá de enfrentar um batalhão de soldados e seguir até o subsolo, que é onde o projeto está.",
+ "localMissao": "Bone County",
  
 },
 {
  
- "nome": "",
- "descricao": "",
- "localMissao": "",
+ "nome": "Gosma Verde",
+ "descricao": "The Truth encontra Carl usando um jetpack, mas ele diz que não consegue voar, então pede que CJ faça um favor para ele. A missão é ir voando até um trem que está protegido por guardas e roubar um “material”, que nem mesmo The Truth sabe bem o que é.",
+ "localMissao": "Bone County",
  
 },
 {
  
- "nome": "",
- "descricao": "",
- "localMissao": "",
+ "nome": "Ketchup no Capô",
+ "descricao": "Durante uma visita, Woozie conta para CJ que está enfrentando problemas em seu negócio de cassinos. Isso porque as três famílias mafiosas da cidade (Leone, Forelli e Sindacco) estão no seu pé. Então ele propõe um acordo a CJ: uma parte do cassino em troca de dar fim em algum desses mafiosos. Porém, o protagonista tem um plano melhor. Segundo ele, dar um susto é mais eficiente, então ele planeja amarrar um desses mafiosos no para-brisa do carro e sair dirigindo freneticamente pela cidade",
+ "localMissao": "Las Venturas",
  
 },
 {
  
- "nome": "",
- "descricao": "",
- "localMissao": "",
+ "nome": "Situação Explosiva",
+ "descricao": "O escolhido para levar o susto na missão anterior foi Johnny Sindacco. Agora CJ pretende expulsar essa e as outras famílias de mafiosos de Las Venturas. Enquanto isso, Woozie pede mais um favor a CJ, dessa vez, ele quer que o amigo roube a dinamite usada na pedreira de Hunter. Para não fracassar na missão, você deve coletar a dinamite antes do temporizador zerar e ela explodir.",
+ "localMissao": "Las Venturas",
  
 },
 {
  
- "nome": "",
- "descricao": "",
- "localMissao": "",
+ "nome": "Operação de Fichinha",
+ "descricao": "enquanto Carl e Woozie estão jogando no cassino, Guppy aparece dizendo que encontrou fichas falsificadas no estabelecimento, o que deixa Woozie furioso. A principal suspeita é de que a família Sindacco esteja sabotando as fichas. Sentido pela situação do amigo, CJ se oferece para destruir a fábrica onde as fichas são produzidas.",
+ "localMissao": "Las Venturas",
  
 },
 {
  
- "nome": "",
- "descricao": "",
- "localMissao": "",
+ "nome": "Don Peyote",
+ "descricao": "The Truth liga para CJ e pede para ele resgatar os músicos de uma banda que estavam com ele. Ao encontrar Maccer e Kent Paul, os membros da banda, CJ descobre que eles desmaiaram depois de usar muita droga. Em seguida, eles saem em busca de Ken Rosemberg, amigo de Paul. No caminho, eles são reconhecidos por pessoas que estiveram com eles na noite anterior e são ameaçados de morte. Para completar a missão, você deve defendê-los e levá-los para o cassino de Rosie.",
+ "localMissao": "Las Venturas",
  
 },
 {
  
- "nome": "",
- "descricao": "",
- "localMissao": "",
+ "nome": "Espionagem Arquitetônica",
+ "descricao": "CJ e Woozie estão planejando assaltar o cassino Caligula's. Para realizar esse roubo, eles vão precisar da dinamite que roubaram da pedreira Hunter, e também da planta do cassino que eles irão roubar. O objetivo dessa missão é conseguir exatamente esse segundo item, que está no prédio governamental. Você deve ser furtivo e tirar uma foto da planta sem que ninguém perceba.",
+ "localMissao": "Las Venturas",
  
 },
 {
  
- "nome": "",
- "descricao": "",
- "localMissao": "",
+ "nome": "A Chave para o Coração Dela",
+ "descricao": "O próximo passo para o assalto é conseguir um cartão de acesso para as áreas restritas do cassino. Porém, para conseguir esse cartão, CJ terá de convencer Millie Perkins, uma das funcionárias do Caligula’s. Ele a leva para sair em alguns encontros e aos poucos vai conquistando sua confiança, até que finalmente ela cede e deixa ele levar o cartão.",
+ "localMissao": "Las Venturas",
  
 },
 {
  
- "nome": "",
- "descricao": "",
- "localMissao": "",
+ "nome": "Rebentando a Represa",
+ "descricao": "Com o cartão de acesso em mãos, CJ agora está preocupado em como irá desconectar a energia do cassino para ter maior cobertura na hora do assalto. Ele decide explodir os geradores, então ele segue para Sherman Dam e planta os explosivos de maneira furtiva.",
+ "localMissao": "Las Venturas",
  
 },
 {
  
- "nome": "",
- "descricao": "",
- "localMissao": "",
+ "nome": "Rodas Policiais",
+ "descricao": "Depois de plantar as bombas nos geradores, o planejamento de CJ indica que eles precisam de quatro motos da polícia, para serem usadas como disfarce na fuga do assalto. Você ficará responsável por roubar as motos, enquanto o assistente de Woozie guarda cada uma delas.",
+ "localMissao": "Las Venturas",
  
 },
 {
  
- "nome": "",
- "descricao": "",
- "localMissao": "",
+ "nome": "Para o Alto e Avante!",
+ "descricao": "O último passo para a realização do assalto é conseguir um carro-forte. Para conseguir roubar um desses, Zero bolou um plano que consiste em usar um imã de helicóptero para guinchar o carro-forte no ferro velho. Para conseguir o helicóptero com o ímã, você deve ir até o depósito em Spinybed e manter os soldados longe. Uma vez que você conseguiu o ímã, basta ir atrás do carro-forte e guinchá-lo.",
+ "localMissao": "Las Venturas",
  
 },
 {
  
- "nome": "",
- "descricao": "",
- "localMissao": "",
+ "nome": "Peixe no Aquário",
+ "descricao": "Essa missão é praticamente uma única cutscene, onde Woozie entrega um documento para Carl e Ran Fa Li assinarem. A cena continua com Woozie explicando que agora eles são oficialmente sócios no Four Dragons Casino.",
+ "localMissao": "Las Venturas",
  
 },
 {
  
- "nome": "",
- "descricao": "",
- "localMissao": "",
+ "nome": "Quebrando a Banca no Caligula",
+ "descricao": "Finalmente a missão do grande assalto. Todos seguem devidamente disfarçados em direção ao cassino, e chegando lá, CJ acessa a área de ventilação com o cartão e joga gás lacrimogêneo para derrubar os seguranças. Zero explode as bombas nos geradores e a luz cai. CJ avança com seus óculos de visão noturna e arromba a porta para Woozie entrar e ajudar a roubar o cofre. Ambos enchem o carro-forte enquanto trocam tiros com seguranças, até que eles conseguem fugir com uma falsa escolta de duas motos da polícia.",
+ "localMissao": "Las Venturas",
  
 },
 {
  
- "nome": "",
- "descricao": "",
- "localMissao": "",
+ "nome": "Um Lar nas Colinas",
+ "descricao": "Madd Dogg reaparece e diz a todos que ele quer voltar a morar na sua mansão, em Los Santos, mas o lugar foi dominado pelos Vagos. CJ concorda em combater a gangue para recuperar a casa de Dogg. Eles chegam até o local de avião, pulando de paraquedas para surpreender os gangsters. Para finalizar a missão, você deve matar Big Poppa, especulado por muitos como o líder da gangue dos Los Santos Vagos.",
+ "localMissao": "Las Venturas",
  
 },
 {
  
- "nome": "",
- "descricao": "",
- "localMissao": "",
+ "nome": "Terapia Intensiva",
+ "descricao": "Ken Rosemberg revela para CJ que ele se tornou o intermediário das três famílias da máfia, Leone Forelli e Sindacco. Isso é um problema pois elas se odeiam e um ataque entre elas poderia levar a sua morte, já que ele seria suspeito de ter participação. Ele conta que Johnny Sindacco foi sequestrado do hospital pelos Forelli, e pede para CJ resgatá-lo. Nessa missão, você deve vasculhar as ambulâncias em busca de Johnny e levar ele a um local seguro",
+ "localMissao": "Las Venturas",
  
 },
 {
  
- "nome": "",
- "descricao": "",
- "localMissao": "",
+ "nome": "O Negócio da Carne",
+ "descricao": "CJ chega ao cassino e encontra Ken completamente drogado, dizendo que vai ir para o matadouro dos Sindacco mostrar quem é que manda. Ambos vão até Whitewood Estates, mas ao chegar lá, Carl prefere não entrar para não causar problemas, já que foi ele quem mandou Johnny ao hospital. Ken insiste para que ele vá, até o convencer, mas o inesperado acontece quando CJ entra na sala. Ao vê-lo, Johnny tem uma parada cardíaca e morre ali mesmo. Os familiares se irritam e atacam CJ e Ken.",
+ "localMissao": "Las Venturas",
  
 },
 {
  
- "nome": "",
- "descricao": "",
- "localMissao": "",
+ "nome": "Apropriação Indevida ",
+ "descricao": "CJ visita os policiais corruptos Frank Tenpenny e Eddie Pulaski, que estão fazendo um churrasco em sua casa. Tudo ia bem, mas Tenpenny revela que está paranoico quanto a segurança dele e de Eddie, então pede para que Carl roube um dossiê com as informações dos dois.",
+ "localMissao": "Las Venturas",
  
 },
 {
  
- "nome": "",
- "descricao": "",
- "localMissao": "",
+ "nome": "Matar ou Morrer",
+ "descricao": "Carl está com o dossiê da C.R.A.S.H, esperando para entregar a Frank e Eddie. Quando eles chegam, Jimmy Hernandez, outro membro da milícia, está junto com eles. Tenpenny aproveita a oportunidade e embosca Jimmy, o nocauteando com uma pá. Segundo ele, Jimmy tinha os vendido para os Assuntos Internos, revelando o trabalho corrupto deles. Por fim, ele pede para que Carl enterre Jimmy sob supervisão de Eddie, enquanto ele volta para Los Santos. No entanto, Hernandez acorda e parte para cima de Pulaski, que o mata e foge. Para concluir a missão, você deve perseguir e dar fim ao policial Eddie Pulaski.",
+ "localMissao": "Las Venturas",
  
 },
 {
  
- "nome": "",
- "descricao": "",
- "localMissao": "",
+ "nome": "Madd Dogg",
+ "descricao": "CJ encontra Madd Dogg tentando se jogar de uma casa. Ele até tenta convencê-lo de não fazer isso, mas logo vê que não vai adiantar. Então, num pensamento rápido, Carl decide usar um caminhão cheio de caixas de papelão para amortecer a queda de Dogg. Após a queda, o protagonista o leva ao hospital, onde Dogg diz que precisa da ajuda de CJ para encontrar um novo empresário.",
+ "localMissao": "Las Venturas",
  
 },
 {
  
- "nome": "",
- "descricao": "",
- "localMissao": "",
+ "nome": "Queda Livre",
+ "descricao": "Considerada por muitos como a missão mais difícil do game, ela começa com CJ dizendo a Leone que ele trabalhou com seu filho, e que reuniu informações de que os Forelli estão vindo matar Salvatore. Para salvá-lo, você terá que roubar um Dodo e perseguir o avião dos Forelli, até um ponto em que seja possível pular de um avião para o outro. Mate todos e complete a missão.",
+ "localMissao": "Las Venturas",
  
 },
 {
  
- "nome": "",
- "descricao": "",
- "localMissao": "",
+ "nome": "Bistrô de Saint Mark",
+ "descricao": "Salvatore pede para que CJ vá até o Marco’s Bistro, em Liberty City, para matar Marco Forelli. A missão é simples, basta voar até a cidade e pegar um táxi para o restaurante. Chegando lá, mate todos os seguranças e por fim, mate Marco Forelli.",
+ "localMissao": "Las Venturas",
  
 },
 {
  
- "nome": "",
- "descricao": "",
- "localMissao": "",
+ "nome": "Pássaro Vertical",
+ "descricao": "Depois de recuperar a mansão de Doog dos Vagos, CJ recebe um chamado de Mike Toreno para realizar um trabalho em troca da liberdade de Sweet. Dessa vez, a tarefa consiste em invadir um navio, roubar um Hydra (jato militar), e usá-lo para destruir navios espiões",
+ "localMissao": "Los Santos",
  
 },
 {
  
- "nome": "",
- "descricao": "",
- "localMissao": "",
+ "nome": "De Volta ao Lar",
+ "descricao": "Toreno diz a CJ que ele tem um último serviço a fazer, mas, cansado de servir a ele, Carl ameaça matá-lo. No entanto, ele recebe uma ligação de Sweet e percebe que Mike cumpriu sua promessa. Ele então pergunta qual o serviço, mas Toreno diz que é apenas para ele ir encontrar seu irmão que está saindo da prisão. Chegando lá, CJ atualiza Sweet sobre sua vida e ambos retornam para Groove Street, mas quando chegam, encontram um lugar tomado por viciados em crack, traficantes e os Ballas. Para finalizar a missão, você deve limpar a área.",
+ "localMissao": "Los Santos",
  
 },
 {
  
- "nome": "",
- "descricao": "",
- "localMissao": "",
+ "nome": "Negócio Acirrado",
+ "descricao": "Madd Dogg está vendo uma entrevista de OG Loc na TV e percebe que as rimas que Loc usa são dele. Ele então convoca CJ para fazer uma visita a OG e recuperar o seu livro de rimas. Chegando lá, Loc foge e uma perseguição frenética começa por Los Santos, até que eles chegam na sede da Blastin Fools Record, onde eles oferecem a Dogg uma contratação junto com um processo a Loc.",
+ "localMissao": "Los Santos",
  
 },
 {
  
- "nome": "",
- "descricao": "",
- "localMissao": "",
+ "nome": "Porrada no B Dup",
+ "descricao": "CJ e Sweet descobrem que B Dup se mudou para o Glen Park, um lugar dominado pelos Kilo Tray Ballas. Ambos decidem ir até lá e confrontá-los. Após eliminarem todos os inimigos, eles perguntam ao B Dup o que houve, que diz que estava sendo obrigado por Smoke a vender drogas ali.",
+ "localMissao": "Los Santos",
  
 },
 {
  
- "nome": "",
- "descricao": "",
- "localMissao": "",
+ "nome": "Groove na Veia",
+ "descricao": "A restauração da Grove Street Families continua a todo vapor. Dessa vez, o objetivo é recuperar duas áreas de Idlewood que estão nas mãos dos Ballas. A missão é intensa, repleta de tiroteio e muitos inimigos. Tome cuidado para não morrer.",
+ "localMissao": "Los Santos",
  
 },
 {
  
- "nome": "",
- "descricao": "",
- "localMissao": "",
+ "nome": "Tumulto",
+ "descricao": "Os milicianos da C.R.A.S.H, Frank Tenpenny e Eddie Pulaski, finalmente são acusados por corrupção, extorsão, narcotráfico e violência sexual. Carl, Cesar, The Truth, Madd Dogg, Kendl, Maccer e Sweet estão observando a cobertura do julgamento na TV da sala. Mais tarde, as acusações contra Tenpenny são retiradas por falta de provas e pelo desaparecimento de Jimmy e Pulaski. Com isso, diversos motins tomaram Los Santos, mas Sweet determinou que na Grove Street não terá nenhum.",
+ "localMissao": "Los Santos",
  
 },
 {
  
- "nome": "",
- "descricao": "",
- "localMissao": "",
+ "nome": "Los Desperados",
+ "descricao": "Cesar aparece para pedir ajuda a CJ e Sweet para reunir sua gangue de volta. Eles aceitam e se juntam a Sunny, Gal e Hazer, três membros antigos dos Aztecas para irem até El Corona e enfrentarem os Vagos. Você deve sobreviver ao intenso tiroteio e todos os inimigos devem ser eliminados para a missão ser concluída.",
+ "localMissao": "Los Santos",
  
 },
 {
  
- "nome": "",
- "descricao": "",
- "localMissao": "",
- 
-},
-{
- 
- "nome": "",
- "descricao": "",
- "localMissao": "",
+ "nome": "Fim da Linha",
+ "descricao": "O desfecho épico de GTA San Andreas. Carl e Sweet descobrem onde Big Smoke está escondido e vão atrás dele. Chegando lá, no Palácio do Crack, Carl rouba um tanque da SWAT e derruba a parede do prédio. Ao entrar, você irá se deparar com membros dos Ballas, da San Fierro Rifa e da máfia russa, todos fortemente armados. Passando por eles, você finalmente vai chegar até Big Smoke e terá que matá-lo.",
+ "localMissao": "Los Santos",
  
 }

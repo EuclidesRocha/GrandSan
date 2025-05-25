@@ -49,14 +49,7 @@
 </html>
 <script>
   validarSessao() 
-
   
-  verPontos()
-    corMudar()
-    tabela()
-  ultimosPontos()
-  colorOfPage()
-
 
 
 
@@ -121,26 +114,6 @@ function ultimosPontos(){
 
   
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -238,5 +211,21 @@ function ultimosPontos(){
         
     }
 }
+validaTela()
+    
+
+    function validaTela(){
+        var numero = validarSessao()
+        console.log(numero)
+        if(numero == true){
+        verPontos()
+        corMudar()
+        tabela()
+        ultimosPontos()
+        colorOfPage()
+   
+        }
+    }
+
 
 </script>
