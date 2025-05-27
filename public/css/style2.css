@@ -136,7 +136,7 @@ margin: 0;
    
 }
 .bannerenciclopedia{
-    height: 34%;
+    height: 80%;
     
     background-image: url(../arquivos/imagens/mapa.png);
    background-repeat: no-repeat;
@@ -511,7 +511,7 @@ width: 40%;
 
 /* Tela Enciclopedia */
 .telaEnciclopedia{
-    height: 150vh;
+    height: 65.1vh;
 }
  .barraEnciclopedia{
     padding: 1%;
@@ -519,15 +519,410 @@ width: 40%;
     flex-direction: row;
     background-color: #000;
     align-items: center;
-    height: 7%;
+    height: 16%;
     
 
 
 }.barraEnciclopedia img{
     height: 70%;
     width: 70%;
+}.barraSelecaoenciclopedia{
+    height: 10vh;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid black;
+}.ButaoEnci{
+    height: 60%;
+    width: 8%;
+    border: solid black;
+    border-radius: 20px;
+    background-color: rgb(235, 235, 235);
+    font-family: "pricedown";
+    font-size: clamp(0.5rem, 1vw, 2rem);
+    margin: 1%;
+    
+    
 }
+.personagensEnci{
+    
+    height: 200vh;
+    
+}
+.carrosEnci{
+   
+   
+    height: 200vh;
+}
+.itensEnci{
+    
+    height: 200vh;
+}
+.radiosEnci{
+   
+  
+    height: 730vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}.containerRadios{
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    width: 80%;
+    background-color: white;
+    border: solid black;
+    border-radius: 20px;
+}.containerRadios a{
+    margin: 1%;
+    height: 90%;
+    width: 10%;
+
+}.containerRadios a img{
+    margin: 1%;
+    height: 100%;
+    width: 100%;
+
+}.caixaRadio1{
+    background-color: white;
+    width: 80%;
+    border: solid black;
+    margin: 1%;
+    border-radius: 20px;
+   height: 50vh;
+
+}.caixaRadio1 p{
+    font-size: clamp(0.1rem, 0.8vw, 1.3rem);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 1%;
+    height: 2%;
+}.caixaRadio1 span{
+    font-size: clamp(0.6rem, 5vw, 1.2rem);
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 1%;
+    border-bottom: solid black;
+    width: 98%;
+    align-items: center;
+    height: 12%;
+    
+
+}.caixaRadio1 span img{
+    height: 100%;
+    width: 5%;
+    
+
+}
+.caixaRadio2{
+    background-color: white;
+    width: 80%;
+    border: solid black;
+    margin: 1%;
+    border-radius: 20px;
+    height: 70vh;
+   
+
+}.caixaRadio2 p{
+    font-size: clamp(0.1rem, 0.8vw, 1.3rem);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 1%;
+    height: 2%;
+}.caixaRadio2 span{
+    font-size: clamp(0.6rem, 5vw, 1.2rem);
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 1%;
+    border-bottom: solid black;
+    width: 98%;
+    align-items: center;
+    height: 10%;
+    
+
+}.caixaRadio2 span img{
+    height: 100%;
+    width: 5%;
+    
+
+}.caixaRadio3{
+    background-color: white;
+    width: 80%;
+    border: solid black;
+    margin: 1%;
+    border-radius: 20px;
+   height: 70vh;
+
+}.caixaRadio3 p{
+    font-size: clamp(0.1rem, 0.8vw, 1.3rem);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 1%;
+    height: 2%;
+}.caixaRadio3 span{
+    font-size: clamp(0.6rem, 5vw, 1.2rem);
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 1%;
+    border-bottom: solid black;
+    width: 98%;
+    align-items: center;
+    height: 10%;
+    
+
+}.caixaRadio3 span img{
+    height: 100%;
+    width: 5%;
+    
+
+}
+.caixaRadio4{
+    background-color: white;
+    width: 80%;
+    border: solid black;
+    margin: 1%;
+    border-radius: 20px;
+    height: 65vh;
+   
+
+}.caixaRadio4 p{
+    font-size: clamp(0.1rem, 0.8vw, 1.3rem);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 1%;
+    height: 2%;
+}.caixaRadio4 span{
+    font-size: clamp(0.6rem, 5vw, 1.2rem);
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 1%;
+    border-bottom: solid black;
+    width: 98%;
+    align-items: center;
+    height: 10%;
+    
+
+}.caixaRadio4 span img{
+    height: 100%;
+    width: 5%;
+    
+
+}
+.caixaRadio5{
+    background-color: white;
+    width: 80%;
+    border: solid black;
+    margin: 1%;
+    border-radius: 20px;
+    height: 60vh;
+   
+
+}.caixaRadio5 p{
+    font-size: clamp(0.1rem, 0.8vw, 1.3rem);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 1%;
+    height: 2%;
+}.caixaRadio5 span{
+    font-size: clamp(0.6rem, 5vw, 1.2rem);
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 1%;
+    border-bottom: solid black;
+    width: 98%;
+    align-items: center;
+    height: 10%;
+    
+
+}.caixaRadio5 span img{
+    height: 100%;
+    width: 5%;
+    
+
+}
+.caixaRadio6{
+    background-color: white;
+    width: 80%;
+    border: solid black;
+    margin: 1%;
+    border-radius: 20px;
+    height: 65vh;
+   
+
+}.caixaRadio6 p{
+    font-size: clamp(0.1rem, 0.8vw, 1.3rem);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 1%;
+    height: 2%;
+}.caixaRadio6 span{
+    font-size: clamp(0.6rem, 5vw, 1.2rem);
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 1%;
+    border-bottom: solid black;
+    width: 98%;
+    align-items: center;
+    height: 10%;
+    
+
+}.caixaRadio6 span img{
+    height: 100%;
+    width: 5%;
+    
+
+}
+.caixaRadio7{
+    background-color: white;
+    width: 80%;
+    border: solid black;
+    margin: 1%;
+    border-radius: 20px;
+    height: 75vh;
+   
+
+}.caixaRadio7 p{
+    font-size: clamp(0.1rem, 0.8vw, 1.3rem);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 1%;
+    height: 2%;
+}.caixaRadio7 span{
+    font-size: clamp(0.6rem, 5vw, 1.2rem);
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 1%;
+    border-bottom: solid black;
+    width: 98%;
+    align-items: center;
+    height: 10%;
+    
+
+}.caixaRadio7 span img{
+    height: 100%;
+    width: 5%;
+    
+
+}.caixaRadio8{
+    background-color: white;
+    width: 80%;
+    border: solid black;
+    margin: 1%;
+    border-radius: 20px;
+    height: 45vh;
+   
+
+}.caixaRadio8 p{
+    font-size: clamp(0.1rem, 0.8vw, 1.3rem);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 1%;
+    height: 2%;
+}.caixaRadio8 span{
+    font-size: clamp(0.6rem, 5vw, 1.2rem);
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 1%;
+    border-bottom: solid black;
+    width: 98%;
+    align-items: center;
+    height: 14%;
+    
+
+}.caixaRadio8 span img{
+    height: 100%;
+    width: 5%;
+    
+
+}
+.caixaRadio9{
+    background-color: white;
+    width: 80%;
+    border: solid black;
+    margin: 1%;
+    border-radius: 20px;
+    height: 65vh;
+   
+
+}.caixaRadio9 p{
+    font-size: clamp(0.1rem, 0.8vw, 1.3rem);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 1%;
+    height: 2%;
+}.caixaRadio9 span{
+    font-size: clamp(0.6rem, 5vw, 1.2rem);
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 1%;
+    border-bottom: solid black;
+    width: 98%;
+    align-items: center;
+    height: 10%;
+    
+
+}.caixaRadio9 span img{
+    height: 100%;
+    width: 5%;
+    
+
+}
+.caixaRadio10{
+    background-color: white;
+    width: 80%;
+    border: solid black;
+    margin: 1%;
+    border-radius: 20px;
+    height: 35vh;
+   
+
+}.caixaRadio10 p{
+    font-size: clamp(0.1rem, 0.8vw, 1.3rem);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 1%;
+    height: 2%;
+}.caixaRadio10 span{
+    font-size: clamp(0.6rem, 5vw, 1.2rem);
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 1%;
+    border-bottom: solid black;
+    width: 98%;
+    align-items: center;
+    height: 17%;
+    
+
+}.caixaRadio10 span img{
+    height: 100%;
+    width: 5%;
+    
+
+}
+.caixaRadio11{
+    background-color: white;
+    width: 80%;
+    border: solid black;
+    margin: 1%;
+    border-radius: 20px;
+    height: 60vh;
+   
+
+}.caixaRadio11 p{
+    font-size: clamp(0.1rem, 0.8vw, 1.3rem);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 1%;
+    height: 2%;
+}.caixaRadio11 span{
+    font-size: clamp(0.6rem, 5vw, 1.2rem);
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 1%;
+    border-bottom: solid black;
+    width: 98%;
+    align-items: center;
+    height: 10%;
+    
+
+}.caixaRadio11 span img{
+    height: 100%;
+    width: 5%;
+    
+
+}
 /*Tela Mais Sobre*/
 .telaMaisSobre{
     height: 300vh;
