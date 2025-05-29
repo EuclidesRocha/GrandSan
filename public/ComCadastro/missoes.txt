@@ -1,560 +1,201 @@
 
-"No Início"
-
-
-"Big Smoke"
-
- 
-"Sweet and Kendl"
-
-
-"Ryder"
-
- 
-"Invasão Domiciliar"
-
-
- 
-"Catalisador"
- 
-
- 
-"Roubando o Tio Sam"
- 
- 
-"Marcando território"
- 
-
-"Limpando as ruas"
- 
- 
-"Drive-Thru"
-
-
-
- 
-"Noves e AK’s"
- 
-
-
- 
-"Tiroteio de Veículo"
- 
- 
-
-
- 
-"Garota do Sweet"
-  
- 
-
-
- 
-"Cesar Vialpando"
-  
- 
-
-
- 
-"Doberman"
- 
- 
-
-
- 
-"Los Sepulcros"
- 
-
-
- 
-"Reunindo as Famílias"
- 
-
-
- 
-"O Sabre Verde"
- 
-
-
- 
-"OG Loc"
- 
- 
-
-
- 
-"Cão em Fuga"
-
-
-
- 
-"Do Lado Errado dos Trilhos"
-
-
-
- 
-"Apenas Negócios"
-  
- 
- 
-
-
- 
-"Tirando Onda na Praia"
-
- 
- 
-
-
- 
-"As Rimas do Madd Dogg"
-
- 
-
-
- 
-"A Gente Tem um Problema"
-
- 
- 
-
-
- 
-"Festinha em Casa"
-
- 
- 
-
-
- 
-"Grande Prêmio Lowrider"
- 
- 
- 
-
-
- 
-"Desejo Ardente"
- 
- 
- 
-
-
- 
-"Mercado Cinza"
- 
- 
- 
-
-
- 
-"Terra de Ninguém"
-
- 
-
-
- 
-"Colheita de Corpos"
-
- 
-
-
- 
-"Rei no Exílio"
-
-
- 
-"Primeiro Encontro"
-
-
-
- 
-"Ladrão de Caminhão"
-
- 
- 
-
-
- 
-"Contra as Probabilidades"
- 
- 
- 
-
-
- 
-"Loja de Bebidas Local"
-
- 
- 
-"Banco de Cidade Pequena"
- 
- 
-
-
- 
-"Preliminares"
- 
- 
-
-
- 
-"Acasalamento"
- 
- 
-
-
- 
-"Par Perfeito"
- 
- 
-
-
- 
-"Wu Zi Mu"
-
- 
-
-
- 
-"Adeus Meu Amor…"
-
- 
-
- 
-"Você Vai Para San Fierro? "
-
- 
-
-
- 
-"Use Flores no Seu Cabelo "
- 
- 
-"Disque-Denúncia"
-  
- 
-
-
- 
-"Desconstrução"
-  
-
-
- 
-"Ataque Aéreo"
-  
- 
-
-
- 
-"Linhas de Suprimentos…"
-
- 
-
-
- 
-"Exército Novo"
-
- 
-
-
- 
-"Oportunidade de Foto"
- 
- 
-
-
- 
-"Jizzy"
- 
-
-
- 
-"T-Bone Mendez"
- 
-
-
- 
-"Mike Toreno" 
-
-
- 
-"Batedor"
-
- 
- 
-
-
- 
-"Galera da Mountain Cloud"
- 
- 
-
-
- 
-"Ran Fa Li"
-  
-
-
- 
-"Isca"
-
- 
-
-
- 
-"Ataque Anfíbio"
-
-
-
- 
-"A Gangue Da Nang"
-
- 
-
-
- 
-"No Rastro da Lesma"
-
- 
-
-
- 
-"Sangue-Frio"
-
- 
-
-
- 
-"Píer 69"
-
- 
-
-
- 
-"O Último Voo do Toreno"
-
- 
-
-
- 
-"Cabum"
-
-
-
- 
-"Zeroing In"
-
- 
-
-
- 
-"Test Drive"
-
- 
-
-
- 
-"Customs Fast Track"
- 
- 
-
-
- 
-"Puncture Wounds"
- 
- 
-
-
- 
-"Aprendendo a Voar"
-
- 
-
-
- 
-"Voo Rasante"
-
- 
-
-
- 
-"Passageiro Clandestino"
-
- 
-
-
- 
-"Projeto Negro"
-
- 
-
-
- 
-"Gosma Verde"
-
- 
-
-
- 
-"Ketchup no Capô"
-
- 
-
-
- 
-"Situação Explosiva"
-
- 
-
-
- 
-"Operação de Fichinha"
-
- 
-
-
- 
-"Don Peyote"
-
- 
-
-
- 
-"Espionagem Arquitetônica"
-  
-
-
- 
-"A Chave para o Coração Dela"
-  
- 
- 
-
-
- 
-"Rebentando a Represa"
-  
- 
- 
-
-
- 
-"Rodas Policiais"
-
- 
- 
-
-
- 
-"Para o Alto e Avante!"
- 
- 
- 
-
-
- 
-"Peixe no Aquário"
-
- 
- 
-
-
- 
-"Quebrando a Banca no Caligula"
-  
- 
- 
-
-
- 
-"Um Lar nas Colinas"
- 
-
-
- 
-"Terapia Intensiva"
-
- 
-
-
- 
-"O Negócio da Carne"
- 
-
-
- 
-"Apropriação Indevida "
- 
-
-
- 
-"Matar ou Morrer"
-
-
-
- 
-"Madd Dogg"
- 
-
-
- 
-"Queda Livre"
-
-
-
- 
-"Bistrô de Saint Mark"
-
- 
-
-
- 
-"Pássaro Vertical"
-
- 
-
-
- 
-"De Volta ao Lar"
-
- 
-
-
- 
-"Negócio Acirrado"
-
- 
-
-
- 
-"Porrada no B Dup"
-
- 
- 
-
-
- 
-"Groove na Veia"
-
- 
- 
-
-
- 
-"Tumulto"
-  
- 
- 
-
-
- 
-"Los Desperados"
-
- 
- 
-
-
- 
-"Fim da Linha"
+aeronave
+
+Andromada
+AT-400
+Beagle
+Cargobob
+Cropduster
+Dodo
+Hunter
+Hydra
+Jetpack
+Leviathan
+Nevada
+News Chopper
+Maverick
+Police Maverick
+Parachute
+Raindance
+Rustler
+Sea Sparrow
+Shamal
+Skimmer
+Sparrow
+Stuntplane
+
+Barcos
+
+Coastguard
+Dinghy
+Jetmax
+Launch
+Marquis
+Predator
+Reefer
+Speeder
+Squalo
+Tropic
+
+Motocicletas & Bicicletas
+
+BF-400
+Bike
+BMX
+Faggio
+FCR-900
+Freeway
+Mountain Bike
+NRG-500
+PCJ-600
+Pizzaboy
+Sanchez
+Wayfarer
+
+Sedans e Peruas
+
+Admiral
+Elegant
+Emperor
+Glendale
+Greenwood
+Intruder
+Merit
+Nebula
+Oceanic
+Perennial
+Premier
+Primo
+Regina
+Romero
+Sentinel
+Solair
+Stafford
+Stretch
+Sunrise
+Vincent
+Washington
+Willard
+
+coupés e hatchbacks
+
+Blista Compact
+Bravura
+Buccaneer
+Cadrona
+Clover
+Club
+Esperanto
+Feltzer
+Fortune
+Hermes
+Hustler
+Majestic
+Manana
+Previon
+Sabre
+Stallion
+Tampa
+Virgo
+
+Carros de Serviço
+
+Baggage
+Bus
+Cabbie
+Coach
+Sweeper
+Taxi
+Tow Truck
+Trashmaster
+Tug
+Utility Van
+
+Industrial
+
+Benson
+Boxville
+Cement Truck
+Combine Harvester
+DFT-30
+Dozer
+Dumper
+Flatbed
+Forklift
+Linerunner
+Mule
+Packer
+Roadtrain
+Tanker
+Tractor
+Yankee
+
+Vãs
+
+Berkley's RC Van
+Burrito
+Hotdog
+Moonbeam
+Mr Whoopee
+Newsvan
+Pony
+Rumpo
+Securicar
+
+
+Tunados
+
+Blade
+Broadway
+Remington
+Savanna
+Slamvan
+Tahoma
+Tornado
+Voodoo
+
+SUVs & Picápes
+
+Bobcat
+Huntley
+Landstalker
+Mesa
+Monster
+Patriot
+Picador
+Rancher
+Sadler
+Sandking
+Walton
+Yosemite
+
+Esportivos
+
+Alpha
+Banshee
+Buffalo
+Bullet
+Cheetah
+Comet
+Euros
+Hotknife
+Infernus
+Phoenix
+Super GT
+Turismo
+Windsor
+ZR-350
+
+
+Lowriders
+
+Blade
+Broadway
+Remington
+Savanna
+Slamvan
+Tahoma
+Tornado
+Voodoo
+
+separa esses textos do maior ate o menor. e uma div que se chama caixaCarro para a seleção de veiculos. no tituto separa por um span e os nomes dos veiculos tambem span. lembra esses span estao dentro da div class caixaCarro 

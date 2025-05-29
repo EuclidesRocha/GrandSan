@@ -108,11 +108,15 @@ margin: 0;
 }
 
 #p_membro{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
     font-size: clamp(0.5rem, 2vw, 1.5rem);
 }
 
 #p_cidade{
     margin-top: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
     font-size: clamp(0.5rem , 2vw, 1.5rem);
 }
 .bannerquiz{
@@ -547,13 +551,137 @@ width: 40%;
 }
 .personagensEnci{
     
-    height: 200vh;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
     
+}.containerPerso{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    margin-top: 1%;
+    
+}.priAndar{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    margin: 1%;
+ 
+
+}.segAndar{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    margin: 1%;
+
+}.terAndar{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    margin: 1%;
+
+}.caixaPerso{
+    display: flex;
+    flex-direction: column;
+    border: solid black;
+    border-radius: 20px;
+    width: 40%;
+    height: 100%;
+    margin: 0.5%;
+    background-color:  rgb(235, 235, 235);
+    
+  
+    
+}.caixaPerso img{
+    height: 80%;
+    width: 100%;
+    border-radius: 20px;
+    border: solidS;
+}.caixaPerso span{
+    height: 10%;
+    width: 100%;
+    
+    border-bottom: solid;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        font-size: clamp(0.1rem, 0.8vw, 1.3rem);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
 }
 .carrosEnci{
    
+   display: flex;
+   justify-content: center;
+    height: 150vh;
+}.BarraTextoCar{
+    border: solid;
+    border-radius: 20px;
+    height: 5%;
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(0.6rem, 5vw, 1.2rem);
+    
+}.BarraTextoCar p{
+    margin: 0;
+    
+}
+    
+
+
+.containerCarro{
+    height: 100%;
+}
+
+.priAndarCar{
+    height: 42%;
+    width: 100%;
+    display: flex;
+    margin: 1%;
+    justify-content: center;
+}
+.segAndarCar{
+    height: 27%;
+    width: 100%;
+    display: flex;
+    margin: 1%;
+    justify-content: center;
+}
+.terAndarCar{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    margin: 1%;
+    justify-content: center;
+}
+.caixaCarro{
+    display: flex;
+    flex-direction: column;
+    
+    margin: 1%; 
+    background-color: rgb(235, 235, 235);
+    width: 20%;
+    height: 100%;
+    border: solid;
+    border-radius: 20px;
+}.caixaCarro .titulosCar{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-bottom: solid;
    
-    height: 200vh;
+}
+.caixaCarro span{
+    margin: 1%;
+    font-size: clamp(0.1rem, 0.8vw, 1.3rem);
+}
+.titulosCar{
+
+    font-family: "pricedown";
 }
 
 
@@ -638,7 +766,8 @@ width: 40%;
     align-items: center;
     justify-items: center;
     font-size: clamp(0.1rem, 0.8vw, 1.3rem);
-    font-family:  "pricedown";
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
     
 }
 
