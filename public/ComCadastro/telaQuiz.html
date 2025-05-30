@@ -145,17 +145,21 @@ function ultimosPontos(){
     }
   });
 
- const ctxBarra = document.getElementById('myChartBarra');
- 
-  
-  new Chart(ctxBarra, {
+
+    }
+
+
+     const ctxBarra = document.getElementById('myChartBarra');
+
+
+ var grafiAcertos = new Chart(ctxBarra, {
     type: 'bar',
    
     data: {
-      labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho'],
+      labels: [],
       datasets: [{
         label: 'Acertos',
-        data: [22, 24, 27, 23, 20, 18], 
+        data: [], 
         borderWidth: 1,
         backgroundColor: 'rgb(240, 6, 96)'
        
@@ -163,7 +167,7 @@ function ultimosPontos(){
       },
       {
         label: 'Erros', 
-        data: [90, 89, 93, 87, 88, 82],
+        data: [],
         borderWidth: 1,
         backgroundColor: 'rgb(25, 86, 201)'
         
@@ -180,6 +184,49 @@ function ultimosPontos(){
       }
     }
   });
+
+    
+    function AcertosErros(){
+      var idUsuario = sessionStorage.ID_USUARIO;
+       fetch(`/resultado/AcertosErros/${idUsuario}`, {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json"
+            },
+        }).then(function (resposta) {
+            console.log("ESTOU NO THEN DO entrar()!")
+
+            if (resposta.ok) {
+                console.log(resposta);
+                
+
+                resposta.json().then(resposta => {
+
+                  for ( Dados of resposta) {
+                grafiAcertos.data.labels.push(Dados.qtdPartidas)
+
+                grafiAcertos.data.datasets[0].data.push(Dados.acertos)
+                grafiAcertos.data.datasets[1].data.push(Dados.erros)
+                grafiAcertos.update()
+
+                  }
+
+             
+                });
+
+            } else {
+
+                console.log("Houve um erro ao tentar realizar o login!");
+                 resposta.text().then(texto => {
+                    console.error(texto);
+                   
+                });
+               
+            }
+
+        }).catch(function (erro) {
+            console.log(erro);
+        })
     }
 
 
@@ -223,9 +270,11 @@ validaTela()
         tabela()
         ultimosPontos()
         colorOfPage()
+        AcertosErros()
    
         }
     }
+
 
 
 </script>

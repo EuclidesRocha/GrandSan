@@ -30,6 +30,12 @@ dtResultado datetime default current_timestamp,
     REFERENCES usuario (idUsuario)
 );
 
+select idResultado, acertos, erros, (select count(idResultado) from resultado where fkUsuario = 1) as qtdPartidas from resultado where fkUsuario = 1 order by idResultado desc limit 5;
+
+
+
+
+
 select * from resultado;
 
 Select sum(pontos) from resultado group by fkUsuario HAVING fkUsuario = 1;
@@ -162,3 +168,4 @@ INSERT INTO missoes (idMissoes, nome) VALUES
 (100, 'Fim da Linha');
 
        
+  

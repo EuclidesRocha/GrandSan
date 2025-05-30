@@ -50,10 +50,28 @@ function listarUlitmos5Pontos(req,res){
 
 }
 
+function  AcertosErros(req,res){
+    var idUsuario = req.params.id;
+
+    if (idUsuario == undefined) {
+        res.status(400).send("Seu ID está undefined!");
+    }else{
+        resultadoModel.AcertosErros(idUsuario).then(function(resposta){
+            res.json(resposta);
+            res.status(200).send("Acerto e erros pegos com sucesso");
+
+        }).catch(erro=>{
+
+            res.status(500).json(erro.sqlMessage);
+        })
+    }
+}
+
 module.exports = {
     guardarResultado,
     pegarPontos,
-    listarUlitmos5Pontos
+    listarUlitmos5Pontos,
+    AcertosErros
     
 }
 

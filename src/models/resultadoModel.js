@@ -29,11 +29,18 @@ var instrucao = `Select  idResultado, pontos from resultado where fkUsuario = ${
 
 }
 
+function AcertosErros(idUsuario){
+    var instrucao = `select idResultado, acertos, erros, (select count(idResultado) from resultado where fkUsuario = ${idUsuario}) as qtdPartidas from resultado where fkUsuario = ${idUsuario} order by idResultado desc limit 5;` 
+    console.log("Executando a instrução SQL: \n" + instrucao);
+    return database.executar(instrucao);
+}
+
 
 module.exports = {
     
     guardarResultado,
     pegarPontos,
-    listarUlitmos5Pontos
+    listarUlitmos5Pontos,
+    AcertosErros
    
 };

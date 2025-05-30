@@ -8,8 +8,8 @@ router.post("/guardarResultado", function (req, res) {
     resultadoController.guardarResultado(req, res);
 });
 
-router.get("/listarResultado", function (req, res) {
-    resultadoController.listarResultado(req, res);
+router.get("/AcertosErros/:id", function (req, res) {
+    resultadoController.AcertosErros(req, res);
 });
 router.post("/pegarPontos", function (req, res){
     resultadoController.pegarPontos(req, res);

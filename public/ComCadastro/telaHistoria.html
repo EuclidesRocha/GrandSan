@@ -28,7 +28,7 @@
     <div class="bannerhistoria">
         <div class="color" id="div_corDasPaginas">
             <div class="textoInBanner">História</div> 
-            <div class="KPI"></div>
+            <div class="KPI"><Span>Missões Feitas:  <div id="KpiMissoes">0<div>/100</div></div></Span></div>
             <div class="grafico1" style="position: relative;">
                 <canvas  style="position: relative;height: 100%; width: 100%;"id="myChartDonut"></canvas >
             </div>
@@ -52,7 +52,7 @@ Em Liberty City, ele teve a oportunidade de trabalhar com o filho de Don Salva
 <div class="textoDeVersãoCJ"> <img src="../arquivos/imagens/imagemDeArtWork.png" alt=""><div>Suposta artwork do cj que poderia ser vista nas telas de londing</div></div> 
 </div>
 <div class="segundoCard"><div class="fotosDeGameplay"> <img src="../arquivos/imagens/imagemRemaster.png" alt=""><div>Cj na versão Remaster de 2021 do GTA San Andreas</div></div>
-<div class="fotosDeGameplay"> <img src="../arquivos/imagens/imagemDeArtWork.png" alt=""><div>Suposta artwork do cj que poderia ser vista nas telas de londing</div></div>
+<div class="fotosDeGameplay"> <img src="../arquivos/imagens/GTA_ San Andreas 29_05_2025 00_07_29.png" alt=""><div>Cj na Versão clássica de PC</div></div>
 </div>
 </div>
     </div>
@@ -1197,10 +1197,10 @@ function colorOfPage(){
 
 
 function tabela(){
-    const ctxBarra = document.getElementById('myChartDonut');
+    const DonutSan = document.getElementById('myChartDonut');
  
   
-  new Chart(ctxBarra, {
+  new Chart(DonutSan, {
     type: 'doughnut',
    
     data: {
