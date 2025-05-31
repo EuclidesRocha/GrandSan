@@ -101,6 +101,7 @@ margin: 0;
     flex-direction: column;
    
     justify-content: center;
+    
 
 }
 .textoUser{
@@ -109,20 +110,26 @@ margin: 0;
     
 }
 #p_ola{
+    margin: 3%;
+    margin-top: 10%;
     font-size: clamp(1rem, 5vw, 3rem);
 }
 
 #p_membro{
+    margin: 3%;
+    margin-top: 10%;
     font-family: "bank";
     font-weight: 600;
     font-size: clamp(0.5rem, 2vw, 1.5rem);
+    width: 100%;
 }
 
 #p_cidade{
-    margin-top: 0;
+   margin: 3%;
     font-family:  "bank";
     font-weight: 600;
     font-size: clamp(0.5rem , 2vw, 1.2rem);
+    width: 100%;
 }
 .bannerquiz{
     height: 34%;
@@ -164,7 +171,7 @@ margin: 0;
     
     
 }.pontos{
-    margin-left: 40%;
+    margin-left: 35%;
     height: 100%;
     display: flex;
     align-items: center;
