@@ -34,13 +34,18 @@ function AcertosErros(idUsuario){
     console.log("Executando a instrução SQL: \n" + instrucao);
     return database.executar(instrucao);
 }
-
+function rankDeUser(){
+    var instrucao = `Select fkUsuario ,nome, sum(pontos) as Pontos from resultado join usuario on fkUsuario = idUsuario group by fkUsuario order by Pontos desc limit 5;` 
+    console.log("Executando a instrução SQL: \n" + instrucao);
+    return database.executar(instrucao);
+}
 
 module.exports = {
     
     guardarResultado,
     pegarPontos,
     listarUlitmos5Pontos,
-    AcertosErros
+    AcertosErros,
+    rankDeUser
    
 };

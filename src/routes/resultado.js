@@ -19,8 +19,10 @@ router.post("/pegarPontos", function (req, res){
 router.post("/listarUlitmos5Pontos", function(req,res){
 
     resultadoController.listarUlitmos5Pontos(req, res);
-})
-
+});
+router.get("/rankDeUser", function(req, res){
+    resultadoController.rankDeUser(req,res)
+});
 
 
 module.exports = router;

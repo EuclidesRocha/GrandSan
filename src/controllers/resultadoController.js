@@ -12,8 +12,8 @@ function guardarResultado(req, res) {
     }
 
     resultadoModel.guardarResultado(idUsuario, pontos, acertos, erro).then(function(resposta){
-        res.json(resposta);
-        res.status(200).send("INSERTS criado com sucesso");
+        res.status(200).json(resposta);
+     
     }).catch(function(erro){
         res.status(500).json(erro.sqlMessage);
     })
@@ -22,13 +22,14 @@ function guardarResultado(req, res) {
 function pegarPontos(req, res) {
 
     var idUsuario = req.body.UsuarioServer;
+
     if (idUsuario == undefined) {
         res.status(400).send("Seu ID está undefined!");
     }
 
     resultadoModel.pegarPontos(idUsuario).then(function(resposta){
-        res.json(resposta);
-        res.status(200).send("INSERTS criado com sucesso");
+        res.status(200).json(resposta);
+      
     }).catch(function(erro){
         res.status(500).json(erro.sqlMessage);
     })
@@ -42,8 +43,8 @@ function listarUlitmos5Pontos(req,res){
     }
 
     resultadoModel.listarUlitmos5Pontos(idUsuario).then(function(resposta){
-        res.json(resposta);
-        res.status(200).send("INSERTS criado com sucesso");
+        res.status(200).json(resposta);
+       
     }).catch(function(erro){
         res.status(500).json(erro.sqlMessage);
     })
@@ -57,8 +58,8 @@ function  AcertosErros(req,res){
         res.status(400).send("Seu ID está undefined!");
     }else{
         resultadoModel.AcertosErros(idUsuario).then(function(resposta){
-            res.json(resposta);
-            res.status(200).send("Acerto e erros pegos com sucesso");
+            
+            res.status(200).json(resposta);
 
         }).catch(erro=>{
 
@@ -67,11 +68,24 @@ function  AcertosErros(req,res){
     }
 }
 
+function rankDeUser(req, res){
+
+      resultadoModel.rankDeUser().then(function(resposta){
+            
+            res.status(200).json(resposta);
+
+        }).catch(erro=>{
+
+            res.status(500).json(erro.sqlMessage);
+        })
+}
+
 module.exports = {
     guardarResultado,
     pegarPontos,
     listarUlitmos5Pontos,
-    AcertosErros
+    AcertosErros,
+    rankDeUser
     
 }
 

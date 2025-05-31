@@ -45,7 +45,9 @@ function feita1() {
             console.log(erro);
         })
         sessionStorage.MISSAO_1 = 1
-    }
+        
+        
+    } calma()
 }
 
 function feita2() {
@@ -92,7 +94,7 @@ function feita2() {
             console.log(erro);
         })
         sessionStorage.MISSAO_2 = 1
-    }
+    }   calma()
 }
 
 function feita3() {
@@ -139,7 +141,7 @@ function feita3() {
             console.log(erro);
         })
         sessionStorage.MISSAO_3 = 1
-    }
+    }   calma()
 }
 
 function feita4() {
@@ -186,7 +188,7 @@ function feita4() {
             console.log(erro);
         })
         sessionStorage.MISSAO_4 = 1
-    }
+    }   calma()
 }
 
 function feita5() {
@@ -233,7 +235,7 @@ function feita5() {
             console.log(erro);
         })
         sessionStorage.MISSAO_5 = 1
-    }
+    }   calma()
 }
 
 function feita6() {
@@ -280,7 +282,7 @@ function feita6() {
             console.log(erro);
         })
         sessionStorage.MISSAO_6 = 1
-    }
+    }   calma()
 }
 
 function feita7() {
@@ -327,7 +329,7 @@ function feita7() {
             console.log(erro);
         })
         sessionStorage.MISSAO_7 = 1
-    }
+    }   calma()
 }
 
 function feita8() {
@@ -374,7 +376,7 @@ function feita8() {
             console.log(erro);
         })
         sessionStorage.MISSAO_8 = 1
-    }
+    }   calma()
 }
 
 function feita9() {
@@ -421,7 +423,7 @@ function feita9() {
             console.log(erro);
         })
         sessionStorage.MISSAO_9 = 1
-    }
+    }   calma()
 }
 
 function feita10() {
@@ -468,7 +470,7 @@ function feita10() {
             console.log(erro);
         })
         sessionStorage.MISSAO_10 = 1
-    }
+    }   calma()
 }
 
 function feita11() {
@@ -515,7 +517,7 @@ function feita11() {
             console.log(erro);
         })
         sessionStorage.MISSAO_11 = 1
-    }
+    }   calma()
 }
 
 function feita12() {
@@ -562,7 +564,7 @@ function feita12() {
             console.log(erro);
         })
         sessionStorage.MISSAO_12 = 1
-    }
+    }   calma()
 }
 
 function feita13() {
@@ -609,7 +611,7 @@ function feita13() {
             console.log(erro);
         })
         sessionStorage.MISSAO_13 = 1
-    }
+    }   calma()
 }
 
 function feita14() {
@@ -656,7 +658,7 @@ function feita14() {
             console.log(erro);
         })
         sessionStorage.MISSAO_14 = 1
-    }
+    }   calma()
 }
 
 function feita15() {
@@ -703,7 +705,7 @@ function feita15() {
             console.log(erro);
         })
         sessionStorage.MISSAO_15 = 1
-    }
+    }   calma()
 }
 
 function feita16() {
@@ -750,7 +752,7 @@ function feita16() {
             console.log(erro);
         })
         sessionStorage.MISSAO_16 = 1
-    }
+    }   calma()
 }
 
 function feita17() {
@@ -797,7 +799,7 @@ function feita17() {
             console.log(erro);
         })
         sessionStorage.MISSAO_17 = 1
-    }
+    }   calma()
 }
 
 function feita18() {
@@ -844,7 +846,7 @@ function feita18() {
             console.log(erro);
         })
         sessionStorage.MISSAO_18 = 1
-    }
+    }   calma()
 }
 
 function feita19() {
@@ -891,7 +893,7 @@ function feita19() {
             console.log(erro);
         })
         sessionStorage.MISSAO_19 = 1
-    }
+    }   calma()
 }
 
 function feita20() {
@@ -938,7 +940,7 @@ function feita20() {
             console.log(erro);
         })
         sessionStorage.MISSAO_20 = 1
-    }
+    }   calma()
 }
 
 function feita21() {
@@ -985,7 +987,7 @@ function feita21() {
             console.log(erro);
         })
         sessionStorage.MISSAO_21 = 1
-    }
+    }   calma()
 }
 
 function feita22() {
@@ -1032,7 +1034,7 @@ function feita22() {
             console.log(erro);
         })
         sessionStorage.MISSAO_22 = 1
-    }
+    }   calma()
 }
 
 function feita23() {
@@ -1079,7 +1081,7 @@ function feita23() {
             console.log(erro);
         })
         sessionStorage.MISSAO_23 = 1
-    }
+    }   calma()
 }
 
 function feita24() {
@@ -1126,7 +1128,7 @@ function feita24() {
             console.log(erro);
         })
         sessionStorage.MISSAO_24 = 1
-    }
+    }   calma()
 }
 
 function feita25() {
@@ -1173,7 +1175,7 @@ function feita25() {
             console.log(erro);
         })
         sessionStorage.MISSAO_25 = 1
-    }
+    }   calma()
 }
 
 function feita26() {
@@ -1220,7 +1222,7 @@ function feita26() {
             console.log(erro);
         })
         sessionStorage.MISSAO_26 = 1
-    }
+    }   calma()
 }
 
 function feita27() {
@@ -1267,7 +1269,7 @@ function feita27() {
             console.log(erro);
         })
         sessionStorage.MISSAO_27 = 1
-    }
+    }   calma()
 }
 
 function feita28() {
@@ -1314,7 +1316,7 @@ function feita28() {
             console.log(erro);
         })
         sessionStorage.MISSAO_28 = 1
-    }
+    }   calma()
 }
 
 function feita29() {
@@ -1361,7 +1363,7 @@ function feita29() {
             console.log(erro);
         })
         sessionStorage.MISSAO_29 = 1
-    }
+    }   calma()
 }
 
 function feita30() {
@@ -1408,7 +1410,7 @@ function feita30() {
             console.log(erro);
         })
         sessionStorage.MISSAO_30 = 1
-    }
+    }   calma()
 }
 
 function feita31() {
@@ -1455,7 +1457,7 @@ function feita31() {
             console.log(erro);
         })
         sessionStorage.MISSAO_31 = 1
-    }
+    }   calma()
 }
 
 function feita32() {
@@ -1502,7 +1504,7 @@ function feita32() {
             console.log(erro);
         })
         sessionStorage.MISSAO_32 = 1
-    }
+    }   calma()
 }
 
 function feita33() {
@@ -1549,7 +1551,7 @@ function feita33() {
             console.log(erro);
         })
         sessionStorage.MISSAO_33 = 1
-    }
+    }   calma()
 }
 
 function feita34() {
@@ -1596,7 +1598,7 @@ function feita34() {
             console.log(erro);
         })
         sessionStorage.MISSAO_34 = 1
-    }
+    }   calma()
 }
 
 function feita35() {
@@ -1643,7 +1645,7 @@ function feita35() {
             console.log(erro);
         })
         sessionStorage.MISSAO_35 = 1
-    }
+    }   calma()
 }
 
 function feita36() {
@@ -1690,7 +1692,7 @@ function feita36() {
             console.log(erro);
         })
         sessionStorage.MISSAO_36 = 1
-    }
+    }   calma()
 }
 
 function feita37() {
@@ -1737,7 +1739,7 @@ function feita37() {
             console.log(erro);
         })
         sessionStorage.MISSAO_37 = 1
-    }
+    }   calma()
 }
 
 function feita38() {
@@ -1784,7 +1786,7 @@ function feita38() {
             console.log(erro);
         })
         sessionStorage.MISSAO_38 = 1
-    }
+    }   calma()
 }
 
 function feita39() {
@@ -1831,7 +1833,7 @@ function feita39() {
             console.log(erro);
         })
         sessionStorage.MISSAO_39 = 1
-    }
+    }   calma()
 }
 
 function feita40() {
@@ -1878,7 +1880,7 @@ function feita40() {
             console.log(erro);
         })
         sessionStorage.MISSAO_40 = 1
-    }
+    }   calma()
 }
 
 function feita41() {
@@ -1925,7 +1927,7 @@ function feita41() {
             console.log(erro);
         })
         sessionStorage.MISSAO_41 = 1
-    }
+    }   calma()
 }
 
 function feita42() {
@@ -1972,7 +1974,7 @@ function feita42() {
             console.log(erro);
         })
         sessionStorage.MISSAO_42 = 1
-    }
+    }   calma()
 }
 
 function feita43() {
@@ -2019,7 +2021,7 @@ function feita43() {
             console.log(erro);
         })
         sessionStorage.MISSAO_43 = 1
-    }
+    }   calma()
 }
 
 function feita44() {
@@ -2066,7 +2068,7 @@ function feita44() {
             console.log(erro);
         })
         sessionStorage.MISSAO_44 = 1
-    }
+    }   calma()
 }
 
 function feita45() {
@@ -2113,7 +2115,7 @@ function feita45() {
             console.log(erro);
         })
         sessionStorage.MISSAO_45 = 1
-    }
+    }   calma()
 }
 
 function feita46() {
@@ -2160,7 +2162,7 @@ function feita46() {
             console.log(erro);
         })
         sessionStorage.MISSAO_46 = 1
-    }
+    }   calma()
 }
 
 function feita47() {
@@ -2207,7 +2209,7 @@ function feita47() {
             console.log(erro);
         })
         sessionStorage.MISSAO_47 = 1
-    }
+    }   calma()
 }
 
 function feita48() {
@@ -2254,7 +2256,7 @@ function feita48() {
             console.log(erro);
         })
         sessionStorage.MISSAO_48 = 1
-    }
+    }   calma()
 }
 
 function feita49() {
@@ -2301,7 +2303,7 @@ function feita49() {
             console.log(erro);
         })
         sessionStorage.MISSAO_49 = 1
-    }
+    }   calma()
 }
 
 function feita50() {
@@ -2348,7 +2350,7 @@ function feita50() {
             console.log(erro);
         })
         sessionStorage.MISSAO_50 = 1
-    }
+    }   calma()
 }
 
 function feita51() {
@@ -2395,7 +2397,7 @@ function feita51() {
             console.log(erro);
         })
         sessionStorage.MISSAO_51 = 1
-    }
+    }   calma()
 }
 
 function feita52() {
@@ -2442,7 +2444,7 @@ function feita52() {
             console.log(erro);
         })
         sessionStorage.MISSAO_52 = 1
-    }
+    }   calma()
 }
 
 function feita53() {
@@ -2489,7 +2491,7 @@ function feita53() {
             console.log(erro);
         })
         sessionStorage.MISSAO_53 = 1
-    }
+    }   calma()
 }
 
 function feita54() {
@@ -2536,7 +2538,7 @@ function feita54() {
             console.log(erro);
         })
         sessionStorage.MISSAO_54 = 1
-    }
+    }   calma()
 }
 
 function feita55() {
@@ -2583,7 +2585,7 @@ function feita55() {
             console.log(erro);
         })
         sessionStorage.MISSAO_55 = 1
-    }
+    }   calma()
 }
 
 function feita56() {
@@ -2630,7 +2632,7 @@ function feita56() {
             console.log(erro);
         })
         sessionStorage.MISSAO_56 = 1
-    }
+    }   calma()
 }
 
 function feita57() {
@@ -2677,7 +2679,7 @@ function feita57() {
             console.log(erro);
         })
         sessionStorage.MISSAO_57 = 1
-    }
+    }   calma()
 }
 
 function feita58() {
@@ -2724,7 +2726,7 @@ function feita58() {
             console.log(erro);
         })
         sessionStorage.MISSAO_58 = 1
-    }
+    }   calma()
 }
 
 function feita59() {
@@ -2771,7 +2773,7 @@ function feita59() {
             console.log(erro);
         })
         sessionStorage.MISSAO_59 = 1
-    }
+    }   calma()
 }
 
 function feita60() {
@@ -2818,7 +2820,7 @@ function feita60() {
             console.log(erro);
         })
         sessionStorage.MISSAO_60 = 1
-    }
+    }   calma()
 }
 
 function feita61() {
@@ -2865,7 +2867,7 @@ function feita61() {
             console.log(erro);
         })
         sessionStorage.MISSAO_61 = 1
-    }
+    }   calma()
 }
 
 function feita62() {
@@ -2912,7 +2914,7 @@ function feita62() {
             console.log(erro);
         })
         sessionStorage.MISSAO_62 = 1
-    }
+    }   calma()
 }
 
 function feita63() {
@@ -2959,7 +2961,7 @@ function feita63() {
             console.log(erro);
         })
         sessionStorage.MISSAO_63 = 1
-    }
+    }   calma()
 }
 
 function feita64() {
@@ -3006,7 +3008,7 @@ function feita64() {
             console.log(erro);
         })
         sessionStorage.MISSAO_64 = 1
-    }
+    }   calma()
 }
 
 function feita65() {
@@ -3053,7 +3055,7 @@ function feita65() {
             console.log(erro);
         })
         sessionStorage.MISSAO_65 = 1
-    }
+    }   calma()
 }
 
 function feita66() {
@@ -3100,7 +3102,7 @@ function feita66() {
             console.log(erro);
         })
         sessionStorage.MISSAO_66 = 1
-    }
+    }   calma()
 }
 
 function feita67() {
@@ -3147,7 +3149,7 @@ function feita67() {
             console.log(erro);
         })
         sessionStorage.MISSAO_67 = 1
-    }
+    }   calma()
 }
 
 function feita68() {
@@ -3194,7 +3196,7 @@ function feita68() {
             console.log(erro);
         })
         sessionStorage.MISSAO_68 = 1
-    }
+    }   calma()
 }
 
 function feita69() {
@@ -3241,7 +3243,7 @@ function feita69() {
             console.log(erro);
         })
         sessionStorage.MISSAO_69 = 1
-    }
+    }   calma()
 }
 
 function feita70() {
@@ -3288,7 +3290,7 @@ function feita70() {
             console.log(erro);
         })
         sessionStorage.MISSAO_70 = 1
-    }
+    }   calma()
 }
 
 function feita71() {
@@ -3335,7 +3337,7 @@ function feita71() {
             console.log(erro);
         })
         sessionStorage.MISSAO_71 = 1
-    }
+    }   calma()
 }
 
 function feita72() {
@@ -3382,7 +3384,7 @@ function feita72() {
             console.log(erro);
         })
         sessionStorage.MISSAO_72 = 1
-    }
+    }   calma()
 }
 
 function feita73() {
@@ -3429,7 +3431,7 @@ function feita73() {
             console.log(erro);
         })
         sessionStorage.MISSAO_73 = 1
-    }
+    }   calma()
 }
 
 function feita74() {
@@ -3476,7 +3478,7 @@ function feita74() {
             console.log(erro);
         })
         sessionStorage.MISSAO_74 = 1
-    }
+    }   calma()
 }
 
 function feita75() {
@@ -3523,7 +3525,7 @@ function feita75() {
             console.log(erro);
         })
         sessionStorage.MISSAO_75 = 1
-    }
+    }   calma()
 }
 
 function feita76() {
@@ -3570,7 +3572,7 @@ function feita76() {
             console.log(erro);
         })
         sessionStorage.MISSAO_76 = 1
-    }
+    }   calma()
 }
 
 function feita77() {
@@ -3617,7 +3619,7 @@ function feita77() {
             console.log(erro);
         })
         sessionStorage.MISSAO_77 = 1
-    }
+    }   calma()
 }
 
 function feita78() {
@@ -3664,7 +3666,7 @@ function feita78() {
             console.log(erro);
         })
         sessionStorage.MISSAO_78 = 1
-    }
+    }   calma()
 }
 
 function feita79() {
@@ -3711,7 +3713,7 @@ function feita79() {
             console.log(erro);
         })
         sessionStorage.MISSAO_79 = 1
-    }
+    }   calma()
 }
 
 function feita80() {
@@ -3758,7 +3760,7 @@ function feita80() {
             console.log(erro);
         })
         sessionStorage.MISSAO_80 = 1
-    }
+    }   calma()
 }
 
 function feita81() {
@@ -3805,7 +3807,7 @@ function feita81() {
             console.log(erro);
         })
         sessionStorage.MISSAO_81 = 1
-    }
+    }   calma()
 }
 
 function feita82() {
@@ -3852,7 +3854,7 @@ function feita82() {
             console.log(erro);
         })
         sessionStorage.MISSAO_82 = 1
-    }
+    }   calma()
 }
 
 function feita83() {
@@ -3899,7 +3901,7 @@ function feita83() {
             console.log(erro);
         })
         sessionStorage.MISSAO_83 = 1
-    }
+    }   calma()
 }
 
 function feita84() {
@@ -3946,7 +3948,7 @@ function feita84() {
             console.log(erro);
         })
         sessionStorage.MISSAO_84 = 1
-    }
+    }   calma()
 }
 
 function feita85() {
@@ -3993,7 +3995,7 @@ function feita85() {
             console.log(erro);
         })
         sessionStorage.MISSAO_85 = 1
-    }
+    }   calma()
 }
 
 function feita86() {
@@ -4040,7 +4042,7 @@ function feita86() {
             console.log(erro);
         })
         sessionStorage.MISSAO_86 = 1
-    }
+    }   calma()
 }
 
 function feita87() {
@@ -4087,7 +4089,7 @@ function feita87() {
             console.log(erro);
         })
         sessionStorage.MISSAO_87 = 1
-    }
+    }   calma()
 }
 
 function feita88() {
@@ -4134,7 +4136,7 @@ function feita88() {
             console.log(erro);
         })
         sessionStorage.MISSAO_88 = 1
-    }
+    }   calma()
 }
 
 function feita89() {
@@ -4181,7 +4183,7 @@ function feita89() {
             console.log(erro);
         })
         sessionStorage.MISSAO_89 = 1
-    }
+    }   calma()
 }
 
 function feita90() {
@@ -4228,7 +4230,7 @@ function feita90() {
             console.log(erro);
         })
         sessionStorage.MISSAO_90 = 1
-    }
+    }   calma()
 }
 
 function feita91() {
@@ -4275,7 +4277,7 @@ function feita91() {
             console.log(erro);
         })
         sessionStorage.MISSAO_91 = 1
-    }
+    }   calma()
 }
 
 function feita92() {
@@ -4322,7 +4324,7 @@ function feita92() {
             console.log(erro);
         })
         sessionStorage.MISSAO_92 = 1
-    }
+    }   calma()
 }
 
 function feita93() {
@@ -4369,7 +4371,7 @@ function feita93() {
             console.log(erro);
         })
         sessionStorage.MISSAO_93 = 1
-    }
+    }   calma()
 }
 
 function feita94() {
@@ -4416,7 +4418,7 @@ function feita94() {
             console.log(erro);
         })
         sessionStorage.MISSAO_94 = 1
-    }
+    }   calma()
 }
 
 function feita95() {
@@ -4463,7 +4465,7 @@ function feita95() {
             console.log(erro);
         })
         sessionStorage.MISSAO_95 = 1
-    }
+    }   calma()
 }
 
 function feita96() {
@@ -4510,7 +4512,7 @@ function feita96() {
             console.log(erro);
         })
         sessionStorage.MISSAO_96 = 1
-    }
+    }   calma()
 }
 
 function feita97() {
@@ -4557,7 +4559,7 @@ function feita97() {
             console.log(erro);
         })
         sessionStorage.MISSAO_97 = 1
-    }
+    }   calma()
 }
 
 function feita98() {
@@ -4604,7 +4606,7 @@ function feita98() {
             console.log(erro);
         })
         sessionStorage.MISSAO_98 = 1
-    }
+    }   calma()
 }
 
 function feita99() {
@@ -4651,7 +4653,7 @@ function feita99() {
             console.log(erro);
         })
         sessionStorage.MISSAO_99 = 1
-    }
+    }   calma()
 }
 
 function feita100() {
@@ -4698,7 +4700,7 @@ function feita100() {
             console.log(erro);
         })
         sessionStorage.MISSAO_100 = 1
-    }
+    }   calma()
 }
 
 
@@ -6051,7 +6053,7 @@ if(sessionStorage.MISSAO_8 == 1){
 }
 if(sessionStorage.MISSAO_9 == 1){
     div_cardMissao9.style.display = `block`
-}else{
+}else{  calma()
     div_cardMissao9.style.display = `none`
 }
 if(sessionStorage.MISSAO_10 == 1){

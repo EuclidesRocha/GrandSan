@@ -117,19 +117,18 @@ function ultimosPontos(){
 
 
 
-    function tabela(){
  const ctxLinha = document.getElementById('myChartLinha');
   
-  new Chart(ctxLinha, {
+  var rankS = new Chart(ctxLinha, {
     type: 'bar',
    
     data: {
-      labels: ['12:00', '13:00', '14:00', '15:00', '16:00', '17:00'],
+      labels: [],
       datasets: [{
         label: 'bar',
-        data: [30, 29, 28, 25, 22, 23], 
+        data: [], 
         borderWidth: 2,
-        borderColor: 'rgb(240, 6, 96)'
+        backgroundColor: 'rgba(48, 100, 56, 1)'
        
         
       },
@@ -146,7 +145,55 @@ function ultimosPontos(){
   });
 
 
+    
+
+    function rankDosBons(){
+
+    
+       fetch(`/resultado/rankDeUser`, {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json"
+            },
+        }).then(function (resposta) {
+            console.log("ESTOU NO THEN DO entrar()!")
+
+            if (resposta.ok) {
+                console.log(resposta);
+                
+
+                resposta.json().then(resposta => {
+                  
+               
+                  for(var i = 0; i < resposta.length; i++){
+
+                   
+                    rankS.data.labels.push(resposta[i].nome);
+                    rankS.data.datasets[0].data.push(resposta[i].Pontos)
+                    
+                    
+                  }
+                  rankS.update()
+             
+                });
+
+            } else {
+
+                console.log("houve um erro no rank");
+                 resposta.text().then(texto => {
+                    console.error(texto);
+                   
+                });
+               
+            }
+
+        }).catch(function (erro) {
+            console.log(erro);
+        })
     }
+
+
+
 
 
      const ctxBarra = document.getElementById('myChartBarra');
@@ -161,7 +208,7 @@ function ultimosPontos(){
         label: 'Acertos',
         data: [], 
         borderWidth: 1,
-        backgroundColor: 'rgb(240, 6, 96)'
+        backgroundColor: 'rgba(48, 100, 56, 1)'
        
         
       },
@@ -169,7 +216,7 @@ function ultimosPontos(){
         label: 'Erros', 
         data: [],
         borderWidth: 1,
-        backgroundColor: 'rgb(25, 86, 201)'
+        backgroundColor: 'rgba(59, 9, 38, 1)'
         
 
         
@@ -201,16 +248,18 @@ function ultimosPontos(){
                 
 
                 resposta.json().then(resposta => {
+                  
+               
+                  //   }
+                  for(var i = 0; i < resposta.length; i++){
 
-                  for ( Dados of resposta) {
-                grafiAcertos.data.labels.push(Dados.qtdPartidas)
-
-                grafiAcertos.data.datasets[0].data.push(Dados.acertos)
-                grafiAcertos.data.datasets[1].data.push(Dados.erros)
-                grafiAcertos.update()
-
+                    var tenta = Number(resposta[i].qtdPartidas - i)
+                    grafiAcertos.data.labels.push(tenta);
+                    grafiAcertos.data.datasets[0].data.push(resposta[i].acertos)
+                    grafiAcertos.data.datasets[1].data.push(resposta[i].erros)
+                    
                   }
-
+                  grafiAcertos.update()
              
                 });
 
@@ -267,10 +316,11 @@ validaTela()
         if(numero == true){
         verPontos()
         corMudar()
-        tabela()
         ultimosPontos()
         colorOfPage()
         AcertosErros()
+        rankDosBons()
+
    
         }
     }

@@ -38,7 +38,8 @@ select idResultado, acertos, erros, (select count(idResultado) from resultado wh
 
 select * from resultado;
 
-Select sum(pontos) from resultado group by fkUsuario HAVING fkUsuario = 1;
+Select fkUsuario ,nome, sum(pontos) as Pontos from resultado join usuario on fkUsuario = idUsuario group by fkUsuario order by Pontos desc limit 5;
+
 Select  tentativa, pontos from resultado where fkUsuario = 1 order by tentativa desc ;
 
 drop table resultado;
