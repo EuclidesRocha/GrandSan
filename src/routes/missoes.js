@@ -15,6 +15,10 @@ router.put("/atualizar", function(req,res){
     missoesController.atualizar(req, res);
 });
 
+router.get("/totalFeitas/:id", function(req,res){
+    missoesController.totalFeitas(req, res);
+});
+
 
 
 module.exports = router;

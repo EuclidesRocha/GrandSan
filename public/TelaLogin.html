@@ -32,7 +32,13 @@
                 <p id="PdeRedirecionamento">Novo Por Aqui? <a id="AdeRedirecionamento" href="TelaCadastro.html">Cadastre-se</a></p>
             
                 </div>   
+
+                
             </div>  
+
+            <div id="div_erroAlerta" class="CardErroAlerta" style="display: none;">
+                  <img src="./arquivos/imagens/opa.png" alt=""> <span id="span_mensagem">Opa</span>
+            </div>
  
         </div>
 
@@ -54,7 +60,11 @@ var senhaVar = in_Senha.value
 if(emailVar == "" || senhaVar == ""){
 
     console.log("erro email vazio ou senha ");
+    span_mensagem.innerHTML = `O seu Email ou senha está vazia!`
+    erroMen()
+    
     return false
+    
 }
 
 console.log("form login", emailVar)
@@ -97,7 +107,9 @@ fetch("/usuario/autenticar", {
                 console.log("Houve um erro ao tentar realizar o login!");
                  resposta.text().then(texto => {
                     console.error(texto);
-                    finalizarAguardar(texto);
+                     span_mensagem.innerHTML = `${texto}`
+                     erroMen()
+                    
                 });
                
             }
@@ -112,6 +124,11 @@ fetch("/usuario/autenticar", {
 
 
 }
+function erroMen(){
+    div_erroAlerta.style.display = "flex";
+    
+    setTimeout(() => div_erroAlerta.style.display = "none", 5000)
 
+}
 
 </script>

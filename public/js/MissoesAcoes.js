@@ -18,11 +18,15 @@ function feita1() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_1 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_1 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_1 == 0 ){
 
@@ -41,13 +45,17 @@ function feita1() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_1 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_1 = 1
         
         
-    } calma()
+        
+    } 
 }
 
 function feita2() {
@@ -67,15 +75,18 @@ function feita2() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_2 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_2 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_2 == 0 ){
-
-        id_missao2.style.backgroundColor = color1
+r = color1
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -90,11 +101,15 @@ function feita2() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_2 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_2 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita3() {
@@ -114,15 +129,19 @@ function feita3() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_3 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_3 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_3 == 0 ){
 
-        id_missao3.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -137,11 +156,15 @@ function feita3() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_3 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_3 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita4() {
@@ -161,15 +184,19 @@ function feita4() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_4 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_4 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_4 == 0 ){
 
-        id_missao4.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -184,11 +211,15 @@ function feita4() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_4 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_4 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita5() {
@@ -208,15 +239,19 @@ function feita5() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_5 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_5 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_5 == 0 ){
 
-        id_missao5.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -231,11 +266,15 @@ function feita5() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_5 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_5 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita6() {
@@ -255,15 +294,19 @@ function feita6() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_6 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_6 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_6 == 0 ){
 
-        id_missao6.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -278,11 +321,15 @@ function feita6() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_6 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_6 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita7() {
@@ -302,15 +349,19 @@ function feita7() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_7 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_7 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_7 == 0 ){
 
-        id_missao7.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -325,11 +376,15 @@ function feita7() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_7 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_7 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita8() {
@@ -349,15 +404,19 @@ function feita8() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_8 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_8 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_8 == 0 ){
 
-        id_missao8.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -372,11 +431,15 @@ function feita8() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_8 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_8 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita9() {
@@ -396,15 +459,19 @@ function feita9() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_9 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_9 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_9 == 0 ){
 
-        id_missao9.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -419,11 +486,15 @@ function feita9() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_9 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_9 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita10() {
@@ -443,15 +514,19 @@ function feita10() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_10 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_10 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_10 == 0 ){
 
-        id_missao10.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -466,11 +541,15 @@ function feita10() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_10 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_10 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita11() {
@@ -490,15 +569,19 @@ function feita11() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_11 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_11 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_11 == 0 ){
 
-        id_missao11.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -513,11 +596,15 @@ function feita11() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_11 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_11 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita12() {
@@ -537,15 +624,19 @@ function feita12() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_12 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_12 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_12 == 0 ){
 
-        id_missao12.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -560,11 +651,15 @@ function feita12() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_12 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_12 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita13() {
@@ -584,15 +679,19 @@ function feita13() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_13 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_13 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_13 == 0 ){
 
-        id_missao13.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -607,11 +706,15 @@ function feita13() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_13 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_13 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita14() {
@@ -631,15 +734,19 @@ function feita14() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_14 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_14 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_14 == 0 ){
 
-        id_missao14.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -654,11 +761,15 @@ function feita14() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_14 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_14 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita15() {
@@ -678,15 +789,19 @@ function feita15() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_15 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_15 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_15 == 0 ){
 
-        id_missao15.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -701,11 +816,15 @@ function feita15() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_15 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_15 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita16() {
@@ -725,15 +844,19 @@ function feita16() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_16 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_16 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_16 == 0 ){
 
-        id_missao16.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -748,11 +871,15 @@ function feita16() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_16 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_16 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita17() {
@@ -772,15 +899,19 @@ function feita17() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_17 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_17 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_17 == 0 ){
 
-        id_missao17.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -795,11 +926,15 @@ function feita17() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_17 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_17 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita18() {
@@ -819,15 +954,19 @@ function feita18() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_18 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_18 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_18 == 0 ){
 
-        id_missao18.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -842,11 +981,15 @@ function feita18() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_18 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_18 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita19() {
@@ -866,15 +1009,19 @@ function feita19() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_19 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_19 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_19 == 0 ){
 
-        id_missao19.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -889,11 +1036,15 @@ function feita19() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_19 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_19 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita20() {
@@ -913,15 +1064,19 @@ function feita20() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_20 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_20 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_20 == 0 ){
 
-        id_missao20.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -936,11 +1091,15 @@ function feita20() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_20 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_20 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita21() {
@@ -960,15 +1119,19 @@ function feita21() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_21 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_21 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_21 == 0 ){
 
-        id_missao21.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -983,11 +1146,15 @@ function feita21() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_21 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_21 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita22() {
@@ -1007,15 +1174,19 @@ function feita22() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_22 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_22 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_22 == 0 ){
 
-        id_missao22.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -1030,11 +1201,15 @@ function feita22() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_22 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_22 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita23() {
@@ -1054,15 +1229,19 @@ function feita23() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_23 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_23 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_23 == 0 ){
 
-        id_missao23.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -1077,11 +1256,15 @@ function feita23() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_23 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_23 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita24() {
@@ -1101,15 +1284,19 @@ function feita24() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_24 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_24 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_24 == 0 ){
 
-        id_missao24.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -1124,11 +1311,15 @@ function feita24() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_24 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_24 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita25() {
@@ -1148,15 +1339,19 @@ function feita25() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_25 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_25 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_25 == 0 ){
 
-        id_missao25.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -1171,11 +1366,15 @@ function feita25() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_25 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_25 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita26() {
@@ -1195,15 +1394,19 @@ function feita26() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_26 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_26 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_26 == 0 ){
 
-        id_missao26.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -1218,11 +1421,15 @@ function feita26() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_26 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_26 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita27() {
@@ -1242,15 +1449,19 @@ function feita27() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_27 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_27 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_27 == 0 ){
 
-        id_missao27.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -1265,11 +1476,15 @@ function feita27() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_27 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_27 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita28() {
@@ -1289,15 +1504,19 @@ function feita28() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_28 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_28 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_28 == 0 ){
 
-        id_missao28.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -1312,11 +1531,15 @@ function feita28() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_28 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_28 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita29() {
@@ -1336,15 +1559,19 @@ function feita29() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_29 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_29 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_29 == 0 ){
 
-        id_missao29.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -1359,11 +1586,15 @@ function feita29() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_29 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_29 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita30() {
@@ -1383,15 +1614,19 @@ function feita30() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_30 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_30 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_30 == 0 ){
 
-        id_missao30.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -1406,11 +1641,15 @@ function feita30() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_30 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_30 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita31() {
@@ -1430,15 +1669,19 @@ function feita31() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_31 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_31 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_31 == 0 ){
 
-        id_missao31.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -1453,11 +1696,15 @@ function feita31() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_31 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_31 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita32() {
@@ -1477,15 +1724,19 @@ function feita32() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_32 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_32 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_32 == 0 ){
 
-        id_missao32.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -1500,11 +1751,15 @@ function feita32() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_32 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_32 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita33() {
@@ -1524,15 +1779,19 @@ function feita33() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_33 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_33 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_33 == 0 ){
 
-        id_missao33.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -1547,11 +1806,15 @@ function feita33() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_33 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_33 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita34() {
@@ -1571,15 +1834,19 @@ function feita34() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_34 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_34 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_34 == 0 ){
 
-        id_missao34.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -1594,11 +1861,15 @@ function feita34() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_34 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_34 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita35() {
@@ -1618,15 +1889,19 @@ function feita35() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_35 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_35 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_35 == 0 ){
 
-        id_missao35.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -1641,11 +1916,15 @@ function feita35() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_35 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_35 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita36() {
@@ -1665,15 +1944,19 @@ function feita36() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_36 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_36 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_36 == 0 ){
 
-        id_missao36.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -1688,11 +1971,15 @@ function feita36() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_36 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_36 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita37() {
@@ -1712,15 +1999,19 @@ function feita37() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_37 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_37 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_37 == 0 ){
 
-        id_missao37.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -1735,11 +2026,15 @@ function feita37() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_37 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_37 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita38() {
@@ -1759,15 +2054,19 @@ function feita38() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_38 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_38 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_38 == 0 ){
 
-        id_missao38.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -1782,11 +2081,15 @@ function feita38() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_38 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_38 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita39() {
@@ -1806,15 +2109,19 @@ function feita39() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_39 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_39 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_39 == 0 ){
 
-        id_missao39.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -1829,11 +2136,15 @@ function feita39() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_39 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_39 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita40() {
@@ -1853,15 +2164,19 @@ function feita40() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_40 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_40 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_40 == 0 ){
 
-        id_missao40.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -1876,11 +2191,15 @@ function feita40() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_40 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_40 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita41() {
@@ -1900,15 +2219,19 @@ function feita41() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_41 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_41 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_41 == 0 ){
 
-        id_missao41.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -1923,11 +2246,15 @@ function feita41() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_41 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_41 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita42() {
@@ -1947,15 +2274,19 @@ function feita42() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_42 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_42 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_42 == 0 ){
 
-        id_missao42.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -1970,11 +2301,15 @@ function feita42() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_42 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_42 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita43() {
@@ -1994,15 +2329,19 @@ function feita43() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_43 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_43 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_43 == 0 ){
 
-        id_missao43.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -2017,11 +2356,15 @@ function feita43() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_43 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_43 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita44() {
@@ -2041,15 +2384,19 @@ function feita44() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_44 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_44 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_44 == 0 ){
 
-        id_missao44.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -2064,11 +2411,15 @@ function feita44() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_44 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_44 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita45() {
@@ -2088,15 +2439,19 @@ function feita45() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_45 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_45 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_45 == 0 ){
 
-        id_missao45.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -2111,11 +2466,15 @@ function feita45() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_45 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_45 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita46() {
@@ -2135,15 +2494,19 @@ function feita46() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_46 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_46 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_46 == 0 ){
 
-        id_missao46.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -2158,11 +2521,15 @@ function feita46() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_46 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_46 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita47() {
@@ -2182,15 +2549,19 @@ function feita47() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_47 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_47 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_47 == 0 ){
 
-        id_missao47.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -2205,11 +2576,15 @@ function feita47() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_47 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_47 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita48() {
@@ -2229,15 +2604,19 @@ function feita48() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_48 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_48 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_48 == 0 ){
 
-        id_missao48.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -2252,11 +2631,15 @@ function feita48() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_48 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_48 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita49() {
@@ -2276,15 +2659,19 @@ function feita49() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_49 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_49 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_49 == 0 ){
 
-        id_missao49.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -2299,11 +2686,15 @@ function feita49() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_49 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_49 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita50() {
@@ -2323,15 +2714,19 @@ function feita50() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_50 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_50 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_50 == 0 ){
 
-        id_missao50.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -2346,11 +2741,15 @@ function feita50() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_50 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_50 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita51() {
@@ -2370,15 +2769,19 @@ function feita51() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_51 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_51 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_51 == 0 ){
 
-        id_missao51.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -2393,11 +2796,15 @@ function feita51() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_51 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_51 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita52() {
@@ -2417,15 +2824,19 @@ function feita52() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_52 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_52 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_52 == 0 ){
 
-        id_missao52.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -2440,11 +2851,15 @@ function feita52() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_52 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_52 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita53() {
@@ -2464,15 +2879,19 @@ function feita53() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_53 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_53 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_53 == 0 ){
 
-        id_missao53.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -2487,11 +2906,15 @@ function feita53() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_53 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_53 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita54() {
@@ -2511,15 +2934,19 @@ function feita54() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_54 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_54 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_54 == 0 ){
 
-        id_missao54.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -2534,11 +2961,15 @@ function feita54() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_54 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_54 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita55() {
@@ -2558,15 +2989,19 @@ function feita55() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_55 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_55 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_55 == 0 ){
 
-        id_missao55.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -2581,11 +3016,15 @@ function feita55() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_55 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_55 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita56() {
@@ -2605,15 +3044,19 @@ function feita56() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_56 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_56 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_56 == 0 ){
 
-        id_missao56.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -2628,11 +3071,15 @@ function feita56() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_56 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_56 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita57() {
@@ -2652,15 +3099,19 @@ function feita57() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_57 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_57 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_57 == 0 ){
 
-        id_missao57.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -2675,11 +3126,15 @@ function feita57() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_57 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_57 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita58() {
@@ -2699,15 +3154,19 @@ function feita58() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_58 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_58 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_58 == 0 ){
 
-        id_missao58.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -2722,11 +3181,15 @@ function feita58() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_58 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_58 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita59() {
@@ -2746,15 +3209,19 @@ function feita59() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_59 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_59 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_59 == 0 ){
 
-        id_missao59.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -2769,11 +3236,15 @@ function feita59() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_59 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_59 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita60() {
@@ -2793,15 +3264,19 @@ function feita60() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_60 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_60 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_60 == 0 ){
 
-        id_missao60.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -2816,11 +3291,15 @@ function feita60() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_60 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_60 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita61() {
@@ -2840,15 +3319,19 @@ function feita61() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_61 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_61 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_61 == 0 ){
 
-        id_missao61.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -2863,11 +3346,15 @@ function feita61() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_61 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_61 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita62() {
@@ -2887,15 +3374,19 @@ function feita62() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_62 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_62 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_62 == 0 ){
 
-        id_missao62.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -2910,11 +3401,15 @@ function feita62() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_62 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_62 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita63() {
@@ -2934,15 +3429,19 @@ function feita63() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_63 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_63 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_63 == 0 ){
 
-        id_missao63.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -2957,11 +3456,15 @@ function feita63() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_63 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_63 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita64() {
@@ -2981,15 +3484,19 @@ function feita64() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_64 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_64 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_64 == 0 ){
 
-        id_missao64.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -3004,11 +3511,15 @@ function feita64() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_64 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_64 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita65() {
@@ -3028,15 +3539,19 @@ function feita65() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_65 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_65 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_65 == 0 ){
 
-        id_missao65.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -3051,11 +3566,15 @@ function feita65() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_65 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_65 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita66() {
@@ -3075,15 +3594,19 @@ function feita66() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_66 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_66 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_66 == 0 ){
 
-        id_missao66.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -3098,11 +3621,15 @@ function feita66() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_66 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_66 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita67() {
@@ -3122,15 +3649,19 @@ function feita67() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_67 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_67 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_67 == 0 ){
 
-        id_missao67.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -3145,11 +3676,15 @@ function feita67() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_67 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_67 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita68() {
@@ -3169,15 +3704,19 @@ function feita68() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_68 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_68 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_68 == 0 ){
 
-        id_missao68.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -3192,11 +3731,15 @@ function feita68() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_68 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_68 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita69() {
@@ -3216,15 +3759,19 @@ function feita69() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_69 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_69 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_69 == 0 ){
 
-        id_missao69.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -3239,11 +3786,15 @@ function feita69() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_69 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_69 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita70() {
@@ -3263,15 +3814,19 @@ function feita70() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_70 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_70 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_70 == 0 ){
 
-        id_missao70.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -3286,11 +3841,15 @@ function feita70() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_70 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_70 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita71() {
@@ -3310,15 +3869,19 @@ function feita71() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_71 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_71 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_71 == 0 ){
 
-        id_missao71.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -3333,11 +3896,15 @@ function feita71() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_71 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_71 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita72() {
@@ -3357,15 +3924,19 @@ function feita72() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_72 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_72 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_72 == 0 ){
 
-        id_missao72.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -3380,11 +3951,15 @@ function feita72() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_72 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_72 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita73() {
@@ -3404,15 +3979,19 @@ function feita73() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_73 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_73 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_73 == 0 ){
 
-        id_missao73.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -3427,11 +4006,15 @@ function feita73() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_73 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_73 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita74() {
@@ -3451,15 +4034,19 @@ function feita74() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_74 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_74 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_74 == 0 ){
 
-        id_missao74.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -3474,11 +4061,15 @@ function feita74() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_74 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_74 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita75() {
@@ -3498,15 +4089,19 @@ function feita75() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_75 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_75 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_75 == 0 ){
 
-        id_missao75.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -3521,11 +4116,15 @@ function feita75() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_75 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_75 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita76() {
@@ -3545,15 +4144,19 @@ function feita76() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_76 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_76 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_76 == 0 ){
 
-        id_missao76.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -3568,11 +4171,15 @@ function feita76() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_76 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_76 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita77() {
@@ -3592,15 +4199,19 @@ function feita77() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_77 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_77 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_77 == 0 ){
 
-        id_missao77.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -3615,11 +4226,15 @@ function feita77() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_77 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_77 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita78() {
@@ -3639,15 +4254,19 @@ function feita78() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_78 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_78 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_78 == 0 ){
 
-        id_missao78.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -3662,11 +4281,15 @@ function feita78() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_78 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_78 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita79() {
@@ -3686,15 +4309,19 @@ function feita79() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_79 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_79 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_79 == 0 ){
 
-        id_missao79.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -3709,11 +4336,15 @@ function feita79() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_79 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_79 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita80() {
@@ -3733,15 +4364,19 @@ function feita80() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_80 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_80 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_80 == 0 ){
 
-        id_missao80.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -3756,11 +4391,15 @@ function feita80() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_80 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_80 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita81() {
@@ -3780,15 +4419,19 @@ function feita81() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_81 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_81 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_81 == 0 ){
 
-        id_missao81.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -3803,11 +4446,15 @@ function feita81() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_81 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_81 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita82() {
@@ -3827,15 +4474,19 @@ function feita82() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_82 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_82 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_82 == 0 ){
 
-        id_missao82.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -3850,11 +4501,15 @@ function feita82() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_82 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_82 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita83() {
@@ -3874,15 +4529,19 @@ function feita83() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_83 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_83 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_83 == 0 ){
 
-        id_missao83.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -3897,11 +4556,15 @@ function feita83() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_83 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_83 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita84() {
@@ -3921,15 +4584,19 @@ function feita84() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_84 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_84 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_84 == 0 ){
 
-        id_missao84.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -3944,11 +4611,15 @@ function feita84() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_84 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_84 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita85() {
@@ -3968,15 +4639,19 @@ function feita85() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_85 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_85 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_85 == 0 ){
 
-        id_missao85.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -3991,11 +4666,15 @@ function feita85() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_85 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_85 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita86() {
@@ -4015,15 +4694,19 @@ function feita86() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_86 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_86 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_86 == 0 ){
 
-        id_missao86.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -4038,11 +4721,15 @@ function feita86() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_86 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_86 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita87() {
@@ -4062,15 +4749,19 @@ function feita87() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_87 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_87 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_87 == 0 ){
 
-        id_missao87.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -4085,11 +4776,15 @@ function feita87() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_87 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_87 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita88() {
@@ -4109,15 +4804,19 @@ function feita88() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_88 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_88 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_88 == 0 ){
 
-        id_missao88.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -4132,11 +4831,15 @@ function feita88() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_88 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_88 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita89() {
@@ -4156,15 +4859,19 @@ function feita89() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_89 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_89 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_89 == 0 ){
 
-        id_missao89.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -4179,11 +4886,15 @@ function feita89() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_89 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_89 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita90() {
@@ -4203,15 +4914,19 @@ function feita90() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_90 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_90 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_90 == 0 ){
 
-        id_missao90.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -4226,11 +4941,15 @@ function feita90() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_90 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_90 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita91() {
@@ -4250,15 +4969,19 @@ function feita91() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_91 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_91 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_91 == 0 ){
 
-        id_missao91.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -4273,11 +4996,15 @@ function feita91() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_91 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_91 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita92() {
@@ -4297,15 +5024,19 @@ function feita92() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_92 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_92 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_92 == 0 ){
 
-        id_missao92.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -4320,11 +5051,15 @@ function feita92() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_92 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_92 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita93() {
@@ -4344,15 +5079,19 @@ function feita93() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_93 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_93 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_93 == 0 ){
 
-        id_missao93.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -4367,11 +5106,15 @@ function feita93() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_93 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_93 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita94() {
@@ -4391,15 +5134,19 @@ function feita94() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_94 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_94 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_94 == 0 ){
 
-        id_missao94.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -4414,11 +5161,15 @@ function feita94() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_94 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_94 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita95() {
@@ -4438,15 +5189,19 @@ function feita95() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_95 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_95 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_95 == 0 ){
 
-        id_missao95.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -4461,11 +5216,15 @@ function feita95() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_95 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_95 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita96() {
@@ -4485,15 +5244,19 @@ function feita96() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_96 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_96 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_96 == 0 ){
 
-        id_missao96.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -4508,11 +5271,15 @@ function feita96() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_96 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_96 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita97() {
@@ -4532,15 +5299,19 @@ function feita97() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_97 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_97 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_97 == 0 ){
 
-        id_missao97.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -4555,11 +5326,15 @@ function feita97() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_97 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_97 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita98() {
@@ -4579,15 +5354,19 @@ function feita98() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_98 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_98 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_98 == 0 ){
 
-        id_missao98.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -4602,11 +5381,15 @@ function feita98() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_98 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_98 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita99() {
@@ -4626,15 +5409,19 @@ function feita99() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_99 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_99 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_99 == 0 ){
 
-        id_missao99.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -4649,11 +5436,15 @@ function feita99() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_99 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_99 = 1
-    }   calma()
+        
+    }   
 }
 
 function feita100() {
@@ -4673,15 +5464,19 @@ function feita100() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_100 = 0
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_100 = 0
-        color()
+        
+        
     }
     else if(sessionStorage.MISSAO_100 == 0 ){
 
-        id_missao100.style.backgroundColor = color1
+        
 
         fetch("/missoes/atualizar", {
             method: "PUT",
@@ -4696,11 +5491,15 @@ function feita100() {
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO ()!")
             resposta.json().then(json => {console.log("RESPOSTA DO JSON:", json)});
+            calma()
+            sessionStorage.MISSAO_100 = 1
+            color()
+            
         }).catch(function (erro) {
             console.log(erro);
         })
-        sessionStorage.MISSAO_100 = 1
-    }   calma()
+        
+    }   
 }
 
 
@@ -6053,7 +6852,7 @@ if(sessionStorage.MISSAO_8 == 1){
 }
 if(sessionStorage.MISSAO_9 == 1){
     div_cardMissao9.style.display = `block`
-}else{  calma()
+}else{  
     div_cardMissao9.style.display = `none`
 }
 if(sessionStorage.MISSAO_10 == 1){

@@ -29,7 +29,7 @@
         <div class="color" id="div_corDasPaginas">
             <div class="textoInBanner">História</div> 
             <div class="KPI"><Span>Missões Feitas:  <div id="KpiMissoes"><div id="div_feita">0</div><div>/100</div></div></Span></div>
-            <div class="grafico1" style="position: relative;">
+            <div class="grafico3" style="position: relative;">
                 <canvas  style="position: relative;height: 100%; width: 100%;"id="myChartDonut"></canvas >
             </div>
         </div>
@@ -785,7 +785,7 @@ var missoes = [
 
 ]
 
-
+var podeir = 0
 
 function aparecermissoes(){
 
@@ -1122,8 +1122,10 @@ function listarMissoes(){
                     }
                     if(json[0].fkMissoes == 100){  
                         sessionStorage.MISSAO_100 = json[0].concluida;
+                        
                     }
 
+                    color()
                 });
                   
 
@@ -1141,8 +1143,11 @@ function listarMissoes(){
          }).catch(function (erro) {
              console.log(erro);
          })
-        }
-        
+
+
+         
+                    
+        }      
  }
 
 var escolha = 0;
@@ -1218,27 +1223,59 @@ function colorOfPage(){
    
   });
 
+  
 
-  function calma(){
-    var feitasMissoes = 0
-   for(var i = 1; i<= 100; i++){
-    feitasMissoes += Number(sessionStorage[`MISSAO_${i}`]);
-    
 
+ 
+
+
+
+ function calma(){
+
+
+  var idUsuario = sessionStorage.ID_USUARIO;
+       fetch(`/missoes/totalFeitas/${idUsuario}`, {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json"
+            },
+        }).then(function (resposta) {
+            console.log("ESTOU NO THEN DO entrar()!")
+
+            if (resposta.ok) {
+                console.log(resposta);
+                
+
+                resposta.json().then(resposta => {
+
+                    var feitas = Number(resposta[0].MissoesFeitas)
+                    var faltantes = 100 - feitas
+                    console.log(resposta[0].MissoesFeitas)
+                    MissoesGrafi.data.datasets[0].data.splice(0, 1, feitas);
+                    MissoesGrafi.data.datasets[0].data.splice(1, 1 ,faltantes);
+                    MissoesGrafi.update()
+                    div_feita.innerHTML = feitas
+             
+                });
+
+            } else {
+
+                console.log("Houve um erro ao tentar realizar o login!");
+                 resposta.text().then(texto => {
+                    console.error(texto);
+                   
+                });
+               
+            }
+
+        }).catch(function (erro) {
+            console.log(erro);
+        })
     }
-    div_feita.innerHTML = feitasMissoes
-    console.log(feitasMissoes)
 
+     
 
-    
-    var faltantes = (100 - feitasMissoes);
-    console.log(faltantes)
-
-    MissoesGrafi.data.datasets[0].data.splice(0, 1 ,feitasMissoes);
-    MissoesGrafi.data.datasets[0].data.splice(1, 1 ,faltantes);
-    MissoesGrafi.update()
-
-   }
+   
   
     
 
@@ -1251,11 +1288,13 @@ validaTela()
         console.log(numero)
         if(numero == true){
         colorOfPage()
-    corMudar()
-    aparecermissoes()
-    listarMissoes()
-    color()
-    calma()
+        listarMissoes()
+        aparecermissoes()
+        corMudar()
+        calma()
+        
+        
+    
    
         }
     }

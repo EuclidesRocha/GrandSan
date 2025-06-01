@@ -515,9 +515,9 @@ width: 40%;
     font-family: "pricedown";
     color: black;
     border-radius: 20px;
-    background-color: rgb(202, 201, 201);
+    background-color: rgb(235, 235, 235);
     height: 100%;
-    font-size:  clamp(1rem, 5vw, 3rem);
+    font-size:  clamp(0.8rem, 2vw, 3rem);
     display: flex;
     align-items: center;
 
@@ -527,15 +527,58 @@ width: 40%;
     justify-content: center;
     margin-bottom: 3%;
     
-}.grafico1{
-    width: 22%;
+    
+}.spaceQuiz{
+    width: 40%;
     height: 100%;
     margin: 1%;
     display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: rgb(235, 235, 235);
+    border: solid;
+    border-radius: 20px;
+
+
+
+}.spaceQuiz span{
+    padding: 2%;
+    font-family: "bank";
+    font-weight: 600;
+    font-size: clamp(0.8rem, 2vw, 2rem);
+    width: 40%;
+   
+   color: white;
+   border-top: solid black;
+   border-bottom: solid black;
+
+
+}
+.grafico1{
+    width: 60%;
+    height: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(235, 235, 235);
+    border-left: solid ;
+    border-radius: 20px;
+    
+   
+    
     
 }.grafico2{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(235, 235, 235); 
+    border-left: solid ;
+    border-radius: 20px;
+   
+}
+.grafico3{
     width: 30%;
     height: 100%;
     margin: 1%;

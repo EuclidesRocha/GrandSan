@@ -46,9 +46,29 @@ function atualizar(req,res){
 
 }
 
+function totalFeitas(req, res){
+
+    var idUsuario = req.params.id;
+
+     if (idUsuario == undefined) {
+            res.status(400).send("Seu ID está undefined!");
+        }else{
+            missoesModel.totalFeitas(idUsuario).then(function(resposta){
+                
+                res.status(200).json(resposta);
+    
+            }).catch(erro=>{
+    
+                res.status(500).json(erro.sqlMessage);
+            })
+        }
+
+}
+
 module.exports = {
     listar,
     cadastrarPrimeiraVez,
-    atualizar
+    atualizar,
+    totalFeitas
 }
 

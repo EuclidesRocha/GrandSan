@@ -55,6 +55,9 @@
             <button id="butaoCadastrar" onclick="cadastrar()">Cadastrar</button>
                 </div>
             </div>
+            <div id="div_erroAlerta" class="CardErroAlerta" style="display: none;">
+                  <img src="./arquivos/imagens/opa.png" alt=""> <span id="span_mensagem">Opa</span>
+            </div>
         </div>
      
 </body>
@@ -74,12 +77,20 @@ var listaUsuario = [];
     var idUsuario = ``
     
 
-    if(Email == `` || Nome == `` || Senha == `` || ConFirmarSenha == `` ||SelGangue == ``||SelCidade == `` || !Email.includes("@"))
+    if(Email == `` || Nome == `` || Senha == `` || ConFirmarSenha == `` ||SelGangue == ``||SelCidade == ``)
 {
+  span_mensagem.innerHTML = `Por favor Preecha Todos os Campos!`;
+    erroMen()  
+  return false;
+} if(!Email.includes("@")){
+  span_mensagem.innerHTML = `Endereço de Email Inválido!`;
+    erroMen()  
     return false;
 }
 if(Senha != ConFirmarSenha){
   console.log("erro ao confirmar a senha")
+  span_mensagem.innerHTML = `Erro ao Confirmar Senha`;
+  erroMen() 
   return false;
 }
 
@@ -163,21 +174,30 @@ if(Senha != ConFirmarSenha){
             window.location = "TelaLogin.html";
           }, "2000");
 
-          limparFormulario();
-          finalizarAguardar();
+          
         } else {
-          throw "Houve um erro ao tentar realizar o cadastro!";
+          throw "Houve um erro ao tentar realizar o cadastro! Talvez o Email já foi usado";
+          
         }
       })
       .catch(function (resposta) {
         console.log(`#ERRO: ${resposta}`);
-        finalizarAguardar();
+        span_mensagem.innerHTML = `${resposta}`;
+      erroMen()  
+
+        
       });
 
     return false;
   }
 
 
+function erroMen(){
+    div_erroAlerta.style.display = "flex";
+    
+    setTimeout(() => div_erroAlerta.style.display = "none", 5000)
+
+}
 
 
 

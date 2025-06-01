@@ -31,10 +31,20 @@ function atualizar(idUsuario, missao, concluida){
     console.log("Executando a instrução SQL: \n" + instrucao);
     return database.executar(instrucao);
 }
+function totalFeitas(idUsuario){
 
+var instrucao = `
+        select fkUsuario as UserId, sum(concluida) as MissoesFeitas from StatusMissao where fkUsuario = ${idUsuario};
+    `;
+    console.log("Executando a instrução SQL: \n" + instrucao);
+    return database.executar(instrucao);
+
+
+}
 module.exports = {
     cadastrarPrimeiraVez,
     listar,
-    atualizar
+    atualizar,
+    totalFeitas
 };
 

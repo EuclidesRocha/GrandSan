@@ -62,6 +62,8 @@ PRIMARY KEY (idStatus,fkMissoes, fkUsuario)
 
 select * from StatusMissao;
 
+select fkUsuario as UserId, sum(concluida) as MissoesFeitas from StatusMissao where fkUsuario = 1;
+
    select * from missoes;
 
        
@@ -169,4 +171,3 @@ INSERT INTO missoes (idMissoes, nome) VALUES
 (100, 'Fim da Linha');
 
        
-  
