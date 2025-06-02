@@ -11,7 +11,7 @@
    
     <div class="barra" >
         <div class="topo">
-            <a id="imagemSan" href="https://www.rockstargames.com/br/games/sanandreas"><img src="./arquivos/imagens/grandSan 1.png"></a>
+            <a id="imagemSan" href="./index.html"><img src="./arquivos/imagens/grandSan 1.png"></a>
            
             <a id="atalhoLogin" href="TelaLogin.html">Login</a>
            </div>
@@ -71,31 +71,32 @@ var listaUsuario = [];
     var Nome = inputNome.value
     var Senha = inputSenha.value        
     var ConFirmarSenha = inputConFirmarSenha.value
-    var SelGangue = Number(inputSelGangue.value)
-    var SelCidade = Number(inputSelCidade.value)    
+    var SelGangue = inputSelGangue.value
+    var SelCidade = inputSelCidade.value 
     var EmailDeCriacao = ``
     var idUsuario = ``
     
 
-    if(Email == `` || Nome == `` || Senha == `` || ConFirmarSenha == `` ||SelGangue == ``||SelCidade == ``)
+    if(Email == `` || Nome == `` || Senha == `` || ConFirmarSenha == `` ||SelGangue == "#"||SelCidade == "#")
 {
   span_mensagem.innerHTML = `Por favor Preecha Todos os Campos!`;
     erroMen()  
   return false;
-} if(!Email.includes("@")){
+} else if(!Email.includes("@")){
   span_mensagem.innerHTML = `Endereço de Email Inválido!`;
     erroMen()  
     return false;
 }
-if(Senha != ConFirmarSenha){
+else if(Senha != ConFirmarSenha){
   console.log("erro ao confirmar a senha")
   span_mensagem.innerHTML = `Erro ao Confirmar Senha`;
   erroMen() 
   return false;
-}
-
-
-    // Enviando o valor da nova input
+}else{ 
+  
+  SelGangue = Number(inputSelGangue.value)
+SelCidade = Number(inputSelCidade.value)
+  // Enviando o valor da nova input
     fetch("/usuario/cadastrar", {
       method: "POST",
       headers: {
@@ -188,7 +189,10 @@ if(Senha != ConFirmarSenha){
         
       });
 
-    return false;
+    return false;}
+
+
+
   }
 
 
