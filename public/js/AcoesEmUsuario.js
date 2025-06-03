@@ -95,7 +95,7 @@ function mudarTelaUser(){
             
             sessionStorage.clear();
 
-            window.location = "http://localhost:3333/"
+            window.location = "http://localhost:8080/"
             
         }
     function verPontos(){
